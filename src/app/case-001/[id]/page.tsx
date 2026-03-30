@@ -85,7 +85,7 @@ export default async function ADRPage({ params }: { params: Promise<{ id: string
       <div className="flex items-center gap-2 text-xs text-muted-foreground">
         <Link href="/" className="hover:text-foreground">← Case Studies</Link>
         <span>/</span>
-        <Link href="/adrs" className="hover:text-foreground">Case #001</Link>
+        <Link href="/case-001" className="hover:text-foreground">Case #001</Link>
         <span>/</span>
         <span className="text-foreground font-mono">{adr.id}</span>
       </div>
@@ -150,7 +150,7 @@ export default async function ADRPage({ params }: { params: Promise<{ id: string
                   {dependsOnADRs.map((dep) => dep && (
                     <Link
                       key={dep.id}
-                      href={`/adrs/${dep.id.toLowerCase()}`}
+                      href={`/case-001/${dep.id.toLowerCase()}`}
                       className="flex items-center gap-2 px-3 py-1.5 rounded border border-border hover:bg-muted/40 transition-colors text-xs font-mono"
                     >
                       ← {dep.id}: {dep.title}
@@ -166,7 +166,7 @@ export default async function ADRPage({ params }: { params: Promise<{ id: string
                   {dependents.map((dep) => (
                     <Link
                       key={dep.id}
-                      href={`/adrs/${dep.id.toLowerCase()}`}
+                      href={`/case-001/${dep.id.toLowerCase()}`}
                       className="flex items-center gap-2 px-3 py-1.5 rounded border border-border hover:bg-muted/40 transition-colors text-xs font-mono"
                     >
                       {dep.id}: {dep.title} →
@@ -222,12 +222,12 @@ export default async function ADRPage({ params }: { params: Promise<{ id: string
       {/* Navigation */}
       <div className="flex items-center justify-between pt-4 border-t border-border">
         <div className="flex items-center gap-4">
-          <Link href="/adrs" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="/case-001" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
             ← All ADRs
           </Link>
           {prevADR && (
             <Link
-              href={`/adrs/${prevADR.id.toLowerCase()}`}
+              href={`/case-001/${prevADR.id.toLowerCase()}`}
               className="text-xs text-muted-foreground hover:text-foreground transition-colors font-mono"
             >
               ← {prevADR.id}
@@ -236,7 +236,7 @@ export default async function ADRPage({ params }: { params: Promise<{ id: string
         </div>
         {nextADR && (
           <Link
-            href={`/adrs/${nextADR.id.toLowerCase()}`}
+            href={`/case-001/${nextADR.id.toLowerCase()}`}
             className="text-xs text-muted-foreground hover:text-foreground transition-colors font-mono"
           >
             {nextADR.id} →

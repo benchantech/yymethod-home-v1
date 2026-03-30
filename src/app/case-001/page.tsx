@@ -40,7 +40,7 @@ export default function ADRsPage() {
             This ADR registry is an illustrative case study demonstrating the YY Method™ Home Edition v2.3.
             Numbers are approximate and generalized. Math is illustrative only.
             Not financial, tax, or legal advice. See{" "}
-            <a href="/adrs/adr-017" className="underline underline-offset-2 hover:text-foreground transition-colors">ADR-017</a>{" "}
+            <a href="/case-001/adr-017" className="underline underline-offset-2 hover:text-foreground transition-colors">ADR-017</a>{" "}
             for the full framing notice.
           </p>
         </CardContent>
@@ -71,7 +71,7 @@ export default function ADRsPage() {
               {group.map((adr) => (
                 <Link
                   key={adr.id}
-                  href={`/adrs/${adr.id.toLowerCase()}`}
+                  href={`/case-001/${adr.id.toLowerCase()}`}
                   className="flex items-start gap-4 p-3 rounded-lg border border-border hover:bg-muted/40 transition-colors group"
                 >
                   <span className="font-mono text-xs text-muted-foreground pt-1 shrink-0 w-16">
