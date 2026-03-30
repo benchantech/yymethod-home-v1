@@ -1,9 +1,10 @@
 # ADR-005: Retirement Vehicle Transition — Solo 401(k) → Dormant → SEP-IRA
 **Method:** YY Method™ Home Edition v2.3 — Capture → Why → Why-Not → Commit → Timestamp
-**Status:** Decided (partially pending — rollover eligibility unconfirmed)
+**Status:** Decided — Partially Corrected (see ADR-023)
 **Date:** March 29, 2026
 **Depends On:** ADR-001, ADR-003
 **Freshness Boundary:** Expires when employer plan rollover eligibility is confirmed or denied. SEP-IRA path is stable until SE income structure changes.
+**Correction:** ADR-023 supersedes two specific claims in this ADR: (1) the solo 401(k) does NOT freeze after March 31 — it can be sponsored by the LLC (disregarded entity) with SE income as the contribution basis; (2) the IRA → solo 401(k) rollover window did not close March 31 — it remains open while the plan is active. Read ADR-023 before acting on any solo 401(k) or SEP-IRA guidance in this ADR.
 
 ---
 

@@ -326,6 +326,20 @@ export const adrs: ADR[] = [
     summary: "Use employer 401(k) as primary pre-tax vehicle — quality index funds, low fixed fee, accepts rollovers, zero admin. Solo 401(k) deferred until LLC income warrants employer contributions or mega backdoor Roth is configured. Employer 401(k) rolls into solo 401(k) if employment ends — nothing foreclosed.",
     tags: ["employer-401k", "solo-401k", "mega-backdoor", "llc", "optionality"],
   },
+  {
+    id: "ADR-023",
+    number: "023",
+    title: "Solo 401(k) Eligibility Correction — LLC Self-Employment Income",
+    status: "Decided — Correction",
+    freshness: "Permanent",
+    freshnessNote: "Permanent correction record. Supersedes two specific claims in ADR-005.",
+    date: "2026-03-30",
+    domain: "tax",
+    position: "Correction",
+    dependsOn: ["ADR-005"],
+    summary: "Corrects ADR-005: solo 401(k) is NOT frozen after S corp terminates. LLC (disregarded entity) can sponsor the plan; contribution basis becomes net SE income. Employee deferral ($23,500) + employer (~20% SE income) available — far superior to SEP-IRA at the same income. IRA rollover window also remained open. ADR-020–022 decisions unchanged.",
+    tags: ["solo-401k", "llc", "se-income", "correction", "sep-ira", "adr-005"],
+  },
 ];
 
 export function getADR(id: string): ADR | undefined {
