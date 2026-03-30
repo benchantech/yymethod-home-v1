@@ -18,7 +18,7 @@ const ADR_FILE_MAP: Record<string, string> = {
   "ADR-006": "ADR-006-cash-banking-execution.md",
   "ADR-007": "ADR-007-tax-bracket-combined-rate.md",
   "ADR-008": "ADR-008-employer-contribution-basis-correction.md",
-  "ADR-009": "ADR-009-daf-tithing-strategy.md",
+  "ADR-009": "ADR-009-daf-charitable-strategy.md",
   "ADR-010": "ADR-010-fsa-election-strategy.md",
   "ADR-011": "ADR-011-paychex-deferral-dca-strategy.md",
   "ADR-012": "ADR-012-minor-child-employment.md",

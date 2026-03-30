@@ -1,4 +1,4 @@
-export type ADRStatus = "Decided" | "Decided — Rejected" | "Decided — Correction" | "Pending" | "Permanent Record";
+export type ADRStatus = "Decided" | "Decided — Rejected" | "Decided — Correction" | "Decided — Partially Corrected" | "Pending" | "Permanent Record";
 
 export type ADRFreshness = "Active" | "Executed" | "Pending" | "Permanent";
 
@@ -77,16 +77,16 @@ export const adrs: ADR[] = [
   {
     id: "ADR-005",
     number: "005",
-    title: "Retirement Vehicle Transition: 401(k) → Dormant → SEP",
-    status: "Decided",
+    title: "Retirement Vehicle Transition — S Corp to LLC",
+    status: "Decided — Partially Corrected",
     freshness: "Pending",
-    freshnessNote: "Expires if employer plan rollover rules confirmed otherwise",
+    freshnessNote: "Expires if employer plan rollover rules confirmed otherwise. Two claims corrected by ADR-023.",
     date: "2026-03-29",
     domain: "tax",
     position: "Derived",
     dependsOn: ["ADR-001", "ADR-003"],
-    summary: "Solo 401(k) goes dormant after March 31 (no new contributions as disregarded entity). Traditional IRA → employer 401(k) rollover pending. SEP-IRA for any 2026 LLC income.",
-    tags: ["solo-401k", "sep-ira", "rollover", "retirement"],
+    summary: "Transition from S corp retirement structure to LLC/employer plan structure. ⚠ Partially corrected by ADR-023: solo 401(k) is NOT frozen after April 1 — LLC (disregarded entity) can sponsor it with SE income as contribution basis. SEP-IRA is generally inferior to solo 401(k) at the same income level. IRA rollover window also remained open.",
+    tags: ["solo-401k", "sep-ira", "rollover", "retirement", "partially-corrected"],
   },
   {
     id: "ADR-006",
@@ -358,6 +358,7 @@ export const statusColor: Record<ADRStatus, string> = {
   "Decided": "bg-emerald-500/15 text-emerald-400 border-emerald-500/20",
   "Decided — Rejected": "bg-red-500/15 text-red-400 border-red-500/20",
   "Decided — Correction": "bg-amber-500/15 text-amber-400 border-amber-500/20",
+  "Decided — Partially Corrected": "bg-orange-500/15 text-orange-400 border-orange-500/20",
   "Pending": "bg-blue-500/15 text-blue-400 border-blue-500/20",
   "Permanent Record": "bg-violet-500/15 text-violet-400 border-violet-500/20",
 };

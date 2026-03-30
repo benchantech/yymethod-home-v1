@@ -34,6 +34,12 @@ ADR-014  Employer Profit-Sharing Strategy   [FORWARD-LOOKING — depends on ADR-
 ADR-015  HSA Deployment & Backdoor Roth     [IMMEDIATE + FORWARD-LOOKING — depends on ADR-005, ADR-007]
 ADR-016  AI Capability Assessment           [PERMANENT HISTORICAL RECORD — depends on all ADRs as evidence]
 ADR-017  Case Study Methodology Notice      [PERMANENT — interpretive frame for the full ADR set]
+ADR-018  Search, Tag Cloud & SEO/AEO/GEO   [FORWARD-LOOKING — deferred to Phase 2, depends on ADR-017]
+ADR-019  Pro-Rata Rule — System Non-Negotiable [CROSS-CUTTING — depends on ADR-005, ADR-015]
+    └── ADR-020  IRA → Employer 401(k) Rollover [DERIVED — depends on ADR-019, ADR-005]
+        └── ADR-021  Backdoor Roth Annual Cycle  [DERIVED — depends on ADR-019, ADR-020]
+ADR-022  Employer vs Solo 401(k) Priority   [FORWARD-LOOKING — depends on ADR-019, ADR-005]
+ADR-023  Solo 401(k) Eligibility Correction [CORRECTION — supersedes two claims in ADR-005]
 ```
 
 ---
@@ -46,7 +52,7 @@ ADR-017  Case Study Methodology Notice      [PERMANENT — interpretive frame fo
 | ADR-002 | Final Payroll Bonus Strategy | Decided | Expires: if cash position changes before March 31 |
 | ADR-003 | Employee Deferral vs Employer Contribution Priority | Decided | Expires: if 2026 limits change or employer plan rules change |
 | ADR-004 | Distribution Reclassification Decision | Decided — Rejected | Permanent record — no reversal |
-| ADR-005 | Retirement Vehicle Transition: 401k → Dormant → SEP | Decided | Expires: if employer plan rollover rules confirmed |
+| ADR-005 | Retirement Vehicle Transition — S Corp to LLC | Decided — Partially Corrected (see ADR-023) | Expires: if employer plan rollover rules confirmed |
 | ADR-006 | Cash & Banking Execution — Conditional Wire Strategy | Decided | Expires: March 31, 2026 — execution complete |
 | ADR-007 | Tax Bracket Reality — Federal + State Combined Rate | Decided | Expires: if filing status, state rate, or income composition changes |
 | ADR-008 | Employer Contribution Basis Correction | Decided — Correction | Permanent — supersedes bonus figures in ADR-002, ADR-006 |
@@ -59,6 +65,12 @@ ADR-017  Case Study Methodology Notice      [PERMANENT — interpretive frame fo
 | ADR-015 | HSA Cash Deployment & Backdoor Roth Sequencing | HSA: Immediate / Roth: Q2-Q3 | Expires: if HDHP eligibility returns, IRA limits change, or rollover confirmed |
 | ADR-016 | AI Capability Assessment — March 2026 | Permanent Historical Record | Never expires as record. Stale as current assessment immediately upon AI advancement |
 | ADR-017 | Case Study Methodology — Illustrative Framing Notice | Permanent Record | Permanent. Governs interpretation of the full ADR set |
+| ADR-018 | Search, Tag Cloud & Organic Discovery — SEO/AEO/GEO Strategy | Pending | Trigger: 3+ case studies or explicit Phase 2 decision |
+| ADR-019 | Pro-Rata Rule — System Non-Negotiable | Decided | Expires if IRS changes pro-rata mechanics or IRA situation changes |
+| ADR-020 | IRA → Employer 401(k) Rollover — Phase 1 One-Time Cleanup | Decided | Expires when rollover confirmed complete for both spouses |
+| ADR-021 | Backdoor Roth Annual Cycle — Phase 2 Repeating System | Decided | Expires if IRA limits change, conversion rules change, or IRA not $0 on Dec 31 |
+| ADR-022 | Employer 401(k) vs Solo 401(k) — Simplicity First, Optionality Preserved | Decided | Expires if employment ends, LLC income grows materially, or employer plan degrades |
+| ADR-023 | Solo 401(k) Eligibility Correction — LLC Self-Employment Income | Decided — Correction | Permanent correction record. Supersedes two claims in ADR-005 |
 
 ---
 
@@ -78,3 +90,8 @@ If ADR-015 HDHP eligibility returns → resume HSA contributions up to annual li
 If ADR-001 5-year lockout is relevant → no S corp deferral subtraction needed through 2030  
 If 2026 IRS limits are revised → re-verify ADR-002, ADR-003, ADR-011  
 If employer plan rejects rollover → re-verify ADR-005
+If IRA balance is not $0 on Dec 31 → do NOT execute backdoor Roth that year (ADR-019, ADR-021)
+If ADR-020 rollover not yet complete → backdoor Roth system (ADR-021) cannot run cleanly
+If LLC income grows to warrant employer contributions → re-evaluate ADR-022 solo 401(k) activation
+If employment ends → solo 401(k) becomes primary vehicle; employer 401(k) rolls into it (ADR-022)
+If solo 401(k) plan document not updated after S corp terminates → correct plan sponsor entity (ADR-023)
