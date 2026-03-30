@@ -21,10 +21,10 @@ export const caseStudies: CaseStudy[] = [
     date: "2026-03-29",
     status: "Complete",
     domains: ["Tax", "Identity", "Agent", "Methodology"],
-    adrCount: 18,
+    adrCount: 22,
     description:
-      "A complex multi-domain financial transition — S corp election termination, final payroll structuring, employer 401(k) maximization, DAF charitable strategy, HSA deployment, backdoor Roth sequencing, and minor child employment planning. Executed under real-time deadline pressure in a single session. 18 knowledge artifacts preserved.",
+      "A complex multi-domain financial transition — S corp election termination, final payroll structuring, employer 401(k) maximization, DAF charitable strategy, HSA deployment, backdoor Roth system architecture (pro-rata elimination, annual cycle, employer vs solo 401k), and minor child employment planning. 22 knowledge artifacts across two sessions.",
     href: "/adrs",
-    tags: ["s-corp", "401k", "tax-optimization", "retirement", "entity-transition", "daf", "hsa", "backdoor-roth"],
+    tags: ["s-corp", "401k", "tax-optimization", "retirement", "entity-transition", "daf", "hsa", "backdoor-roth", "pro-rata", "roth-ira"],
   },
 ];

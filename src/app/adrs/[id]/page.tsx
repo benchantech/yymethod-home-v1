@@ -28,6 +28,10 @@ const ADR_FILE_MAP: Record<string, string> = {
   "ADR-016": "ADR-016-ai-capability-assessment-march-2026.md",
   "ADR-017": "ADR-017-case-study-methodology-notice.md",
   "ADR-018": "ADR-018-search-seo-aeo-geo.md",
+  "ADR-019": "ADR-019-pro-rata-rule-system-invariant.md",
+  "ADR-020": "ADR-020-ira-rollover-employer-401k-phase1.md",
+  "ADR-021": "ADR-021-backdoor-roth-annual-cycle-phase2.md",
+  "ADR-022": "ADR-022-employer-vs-solo-401k-priority.md",
 };
 
 async function getADRContent(adrId: string): Promise<string | null> {
@@ -35,7 +39,13 @@ async function getADRContent(adrId: string): Promise<string | null> {
   if (!filename) return null;
   try {
     const filePath = path.join(process.cwd(), "content", "adrs", filename);
-    const raw = await fs.readFile(filePath, "utf-8");
+    let raw = await fs.readFile(filePath, "utf-8");
+    // Strip the header metadata block (title + key-value pairs) before the first --- divider.
+    // These fields are already rendered from structured data in the page header.
+    const dividerIndex = raw.indexOf('\n---\n');
+    if (dividerIndex !== -1) {
+      raw = raw.slice(dividerIndex + 5);
+    }
     return await marked(raw, { gfm: true, breaks: false }) as string;
   } catch {
     return null;
@@ -64,6 +74,9 @@ export default async function ADRPage({ params }: { params: Promise<{ id: string
   ]);
 
   const dependents = adrs.filter((a) => a.dependsOn.includes(adr.id));
+  const currentNum = parseInt(adr.number);
+  const prevADR = adrs.find((a) => parseInt(a.number) === currentNum - 1);
+  const nextADR = adrs.find((a) => parseInt(a.number) === currentNum + 1);
 
   return (
     <main className="min-h-screen p-6 md:p-10 max-w-4xl mx-auto space-y-8">
@@ -206,16 +219,26 @@ export default async function ADRPage({ params }: { params: Promise<{ id: string
       )}
 
       {/* Navigation */}
-      <div className="flex justify-between pt-4 border-t border-border">
-        <Link href="/adrs" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-          ← All ADRs
-        </Link>
-        {dependents.length > 0 && (
+      <div className="flex items-center justify-between pt-4 border-t border-border">
+        <div className="flex items-center gap-4">
+          <Link href="/adrs" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+            ← All ADRs
+          </Link>
+          {prevADR && (
+            <Link
+              href={`/adrs/${prevADR.id.toLowerCase()}`}
+              className="text-xs text-muted-foreground hover:text-foreground transition-colors font-mono"
+            >
+              ← {prevADR.id}
+            </Link>
+          )}
+        </div>
+        {nextADR && (
           <Link
-            href={`/adrs/${dependents[0].id.toLowerCase()}`}
-            className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+            href={`/adrs/${nextADR.id.toLowerCase()}`}
+            className="text-xs text-muted-foreground hover:text-foreground transition-colors font-mono"
           >
-            Next: {dependents[0].id} →
+            {nextADR.id} →
           </Link>
         )}
       </div>
