@@ -33,6 +33,7 @@ const ADR_FILE_MAP: Record<string, string> = {
   "ADR-021": "ADR-021-backdoor-roth-annual-cycle-phase2.md",
   "ADR-022": "ADR-022-employer-vs-solo-401k-priority.md",
   "ADR-023": "ADR-023-solo-401k-eligibility-correction.md",
+  "ADR-024": "ADR-024-build-session-march-30-2026.md",
 };
 
 async function getADRContent(adrId: string): Promise<string | null> {

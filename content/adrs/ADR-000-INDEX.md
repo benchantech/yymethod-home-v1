@@ -40,6 +40,7 @@ ADR-019  Pro-Rata Rule — System Non-Negotiable [CROSS-CUTTING — depends on A
         └── ADR-021  Backdoor Roth Annual Cycle  [DERIVED — depends on ADR-019, ADR-020]
 ADR-022  Employer vs Solo 401(k) Priority   [FORWARD-LOOKING — depends on ADR-019, ADR-005]
 ADR-023  Solo 401(k) Eligibility Correction [CORRECTION — supersedes two claims in ADR-005]
+ADR-024  Build Session — March 30, 2026     [PERMANENT — full session record, build arc, corrections, discipline]
 ```
 
 ---
@@ -71,6 +72,7 @@ ADR-023  Solo 401(k) Eligibility Correction [CORRECTION — supersedes two claim
 | ADR-021 | Backdoor Roth Annual Cycle — Phase 2 Repeating System | Decided | Expires if IRA limits change, conversion rules change, or IRA not $0 on Dec 31 |
 | ADR-022 | Employer 401(k) vs Solo 401(k) — Simplicity First, Optionality Preserved | Decided | Expires if employment ends, LLC income grows materially, or employer plan degrades |
 | ADR-023 | Solo 401(k) Eligibility Correction — LLC Self-Employment Income | Decided — Correction | Permanent correction record. Supersedes two claims in ADR-005 |
+| ADR-024 | Build Session — yymethod-home-v1, March 30, 2026 | Permanent Record | Permanent. Full build arc, corrections, DNS, discrepancy audit. Does not expire. |
 
 ---
 

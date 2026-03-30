@@ -340,6 +340,20 @@ export const adrs: ADR[] = [
     summary: "Corrects ADR-005: solo 401(k) is NOT frozen after S corp terminates. LLC (disregarded entity) can sponsor the plan; contribution basis becomes net SE income. Employee deferral ($23,500) + employer (~20% SE income) available — far superior to SEP-IRA at the same income. IRA rollover window also remained open. ADR-020–022 decisions unchanged.",
     tags: ["solo-401k", "llc", "se-income", "correction", "sep-ira", "adr-005"],
   },
+  {
+    id: "ADR-024",
+    number: "024",
+    title: "Build Session — yymethod-home-v1, March 30, 2026",
+    status: "Permanent Record",
+    freshness: "Permanent",
+    freshnessNote: "Permanent historical record. Documents how this site was built on the day it was completed.",
+    date: "2026-03-30",
+    domain: "methodology",
+    position: "Permanent",
+    dependsOn: ["ADR-013", "ADR-016", "ADR-017"],
+    summary: "Full build session record: case study selector home page, /case-001 URL structure, ADR-019 through ADR-023, HTTPS DNS diagnosis, discrepancy audit, correction ADR filed. What broke, how it was fixed, and why none of it is magic — it is hardened dev practice applied with intention. AI is a force multiplier for disciplined operators.",
+    tags: ["build-session", "methodology", "corrections", "discipline", "permanent", "ai-tooling"],
+  },
 ];
 
 export function getADR(id: string): ADR | undefined {
