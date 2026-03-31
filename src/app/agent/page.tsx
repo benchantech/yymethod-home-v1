@@ -1,4 +1,18 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Agent System — YY Method™ Home Edition",
+  description: "YY Method agent orchestration reference. Builder / Test / Review / Docs roles, ambiguity queue protocol, and executor contract.",
+  authors: [{ name: "Ben Chan" }],
+  openGraph: {
+    title: "Agent System — YY Method™ Home Edition",
+    description: "Builder / Test / Review / Docs. Ambiguity queue. Executor contract.",
+    url: "https://home.yymethod.com/agent",
+    siteName: "YY Method™ Home Edition",
+    type: "article",
+  },
+};
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";

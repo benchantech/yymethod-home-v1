@@ -1,4 +1,18 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "YY Framework — YY Method™ Home Edition",
+  description: "The YY Method core formula: eight layers, six invariants, canonical principles. Compression · Scars · Survivability · Explainability · Timestamping · Discipline.",
+  authors: [{ name: "Ben Chan" }],
+  openGraph: {
+    title: "YY Framework — YY Method™ Home Edition",
+    description: "The YY Method core formula: eight layers, six invariants, canonical principles.",
+    url: "https://home.yymethod.com/framework",
+    siteName: "YY Method™ Home Edition",
+    type: "article",
+  },
+};
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";

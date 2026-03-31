@@ -1,4 +1,18 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Case 002: yysworld.com Founding Architecture — YY Method™ Home Edition",
+  description: "23 ADRs documenting the founding architecture of yysworld.com — a COPPA-compliant YY Method artifact for kids. Includes the AI extrapolation scars and the operator correction interview.",
+  authors: [{ name: "Ben Chan" }],
+  openGraph: {
+    title: "Case 002: yysworld.com Founding Architecture — YY Method™ Home Edition",
+    description: "23 ADRs: AI extrapolated scars + operator-corrected founding architecture for yysworld.com.",
+    url: "https://home.yymethod.com/case-002",
+    siteName: "YY Method™ Home Edition",
+    type: "article",
+  },
+};
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { adrsCase002, domainLabelCase002, type ADRCase002, type ADRCase002Domain } from "@/lib/adrs-case-002";

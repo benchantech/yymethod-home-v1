@@ -1,12 +1,28 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { caseStudies } from "@/lib/cases";
+import { JsonLd, personSchema } from "@/components/json-ld";
+
+export const metadata: Metadata = {
+  title: "YY Method™ Home Edition",
+  description: "Preserve judgment under constraint. The independently owned Home Edition of the YY Method — case studies, ADR registry, and framework documentation.",
+  authors: [{ name: "Ben Chan" }],
+  openGraph: {
+    title: "YY Method™ Home Edition",
+    description: "Preserve judgment under constraint. The independently owned Home Edition of the YY Method — case studies, ADR registry, and framework documentation.",
+    url: "https://home.yymethod.com",
+    siteName: "YY Method™ Home Edition",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (
     <main className="min-h-screen p-6 md:p-10 max-w-4xl mx-auto space-y-12">
+      <JsonLd data={personSchema()} />
 
       {/* Header — YY Method Home Edition brand */}
       <div className="space-y-4 pt-4">

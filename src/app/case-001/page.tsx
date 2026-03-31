@@ -1,4 +1,18 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Case 001: S Corp Tax Transition — YY Method™ Home Edition",
+  description: "24 Architecture Decision Records documenting an S Corp dissolution, Solo 401(k) strategy, backdoor Roth architecture, and operator identity. YY Method applied to personal tax architecture.",
+  authors: [{ name: "Ben Chan" }],
+  openGraph: {
+    title: "Case 001: S Corp Tax Transition — YY Method™ Home Edition",
+    description: "24 ADRs: S Corp dissolution, Solo 401(k), backdoor Roth, operator identity. YY Method applied.",
+    url: "https://home.yymethod.com/case-001",
+    siteName: "YY Method™ Home Edition",
+    type: "article",
+  },
+};
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";

@@ -8,6 +8,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { adrsCase002, getADRCase002, domainLabelCase002 } from "@/lib/adrs-case-002";
 import { statusColor } from "@/lib/adrs";
+import { JsonLd, articleSchema, breadcrumbSchema, faqSchema } from "@/components/json-ld";
+import { extractFaqItems } from "@/lib/faq-schema";
 
 const ADR_FILE_MAP: Record<string, string> = {
   "C2-001": "C2-001-domain-and-identity.md",
@@ -35,20 +37,23 @@ const ADR_FILE_MAP: Record<string, string> = {
   "C2-023": "C2-023-stack-pending.md",
 };
 
-async function getADRContent(adrId: string): Promise<string | null> {
+async function getADRRaw(adrId: string): Promise<string | null> {
   const filename = ADR_FILE_MAP[adrId];
   if (!filename) return null;
   try {
     const filePath = path.join(process.cwd(), "content", "case-002", filename);
-    let raw = await fs.readFile(filePath, "utf-8");
+    const raw = await fs.readFile(filePath, "utf-8");
     const dividerIndex = raw.indexOf('\n---\n');
-    if (dividerIndex !== -1) {
-      raw = raw.slice(dividerIndex + 5);
-    }
-    return await marked(raw, { gfm: true, breaks: false }) as string;
+    return dividerIndex !== -1 ? raw.slice(dividerIndex + 5) : raw;
   } catch {
     return null;
   }
+}
+
+async function getADRContent(adrId: string): Promise<string | null> {
+  const raw = await getADRRaw(adrId);
+  if (!raw) return null;
+  return await marked(raw, { gfm: true, breaks: false }) as string;
 }
 
 export function generateStaticParams() {
@@ -59,7 +64,21 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const { id } = await params;
   const adr = getADRCase002(id.toUpperCase());
   if (!adr) return {};
-  return { title: `${adr.id}: ${adr.title} — YY Method™ Home Edition` };
+  const title = `${adr.id}: ${adr.title} — YY Method™ Home Edition`;
+  const description = `${adr.summary} Decision status: ${adr.status}. Case 002 — yysworld.com founding architecture.`;
+  return {
+    title,
+    description,
+    authors: [{ name: "Ben Chan" }],
+    openGraph: {
+      title,
+      description,
+      url: `https://home.yymethod.com/case-002/${adr.id}`,
+      siteName: "YY Method™ Home Edition",
+      type: "article",
+      publishedTime: adr.date,
+    },
+  };
 }
 
 export default async function ADRCase002Page({ params }: { params: Promise<{ id: string }> }) {
@@ -67,17 +86,32 @@ export default async function ADRCase002Page({ params }: { params: Promise<{ id:
   const adr = getADRCase002(id.toUpperCase());
   if (!adr) notFound();
 
-  const [content, dependsOnADRs] = await Promise.all([
+  const [content, rawContent, dependsOnADRs] = await Promise.all([
     getADRContent(adr.id),
+    getADRRaw(adr.id),
     Promise.resolve(adr.dependsOn.map((depId) => getADRCase002(depId)).filter(Boolean)),
   ]);
 
+  const faqItems = rawContent ? extractFaqItems(rawContent) : [];
   const dependents = adrsCase002.filter((a) => a.dependsOn.includes(adr.id));
   const currentNum = parseInt(adr.number);
   const prevADR = adrsCase002.find((a) => parseInt(a.number) === currentNum - 1);
   const nextADR = adrsCase002.find((a) => parseInt(a.number) === currentNum + 1);
 
   return (
+    <>
+      <JsonLd data={articleSchema({
+        title: `${adr.id}: ${adr.title}`,
+        description: adr.summary,
+        url: `https://home.yymethod.com/case-002/${adr.id}`,
+        datePublished: adr.date,
+      })} />
+      <JsonLd data={breadcrumbSchema([
+        { name: "YY Method™ Home Edition", url: "https://home.yymethod.com" },
+        { name: "Case 002", url: "https://home.yymethod.com/case-002" },
+        { name: adr.id, url: `https://home.yymethod.com/case-002/${adr.id}` },
+      ])} />
+      {faqItems.length > 0 && <JsonLd data={faqSchema(faqItems)} />}
     <main className="min-h-screen p-6 md:p-10 max-w-4xl mx-auto space-y-8">
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 text-xs text-muted-foreground">
@@ -229,5 +263,6 @@ export default async function ADRCase002Page({ params }: { params: Promise<{ id:
         )}
       </div>
     </main>
+    </>
   );
 }

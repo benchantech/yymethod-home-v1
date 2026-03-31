@@ -13,8 +13,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "YY Method™ Home Edition",
+  title: {
+    default: "YY Method™ Home Edition",
+    template: "%s",
+  },
   description: "Preserve judgment under constraint. The independently owned Home Edition of the YY Method — case studies, ADR registry, and framework documentation.",
+  authors: [{ name: "Ben Chan" }],
+  metadataBase: new URL("https://home.yymethod.com"),
+  openGraph: {
+    siteName: "YY Method™ Home Edition",
+    type: "website",
+    locale: "en_US",
+    url: "https://home.yymethod.com",
+    title: "YY Method™ Home Edition",
+    description: "Preserve judgment under constraint. The independently owned Home Edition of the YY Method.",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "YY Method™ Home Edition" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "YY Method™ Home Edition",
+    description: "Preserve judgment under constraint. The independently owned Home Edition of the YY Method.",
+    images: ["/opengraph-image"],
+  },
 };
 
 export default function RootLayout({
