@@ -36,6 +36,7 @@ const ADR_FILE_MAP: Record<string, string> = {
   "ADR-022": "ADR-022-employer-vs-solo-401k-priority.md",
   "ADR-023": "ADR-023-solo-401k-eligibility-correction.md",
   "ADR-024": "ADR-024-build-session-march-30-2026.md",
+  "ADR-025": "ADR-025-fica-correction-full-payroll-tax.md",
 };
 
 async function getADRRaw(adrId: string): Promise<string | null> {

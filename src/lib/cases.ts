@@ -21,7 +21,7 @@ export const caseStudies: CaseStudy[] = [
     date: "2026-03-29",
     status: "Complete",
     domains: ["Tax", "Identity", "Agent", "Methodology"],
-    adrCount: 24,
+    adrCount: 25,
     description:
       "A complex multi-domain financial transition — S corp election termination, final payroll structuring, employer 401(k) maximization, DAF charitable strategy, HSA deployment, backdoor Roth system architecture (pro-rata elimination, annual cycle, employer vs solo 401k), and minor child employment planning. 22 knowledge artifacts across two sessions.",
     href: "/case-001",
