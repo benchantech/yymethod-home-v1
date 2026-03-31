@@ -1,4 +1,4 @@
-export type ADRStatus = "Decided" | "Decided — Rejected" | "Decided — Correction" | "Decided — Partially Corrected" | "Pending" | "Permanent Record";
+export type ADRStatus = "Decided" | "Decided — Rejected" | "Decided — Correction" | "Decided — Partially Corrected" | "Pending" | "Permanent Record" | "AI Extrapolated";
 
 export type ADRFreshness = "Active" | "Executed" | "Pending" | "Permanent";
 
@@ -375,6 +375,7 @@ export const statusColor: Record<ADRStatus, string> = {
   "Decided — Partially Corrected": "bg-orange-500/15 text-orange-400 border-orange-500/20",
   "Pending": "bg-blue-500/15 text-blue-400 border-blue-500/20",
   "Permanent Record": "bg-violet-500/15 text-violet-400 border-violet-500/20",
+  "AI Extrapolated": "bg-rose-500/15 text-rose-400 border-rose-500/20",
 };
 
 export const domainLabel: Record<ADR["domain"], string> = {

@@ -27,4 +27,18 @@ export const caseStudies: CaseStudy[] = [
     href: "/case-001",
     tags: ["s-corp", "401k", "tax-optimization", "retirement", "entity-transition", "daf", "hsa", "backdoor-roth", "pro-rata", "roth-ira"],
   },
+  {
+    id: "case-002",
+    number: "002",
+    title: "yysworld.com — A YY Method Artifact for Kids",
+    subtitle: "Founding architecture · COPPA compliance · stealth inoculation · cognitive theft defense",
+    date: "2026-03-30",
+    status: "In Progress",
+    domains: ["Founding", "Data", "Content", "Philosophy", "Architecture"],
+    adrCount: 23,
+    description:
+      "The founding architecture of yysworld.com — a read-only site for kids where YY the stuffed squirrel delivers stealth inoculation against cognitive theft. 23 knowledge artifacts: C2-001–C2-012 preserved as AI Extrapolated scars from the first draft, C2-013–C2-023 operator-supplied reasoning from the corrective interview. The full chain is provable. Provenance flows outward. Nothing returns.",
+    href: "/case-002",
+    tags: ["yysworld", "kids", "coppa", "cognitive-theft", "provenance", "anti-smoothing", "yy", "acorn-economy", "static-site"],
+  },
 ];

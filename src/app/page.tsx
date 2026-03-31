@@ -138,18 +138,6 @@ export default function Home() {
           ))}
         </div>
 
-        {/* Coming soon placeholder */}
-        <div className="p-5 rounded-lg border border-dashed border-border bg-muted/5">
-          <div className="flex items-center gap-2">
-            <span className="font-mono text-xs text-muted-foreground">Case #002</span>
-            <span className="text-xs px-1.5 py-0.5 rounded border font-mono bg-muted/50 text-muted-foreground border-border">
-              Coming Soon
-            </span>
-          </div>
-          <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
-            Next case study in progress. The method applies wherever judgment is required under constraint.
-          </p>
-        </div>
       </div>
 
       <Separator />
@@ -167,8 +155,8 @@ export default function Home() {
         </CardContent>
       </Card>
 
-      {/* Nav to framework/agent */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {/* Nav to framework/agent/interview */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {[
           {
             href: "/framework",
@@ -181,6 +169,12 @@ export default function Home() {
             title: "Agent System",
             description: "Builder / Test / Review / Docs. Ambiguity queue. Executor contract.",
             badge: "v2",
+          },
+          {
+            href: "/interview",
+            title: "Interview with AI",
+            description: "Word-for-word audit of the Case 002 first draft. AI extrapolated; operator corrected. The scar record.",
+            badge: "2026-03-30",
           },
         ].map((nav) => (
           <Link
