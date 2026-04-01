@@ -28,6 +28,20 @@ export const caseStudies: CaseStudy[] = [
     tags: ["s-corp", "401k", "tax-optimization", "retirement", "entity-transition", "daf", "hsa", "backdoor-roth", "pro-rata", "roth-ira"],
   },
   {
+    id: "case-003",
+    number: "003",
+    title: "Quest 3 — Cognitive Theft & AI Governance",
+    subtitle: "Writing process · essay architecture · authorship · provenance",
+    date: "2026-03-31",
+    status: "In Progress",
+    domains: ["Writing", "Methodology", "Identity"],
+    adrCount: 1,
+    description:
+      "The YY Method applied to the writing process. ADRs capture decisions about essay architecture alongside the essays themselves — not ahead of them. C3-001 records the opening architecture of the Cognitive Theft essay: the first artifact of Quest 3.",
+    href: "/case-003",
+    tags: ["cognitive-theft", "quest-3", "substack", "writing", "authorship", "provenance"],
+  },
+  {
     id: "case-002",
     number: "002",
     title: "yysworld.com — A YY Method Artifact for Kids",

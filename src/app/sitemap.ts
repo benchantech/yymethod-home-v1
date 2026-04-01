@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { adrs } from "@/lib/adrs";
 import { adrsCase002 } from "@/lib/adrs-case-002";
+import { adrsCase003 } from "@/lib/adrs-case-003";
 
 const BASE_URL = "https://home.yymethod.com";
 
@@ -12,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/interview`, lastModified: "2026-03-30", changeFrequency: "never", priority: 0.9 },
     { url: `${BASE_URL}/case-001`, lastModified: "2026-03-30", changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/case-002`, lastModified: "2026-03-30", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/case-003`, lastModified: "2026-03-31", changeFrequency: "weekly", priority: 0.8 },
   ];
 
   const case001Routes: MetadataRoute.Sitemap = adrs.map((adr) => ({
@@ -28,5 +30,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...case001Routes, ...case002Routes];
+  const case003Routes: MetadataRoute.Sitemap = adrsCase003.map((adr) => ({
+    url: `${BASE_URL}/case-003/${adr.id}`,
+    lastModified: adr.date,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...case001Routes, ...case002Routes, ...case003Routes];
 }
