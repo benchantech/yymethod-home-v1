@@ -35,9 +35,9 @@ export const caseStudies: CaseStudy[] = [
     date: "2026-03-31",
     status: "In Progress",
     domains: ["Writing", "Methodology", "Identity"],
-    adrCount: 1,
+    adrCount: 4,
     description:
-      "The YY Method applied to the writing process. ADRs capture decisions about essay architecture alongside the essays themselves — not ahead of them. C3-001 records the opening architecture of the Cognitive Theft essay: the first artifact of Quest 3.",
+      "The YY Method applied to the writing process. ADRs capture decisions about essay architecture alongside the essays themselves — not ahead of them. Includes public surface mining architecture, the lens framing of ADRs, and a field study of cloud LLM failure modes under controlled YY discipline.",
     href: "/case-003",
     tags: ["cognitive-theft", "quest-3", "substack", "writing", "authorship", "provenance"],
   },

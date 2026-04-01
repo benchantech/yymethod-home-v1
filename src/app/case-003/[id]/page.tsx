@@ -13,6 +13,9 @@ import { extractFaqItems } from "@/lib/faq-schema";
 
 const ADR_FILE_MAP: Record<string, string> = {
   "C3-001": "C3-001-cognitive-theft-essay-opening-architecture.md",
+  "C3-002": "C3-002-public-surface-mining.md",
+  "C3-003": "C3-003-adrs-as-lenses.md",
+  "C3-004": "C3-004-cloud-llm-field-study.md",
 };
 
 async function getADRRaw(adrId: string): Promise<string | null> {
