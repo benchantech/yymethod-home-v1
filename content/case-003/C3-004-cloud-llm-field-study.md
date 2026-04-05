@@ -9,7 +9,7 @@
 
 ## Capture
 
-On March 31, 2026, the operator ran a deliberate field study on a cloud LLM using YY Method discipline. The session covered the Claude Code source leak, local LLMs, YY Vibe framing, and public surface mining architecture.
+On March 31, 2026, the operator ran a deliberate field study on a cloud LLM using YY Method discipline. Session topics were drawn from public surface material only.
 
 The operator's framing: *"I let you lead me when I know that's what you'll do."*
 

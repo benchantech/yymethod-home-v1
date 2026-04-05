@@ -48,7 +48,7 @@ export default function Case003Page() {
       <Card className="border-violet-500/20 bg-violet-500/5">
         <CardContent className="pt-4 pb-4">
           <p className="text-xs text-violet-400 font-mono leading-relaxed">
-            The founding argument: the artifact capture process that governs vibe-coding production systems applies equally to writing. The essay is the artifact. The ADR is the decision record. Both evolve together. Neither precedes the other.
+            The founding argument: the same artifact capture process that governs software architecture decisions applies equally to writing. The essay is the artifact. The ADR is the decision record. Both evolve together. Neither precedes the other.
           </p>
         </CardContent>
       </Card>
