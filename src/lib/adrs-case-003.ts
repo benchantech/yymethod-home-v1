@@ -74,6 +74,20 @@ export const adrsCase003: ADRCase003[] = [
     summary: "Deliberate field study: operator gave cloud LLM controlled room under YY discipline. Documented failure modes: leading, amplifying, Why-Not skipping, temporal drift, flares-as-terrain, writing operator conclusions. All failure modes undetected by model independently, corrected immediately when flagged. Session content is ore — requires enrichment before becoming artifact.",
     tags: ["field-study", "cloud-llm", "failure-modes", "correction", "ore", "scar", "first-draft"],
   },
+  {
+    id: "C3-005",
+    number: "005",
+    title: "Case 003 Rejected — Title Outran Content",
+    status: "Decided — Rejected",
+    freshness: "Permanent",
+    freshnessNote: "Permanent. A rejection decision does not expire.",
+    date: "2026-04-05",
+    domain: "methodology",
+    position: "Permanent",
+    dependsOn: ["C3-001", "C3-002", "C3-003", "C3-004"],
+    summary: "Case 003 reviewed against the registry's own standard and found insufficient. Four ADRs, stalled, no essays written, energy never returned. The stall is a verdict. Title outran content. Expanding it now would be performed rather than genuine. Deletion removes the evidence. The scar is more useful than a clean registry: it proves the registry is curated and held to the same standard as the decisions it documents.",
+    tags: ["rejection", "scar-record", "registry-standard", "curation", "method-applied-to-itself", "permanent"],
+  },
 ];
 
 export function getADRCase003(id: string): ADRCase003 | undefined {

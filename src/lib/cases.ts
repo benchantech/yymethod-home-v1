@@ -63,7 +63,7 @@ export const caseStudies: CaseStudy[] = [
     date: "2026-03-31",
     status: "Rejected",
     domains: ["Writing", "Methodology", "Identity"],
-    adrCount: 4,
+    adrCount: 5,
     description:
       "Rejected. 4 ADRs — the title outran the content. Preserved as a scar: a case that was started but not substantive enough to carry its own weight. The method applies to the registry itself.",
     href: "/case-003",
