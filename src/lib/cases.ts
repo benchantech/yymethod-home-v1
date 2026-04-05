@@ -42,6 +42,20 @@ export const caseStudies: CaseStudy[] = [
     tags: ["cognitive-theft", "quest-3", "substack", "writing", "authorship", "provenance"],
   },
   {
+    id: "case-004",
+    number: "004",
+    title: "Local-First Remote Work Orchestration for Sensitive Compute",
+    subtitle: "Trust boundary · device roles · private overlay · admission control · governance",
+    date: "2026-04-05",
+    status: "Complete",
+    domains: ["Principles", "Architecture", "Operations", "Governance"],
+    adrCount: 16,
+    description:
+      "16 ADRs documenting the principles behind a local-first, remote-operable work architecture for sensitive compute. Separates control surfaces from execution surfaces, keeps the execution surface dark via private overlay, guards heavy local inference with admission control, and preserves the method without disclosing the client deployment. Complete — implemented under employer. Will be reopened as circumstances evolve.",
+    href: "/case-004",
+    tags: ["local-first", "trust-boundary", "private-overlay", "admission-control", "device-roles", "remote-work", "sensitive-compute", "governance"],
+  },
+  {
     id: "case-002",
     number: "002",
     title: "yysworld.com — A YY Method Artifact for Kids",
