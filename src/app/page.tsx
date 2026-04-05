@@ -7,14 +7,14 @@ import { caseStudies } from "@/lib/cases";
 import { JsonLd, personSchema } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "YY Method™ — Cases & ADRs",
+  title: "YY Method™ Cases & ADRs — Ben Chan",
   description: "Preserve judgment under constraint. A live registry of decisions made under the YY Method — case studies, ADR records, and applied reasoning across tax, systems, and life architecture.",
   authors: [{ name: "Ben Chan" }],
   openGraph: {
-    title: "YY Method™ — Cases & ADRs",
+    title: "YY Method™ Cases & ADRs — Ben Chan",
     description: "A live registry of decisions made under the YY Method — case studies, ADR records, and applied reasoning.",
     url: "https://home.yymethod.com",
-    siteName: "YY Method™ — Cases & ADRs",
+    siteName: "YY Method™ Cases & ADRs — Ben Chan",
     type: "website",
   },
 };
