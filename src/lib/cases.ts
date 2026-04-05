@@ -21,9 +21,9 @@ export const caseStudies: CaseStudy[] = [
     date: "2026-04-05",
     status: "In Progress",
     domains: ["Framing", "Family", "Paths", "Resolution"],
-    adrCount: 10,
+    adrCount: 11,
     description:
-      "10 ADRs capturing a live family housing decision. A lifestyle upgrade collides with a 7-figure opportunity cost, a split household, an integrity-killed split-time model, a rejected REPS tax strategy, and a funding trilemma. Governing constraints: family unity required, spouse's time is paramount, answer to no one. Current posture: accumulate for one year, stay actively ready, don't settle.",
+      "11 ADRs capturing a live family housing decision. A lifestyle upgrade collides with a 7-figure opportunity cost, a split household, an integrity-killed split-time model, a rejected REPS tax strategy, and a funding trilemma. Governing constraints: family unity required, spouse's time is paramount, answer to no one. Current posture: accumulate for one year, stay actively ready, don't settle.",
     href: "/case-005",
     tags: ["family-move", "housing", "opportunity-cost", "optionality", "spouse-protection", "school-district", "integrity", "accumulation", "sovereignty"],
   },

@@ -22,6 +22,7 @@ const ADR_FILE_MAP: Record<string, string> = {
   "C5-008": "C5-008-split-time-model.md",
   "C5-009": "C5-009-wait-one-year.md",
   "C5-010": "C5-010-wait-with-optionality.md",
+  "C5-011": "C5-011-framing-notice.md",
 };
 
 async function getADRRaw(adrId: string): Promise<string | null> {

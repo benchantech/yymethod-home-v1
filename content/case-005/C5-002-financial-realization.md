@@ -13,7 +13,7 @@
 
 Running the numbers on the upgrade produced a number that stopped the conversation: a 7-figure opportunity cost from compounding.
 
-The mechanism is simple. The delta between the current housing cost and the upgraded housing cost is a few hundred thousand dollars. That capital — not spent on housing but invested — compounds over several decades at a reasonable market return. The result is a sum in the seven-figure range.
+The mechanism is simple. The delta between the current housing cost and the upgraded housing cost is a material capital sum. That capital — not spent on housing but invested — compounds over several decades at a reasonable market return. The result is a sum in the seven-figure range. (Figures here are order-of-magnitude and illustrative; actual amounts are not disclosed.)
 
 Every dollar spent on the upgrade is a dollar not compounding.
 
@@ -23,7 +23,7 @@ Every dollar spent on the upgrade is a dollar not compounding.
 
 The opportunity cost of capital is not a hidden or exotic calculation. It is the most basic question in personal finance: what does this dollar do if I don't spend it? Housing upgrades feel like one-time purchases, but they are sustained capital deployment. The premium paid each year — whether as a higher mortgage payment, a larger down payment deployed in real estate rather than markets, or higher carrying costs — compounds against you over time.
 
-The 7-figure figure is not a scare tactic. It is arithmetic. A few hundred thousand dollars at typical equity market returns, held for several decades, reaches seven figures. The lifestyle upgrade has a price tag that is not visible on the listing.
+The 7-figure figure is not a scare tactic. It is arithmetic. A material capital delta at typical equity market returns, held for several decades, reaches seven figures. The lifestyle upgrade has a price tag that is not visible on the listing.
 
 This realization does not end the discussion. It reframes it. The question is no longer "can we afford the upgrade?" — the answer to that is yes. The question becomes "is the upgrade worth its actual cost?" — and that cost is generational, not transactional.
 

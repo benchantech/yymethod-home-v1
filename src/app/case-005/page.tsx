@@ -7,7 +7,7 @@ import { statusColor } from "@/lib/adrs";
 
 export const metadata: Metadata = {
   title: "Case 005: Family Move Architecture — YY Method™ Home Edition",
-  description: "10 ADRs capturing a live family housing decision in progress. A lifestyle upgrade desire collides with a 7-figure opportunity cost, a split household, a funding trilemma, a rejected tax strategy, school district integrity constraints, and one paramount rule: protect the spouse's time.",
+  description: "11 ADRs capturing a live family housing decision in progress. A lifestyle upgrade desire collides with a 7-figure opportunity cost, a split household, a funding trilemma, a rejected tax strategy, school district integrity constraints, and one paramount rule: protect the spouse's time.",
   authors: [{ name: "Ben Chan" }],
   openGraph: {
     title: "Case 005: Family Move Architecture — YY Method™ Home Edition",
@@ -72,7 +72,7 @@ export default function Case005Page() {
             {[
               { rank: "1", label: "Family unity", note: "Required. No move without it. No stay without it either." },
               { rank: "2", label: "Spouse's time", note: "Paramount. Capability ≠ obligation. Never the default escalation path." },
-              { rank: "3", label: "Sovereignty", note: "Accumulate until you answer to no one — no bank loan, no family loan." },
+              { rank: "3", label: "Sovereignty", note: "Accumulate until you answer to no one — no external financing, no obligations." },
               { rank: "4", label: "Optionality", note: "Don't foreclose futures prematurely. Irreversibility has a hidden tax." },
             ].map((item) => (
               <div key={item.rank} className="space-y-1">
@@ -84,6 +84,15 @@ export default function Case005Page() {
               </div>
             ))}
           </div>
+        </CardContent>
+      </Card>
+
+      {/* Framing notice */}
+      <Card className="border-border bg-muted/5">
+        <CardContent className="pt-4 pb-4">
+          <p className="text-xs font-mono text-muted-foreground leading-relaxed">
+            <span className="text-foreground/60 font-semibold">Framing notice (C5-011):</span> This case involves active financial planning, minor children, and personal relationships. The reasoning structure and constraint hierarchy are preserved at full fidelity. Identifying details — family composition, specific financial figures, and personal network references — are abstracted. The method is the subject. The family is not.
+          </p>
         </CardContent>
       </Card>
 

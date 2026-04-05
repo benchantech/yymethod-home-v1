@@ -11,7 +11,7 @@
 
 ## Capture
 
-The household is not unified on the move. Kids are split: roughly half ambivalent. Of the rest, some are strongly in favor; others are strongly against.
+The household is not unified on the move. Kids are split: some ambivalent, some strongly in favor, some strongly against.
 
 The split is not random. It reflects two legitimate and competing value systems within the household:
 

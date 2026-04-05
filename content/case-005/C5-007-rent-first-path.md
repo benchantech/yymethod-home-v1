@@ -19,7 +19,7 @@ This path does two things at once: it de-risks the family alignment problem and 
 Buying the upgrade requires capital. Three sources exist; all three are problematic:
 1. **Bank loan:** Salary qualifies. The operator is opposed on principle. A large bank loan — even an affordable one — is not the model.
 2. **Sell the current home:** Funds the upgrade cleanly, but destroys the anchor (C5-001) and forecloses three of the four optionality futures (C5-006). The legacy value is not recoverable.
-3. **Family loan:** Avoids the bank. But introduces an external party into the decision — someone to answer to, someone whose expectations must be managed, someone whose relationship with the household depends partly on repayment. That is a different kind of obligation than a bank loan, and not necessarily a better one.
+3. **Personal financing from a known party:** Avoids the bank. But introduces an external party into the decision — someone to answer to, someone whose expectations must be managed, someone whose relationship with the household depends partly on repayment. That is a different kind of obligation than a bank loan, and not necessarily a better one.
 
 Renting the destination sidesteps all three. No large capital commitment. No anchor destroyed. No one to answer to.
 
@@ -31,7 +31,7 @@ The rent-first path is the lowest-commitment way to gather the most important in
 
 Family alignment cannot be established in the abstract. The kids who are strongly against the move have not experienced the destination. The ones who are ambivalent have nothing concrete to evaluate. Renting before buying gives everyone a real data point — an actual experience of the community, the schools, the lifestyle — before the decision becomes irreversible.
 
-If the destination works, the rent-first path converts naturally into a buy decision with much higher confidence and family alignment already earned. If it doesn't work, the exit is clean. No capital locked, no anchor sold, no relationship strained by a family loan gone wrong.
+If the destination works, the rent-first path converts naturally into a buy decision with much higher confidence and family alignment already earned. If it doesn't work, the exit is clean. No capital locked, no anchor sold, no external relationship strained by a private financing arrangement gone wrong.
 
 The financial argument is parallel: renting avoids the capital commitment at a moment when accumulation (C5-009) is the better use of that capital anyway.
 
