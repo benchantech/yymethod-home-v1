@@ -71,7 +71,7 @@ export default function Case002Page() {
         if (group.length === 0) return null;
         return (
           <div key={domain} className="space-y-3">
-            <div className="flex items-baseline gap-3">
+            <div className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-3">
               <h2 className="text-sm font-medium uppercase tracking-wider text-muted-foreground">{label}</h2>
               <span className="text-xs text-muted-foreground">{description}</span>
             </div>
@@ -92,8 +92,11 @@ export default function Case002Page() {
                     <p className="text-xs text-muted-foreground mt-1 line-clamp-2 leading-relaxed">
                       {adr.summary}
                     </p>
+                    <span className={`sm:hidden mt-1.5 inline-block text-xs px-1.5 py-0.5 rounded border font-mono ${statusColor[adr.status]}`}>
+                      {adr.status}
+                    </span>
                   </div>
-                  <div className="shrink-0 flex flex-col items-end gap-1.5 pt-0.5">
+                  <div className="hidden sm:flex flex-col items-end gap-1.5 pt-0.5">
                     <span className={`text-xs px-1.5 py-0.5 rounded border font-mono ${statusColor[adr.status]}`}>
                       {adr.status}
                     </span>
