@@ -45,7 +45,7 @@ The "why pay rent when you could own" framing ignores the option value of the te
 **Why not rent indefinitely rather than eventually buy?**
 Renting preserves maximum flexibility but forgoes the compounding benefits of ownership when ownership is the right long-term choice. The rent-first path is a sequencing decision, not a permanent housing philosophy.
 
-**Why not just renting still be disruptive?**
+**Why not just rent first? Still disruptive?**
 Yes. A rental move is still a move — it requires the family to relocate, adjust to a new environment, disrupt existing routines. The disruption cost is real and should not be minimized. The argument for rent-first is not that it eliminates disruption but that it contains it: if the destination doesn't work, the disruption is time-bounded and the exit is clean.
 
 ---
