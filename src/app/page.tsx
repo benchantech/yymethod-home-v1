@@ -46,9 +46,14 @@ export default function Home() {
             <p className="text-xs text-muted-foreground leading-relaxed">
               <span className="text-foreground/80 font-semibold font-mono">This is YY Method™ Home Edition</span>
               {" "}— independently owned and controlled. v2.3 is the last version personally owned by the method&apos;s author.
-              A professional version has since been developed under an employer, with rights to its evolution assigned accordingly.
-              Home Edition was carved out before that employment and remains under the author&apos;s sole control.
-              The two editions share the v2.3 foundation and diverge from there.
+              The method has since been applied within a professional employment context. The method itself — its principles,
+              decision structures, and reasoning patterns — remains the author&apos;s personal property; it predated the employment
+              and outlasts it. What belongs to the employer is the work-product: the specific implementations, operational
+              refinements, and decisions produced within that context. This site publishes reasoning chains, not deployments.
+              The boundary is governed by{" "}
+              <Link href="/case-004/c4-015" className="text-foreground/70 underline underline-offset-2 hover:text-foreground transition-colors font-mono">C4-015</Link>
+              {" "}and{" "}
+              <Link href="/case-004/c4-016" className="text-foreground/70 underline underline-offset-2 hover:text-foreground transition-colors font-mono">C4-016</Link>.
             </p>
             <p className="text-xs text-muted-foreground">
               Canonical framework overview →{" "}
