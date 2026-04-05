@@ -63,7 +63,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-foreground/70 underline underline-offset-2 hover:text-foreground transition-colors font-mono"
               >
-                yymethod.com
+                YY Method™
               </a>
             </p>
           </CardContent>
