@@ -14,32 +14,18 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   {
-    id: "case-001",
-    number: "001",
-    title: "S Corp Termination & 401(k) Optimization",
-    subtitle: "Entity transition · retirement maximization · tax bracket optimization",
-    date: "2026-03-29",
-    status: "Complete",
-    domains: ["Tax", "Identity", "Agent", "Methodology"],
-    adrCount: 25,
-    description:
-      "A complex multi-domain financial transition — S corp election termination, final payroll structuring, employer 401(k) maximization, DAF charitable strategy, HSA deployment, backdoor Roth system architecture (pro-rata elimination, annual cycle, employer vs solo 401k), and minor child employment planning. 22 knowledge artifacts across two sessions.",
-    href: "/case-001",
-    tags: ["s-corp", "401k", "tax-optimization", "retirement", "entity-transition", "daf", "hsa", "backdoor-roth", "pro-rata", "roth-ira"],
-  },
-  {
-    id: "case-003",
-    number: "003",
-    title: "Quest 3 — Cognitive Theft & AI Governance",
-    subtitle: "Writing process · essay architecture · authorship · provenance",
-    date: "2026-03-31",
+    id: "case-005",
+    number: "005",
+    title: "Family Move Architecture",
+    subtitle: "Housing upgrade · opportunity cost · family alignment · spouse protection · sovereignty",
+    date: "2026-04-05",
     status: "In Progress",
-    domains: ["Writing", "Methodology", "Identity"],
-    adrCount: 4,
+    domains: ["Framing", "Family", "Paths", "Resolution"],
+    adrCount: 10,
     description:
-      "The YY Method applied to the writing process. ADRs capture decisions about essay architecture alongside the essays themselves — not ahead of them. Includes public surface mining architecture, the lens framing of ADRs, and a field study of cloud LLM failure modes under controlled YY discipline.",
-    href: "/case-003",
-    tags: ["cognitive-theft", "quest-3", "substack", "writing", "authorship", "provenance"],
+      "10 ADRs capturing a live family housing decision. A lifestyle upgrade collides with a 7-figure opportunity cost, a split household, an integrity-killed split-time model, a rejected REPS tax strategy, and a funding trilemma. Governing constraints: family unity required, spouse's time is paramount, answer to no one. Current posture: accumulate for one year, stay actively ready, don't settle.",
+    href: "/case-005",
+    tags: ["family-move", "housing", "opportunity-cost", "optionality", "spouse-protection", "school-district", "integrity", "accumulation", "sovereignty"],
   },
   {
     id: "case-004",
@@ -56,6 +42,20 @@ export const caseStudies: CaseStudy[] = [
     tags: ["local-first", "trust-boundary", "private-overlay", "admission-control", "device-roles", "remote-work", "sensitive-compute", "governance"],
   },
   {
+    id: "case-003",
+    number: "003",
+    title: "Quest 3 — Cognitive Theft & AI Governance",
+    subtitle: "Writing process · essay architecture · authorship · provenance",
+    date: "2026-03-31",
+    status: "In Progress",
+    domains: ["Writing", "Methodology", "Identity"],
+    adrCount: 4,
+    description:
+      "The YY Method applied to the writing process. ADRs capture decisions about essay architecture alongside the essays themselves — not ahead of them. Includes public surface mining architecture, the lens framing of ADRs, and a field study of cloud LLM failure modes under controlled YY discipline.",
+    href: "/case-003",
+    tags: ["cognitive-theft", "quest-3", "substack", "writing", "authorship", "provenance"],
+  },
+  {
     id: "case-002",
     number: "002",
     title: "yysworld.com — A YY Method Artifact for Kids",
@@ -68,5 +68,19 @@ export const caseStudies: CaseStudy[] = [
       "The founding architecture of yysworld.com — a read-only site for kids where YY the stuffed squirrel delivers stealth inoculation against cognitive theft. 23 knowledge artifacts: C2-001–C2-012 preserved as AI Extrapolated scars from the first draft, C2-013–C2-023 operator-supplied reasoning from the corrective interview. The full chain is provable. Provenance flows outward. Nothing returns.",
     href: "/case-002",
     tags: ["yysworld", "kids", "coppa", "cognitive-theft", "provenance", "anti-smoothing", "yy", "acorn-economy", "static-site"],
+  },
+  {
+    id: "case-001",
+    number: "001",
+    title: "S Corp Termination & 401(k) Optimization",
+    subtitle: "Entity transition · retirement maximization · tax bracket optimization",
+    date: "2026-03-29",
+    status: "Complete",
+    domains: ["Tax", "Identity", "Agent", "Methodology"],
+    adrCount: 25,
+    description:
+      "A complex multi-domain financial transition — S corp election termination, final payroll structuring, employer 401(k) maximization, DAF charitable strategy, HSA deployment, backdoor Roth system architecture (pro-rata elimination, annual cycle, employer vs solo 401k), and minor child employment planning. 22 knowledge artifacts across two sessions.",
+    href: "/case-001",
+    tags: ["s-corp", "401k", "tax-optimization", "retirement", "entity-transition", "daf", "hsa", "backdoor-roth", "pro-rata", "roth-ira"],
   },
 ];
