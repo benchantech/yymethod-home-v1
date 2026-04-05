@@ -14,6 +14,20 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   {
+    id: "case-006",
+    number: "006",
+    title: "Personal Identity Consolidation — Multi-Property Hub Architecture",
+    subtitle: "Hub design · canonical Person entity · domain roles · Signal Before Elegance · schema.org",
+    date: "2026-04-05",
+    status: "In Progress",
+    domains: ["Strategy", "Identity", "Structure", "Surface"],
+    adrCount: 10,
+    description:
+      "10 ADRs capturing an in-progress identity consolidation across four digital properties. A hub is designed with no original content. A canonical Person entity is anchored at the hub domain. Domain roles are made explicit to prevent role bleed. The governing principle — Signal Before Elegance — is formalized after a direction reversal that attempted to gate the signal on a stack migration. The @id URI is decoupled from infrastructure. The sameAs array is treated as a contract.",
+    href: "/case-006",
+    tags: ["identity-consolidation", "hub-architecture", "person-schema", "canonical-id", "domain-roles", "signal-before-elegance", "jekyll", "schema-org", "sameas", "direction-reversal"],
+  },
+  {
     id: "case-005",
     number: "005",
     title: "Family Move Architecture",
