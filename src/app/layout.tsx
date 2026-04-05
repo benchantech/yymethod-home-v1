@@ -20,25 +20,25 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "YY Method™ Home Edition",
-    template: "%s",
+    default: "YY Method™ — Cases & ADRs",
+    template: "%s | YY Method™",
   },
-  description: "Preserve judgment under constraint. The independently owned Home Edition of the YY Method — case studies, ADR registry, and framework documentation.",
+  description: "Preserve judgment under constraint. A live registry of decisions made under the YY Method — case studies, ADR records, and applied reasoning across tax, systems, and life architecture.",
   authors: [{ name: "Ben Chan" }],
   metadataBase: new URL("https://home.yymethod.com"),
   openGraph: {
-    siteName: "YY Method™ Home Edition",
+    siteName: "YY Method™ — Cases & ADRs",
     type: "website",
     locale: "en_US",
     url: "https://home.yymethod.com",
-    title: "YY Method™ Home Edition",
-    description: "Preserve judgment under constraint. The independently owned Home Edition of the YY Method.",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "YY Method™ Home Edition" }],
+    title: "YY Method™ — Cases & ADRs",
+    description: "A live registry of decisions made under the YY Method — case studies, ADR records, and applied reasoning.",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "YY Method™ — Cases & ADRs" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "YY Method™ Home Edition",
-    description: "Preserve judgment under constraint. The independently owned Home Edition of the YY Method.",
+    title: "YY Method™ — Cases & ADRs",
+    description: "A live registry of decisions made under the YY Method — case studies, ADR records, and applied reasoning.",
     images: ["/opengraph-image"],
   },
 };

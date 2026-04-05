@@ -7,14 +7,14 @@ import { caseStudies } from "@/lib/cases";
 import { JsonLd, personSchema } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "YY Method™ Home Edition",
-  description: "Preserve judgment under constraint. The independently owned Home Edition of the YY Method — case studies, ADR registry, and framework documentation.",
+  title: "YY Method™ — Cases & ADRs",
+  description: "Preserve judgment under constraint. A live registry of decisions made under the YY Method — case studies, ADR records, and applied reasoning across tax, systems, and life architecture.",
   authors: [{ name: "Ben Chan" }],
   openGraph: {
-    title: "YY Method™ Home Edition",
-    description: "Preserve judgment under constraint. The independently owned Home Edition of the YY Method — case studies, ADR registry, and framework documentation.",
+    title: "YY Method™ — Cases & ADRs",
+    description: "A live registry of decisions made under the YY Method — case studies, ADR records, and applied reasoning.",
     url: "https://home.yymethod.com",
-    siteName: "YY Method™ Home Edition",
+    siteName: "YY Method™ — Cases & ADRs",
     type: "website",
   },
 };
@@ -215,8 +215,13 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="pb-6 text-center">
+      <div className="pb-6 text-center space-y-2">
         <p className="text-xs text-muted-foreground font-mono">Human captures. AI reads.</p>
+        <p className="text-xs text-muted-foreground">
+          <a href="https://benchantech.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">benchantech.com</a>
+          <span className="mx-2 opacity-30">·</span>
+          <a href="https://yymethod.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">yymethod.com</a>
+        </p>
       </div>
 
     </main>

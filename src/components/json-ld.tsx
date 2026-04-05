@@ -13,11 +13,12 @@ export function personSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://home.yymethod.com/#person",
+    "@id": "https://benchantech.com/#person",
     name: "Ben Chan",
-    url: "https://home.yymethod.com",
+    url: "https://benchantech.com",
     sameAs: [
       "https://yymethod.com",
+      "https://home.yymethod.com",
       "https://yyand.me",
       "https://benchantech.com",
       "https://www.youtube.com/@benchanviolin",
@@ -68,7 +69,7 @@ export function articleSchema({
     datePublished,
     author: {
       "@type": "Person",
-      "@id": "https://home.yymethod.com/#person",
+      "@id": "https://benchantech.com/#person",
       name: authorName,
     },
     publisher: {
@@ -90,7 +91,7 @@ export function interviewSchema() {
     datePublished: "2026-03-30",
     author: {
       "@type": "Person",
-      "@id": "https://home.yymethod.com/#person",
+      "@id": "https://benchantech.com/#person",
       name: "Ben Chan",
     },
     about: {
