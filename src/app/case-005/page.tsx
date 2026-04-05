@@ -68,7 +68,7 @@ export default function Case005Page() {
       <Card className="border-border bg-muted/10">
         <CardContent className="pt-4 pb-4 space-y-2">
           <p className="text-xs font-mono text-muted-foreground font-semibold uppercase tracking-wider">Constraint Stack</p>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {[
               { rank: "1", label: "Family unity", note: "Required. No move without it. No stay without it either." },
               { rank: "2", label: "Spouse's time", note: "Paramount. Capability ≠ obligation. Never the default escalation path." },
@@ -102,7 +102,7 @@ export default function Case005Page() {
         if (group.length === 0) return null;
         return (
           <div key={domain} className="space-y-3">
-            <div className="flex items-baseline gap-3">
+            <div className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-3">
               <h2 className="text-sm font-medium uppercase tracking-wider text-muted-foreground">{label}</h2>
               <span className="text-xs text-muted-foreground">{description}</span>
             </div>
@@ -129,7 +129,7 @@ export default function Case005Page() {
                       {adr.status}
                     </span>
                     {adr.dependsOn.length > 0 && (
-                      <span className="text-xs text-muted-foreground font-mono">
+                      <span className="hidden sm:inline text-xs text-muted-foreground font-mono">
                         ← {adr.dependsOn.length > 3 ? `${adr.dependsOn.slice(0, 3).join(", ")} +${adr.dependsOn.length - 3}` : adr.dependsOn.join(", ")}
                       </span>
                     )}

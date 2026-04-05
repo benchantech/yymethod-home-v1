@@ -68,7 +68,7 @@ export default function Case004Page() {
       <Card className="border-border bg-muted/10">
         <CardContent className="pt-4 pb-4 space-y-2">
           <p className="text-xs font-mono text-muted-foreground font-semibold uppercase tracking-wider">Abstraction Policy</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {[
               { label: "Generalized", note: "Device names reduced to roles. Model sizes reduced to workload classes. No hostnames, addresses, or ports." },
               { label: "Removed", note: "Exact commands, pathnames, schedules, automation triggers, and client-identifying environmental markers." },
@@ -89,7 +89,7 @@ export default function Case004Page() {
         if (group.length === 0) return null;
         return (
           <div key={domain} className="space-y-3">
-            <div className="flex items-baseline gap-3">
+            <div className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-3">
               <h2 className="text-sm font-medium uppercase tracking-wider text-muted-foreground">{label}</h2>
               <span className="text-xs text-muted-foreground">{description}</span>
             </div>
@@ -116,7 +116,7 @@ export default function Case004Page() {
                       {adr.status}
                     </span>
                     {adr.dependsOn.length > 0 && (
-                      <span className="text-xs text-muted-foreground font-mono">
+                      <span className="hidden sm:inline text-xs text-muted-foreground font-mono">
                         ← {adr.dependsOn.length > 3 ? `${adr.dependsOn.slice(0, 3).join(", ")} +${adr.dependsOn.length - 3}` : adr.dependsOn.join(", ")}
                       </span>
                     )}

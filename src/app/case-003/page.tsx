@@ -57,7 +57,7 @@ export default function Case003Page() {
       <Card className="border-border bg-muted/10">
         <CardContent className="pt-4 pb-4 space-y-2">
           <p className="text-xs font-mono text-muted-foreground font-semibold uppercase tracking-wider">Quest Arc</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {[
               { quest: "Quest 1", label: "5 essays", note: "Heavy AI assistance. Voice taken without knowing." },
               { quest: "Quest 2", label: "4 essays", note: "Minimal AI. Voice reclaimed. Scars Visible is the capstone." },
@@ -81,7 +81,7 @@ export default function Case003Page() {
         if (group.length === 0) return null;
         return (
           <div key={domain} className="space-y-3">
-            <div className="flex items-baseline gap-3">
+            <div className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-3">
               <h2 className="text-sm font-medium uppercase tracking-wider text-muted-foreground">{label}</h2>
               <span className="text-xs text-muted-foreground">{description}</span>
             </div>
@@ -108,7 +108,7 @@ export default function Case003Page() {
                       {adr.status}
                     </span>
                     {adr.dependsOn.length > 0 && (
-                      <span className="text-xs text-muted-foreground font-mono">
+                      <span className="hidden sm:inline text-xs text-muted-foreground font-mono">
                         ← {adr.dependsOn.join(", ")}
                       </span>
                     )}

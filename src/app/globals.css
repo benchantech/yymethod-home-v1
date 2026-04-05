@@ -124,8 +124,15 @@
   }
   body {
     @apply bg-background text-foreground;
+    padding-bottom: env(safe-area-inset-bottom);
   }
   html {
     @apply font-sans;
+  }
+  /* Prose tables scroll independently on narrow screens */
+  .prose table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
   }
 }
