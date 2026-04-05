@@ -111,6 +111,8 @@ export default function Home() {
                           ? "bg-emerald-500/15 text-emerald-400 border-emerald-500/20"
                           : cs.status === "In Progress"
                           ? "bg-blue-500/15 text-blue-400 border-blue-500/20"
+                          : cs.status === "Rejected"
+                          ? "bg-red-500/15 text-red-400 border-red-500/20"
                           : "bg-muted/50 text-muted-foreground border-border"
                       }`}
                     >

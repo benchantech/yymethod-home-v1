@@ -4,7 +4,7 @@ export interface CaseStudy {
   title: string;
   subtitle: string;
   date: string;
-  status: "Complete" | "In Progress" | "Coming Soon";
+  status: "Complete" | "In Progress" | "Coming Soon" | "Rejected";
   domains: string[];
   adrCount: number;
   description: string;
@@ -61,11 +61,11 @@ export const caseStudies: CaseStudy[] = [
     title: "Quest 3 — Cognitive Theft & AI Governance",
     subtitle: "Writing process · essay architecture · authorship · provenance",
     date: "2026-03-31",
-    status: "In Progress",
+    status: "Rejected",
     domains: ["Writing", "Methodology", "Identity"],
     adrCount: 4,
     description:
-      "The YY Method applied to the writing process. ADRs capture decisions about essay architecture alongside the essays themselves — not ahead of them. Includes public surface mining architecture, the lens framing of ADRs, and a field study of cloud LLM failure modes under controlled YY discipline.",
+      "Rejected. 4 ADRs — the title outran the content. Preserved as a scar: a case that was started but not substantive enough to carry its own weight. The method applies to the registry itself.",
     href: "/case-003",
     tags: ["cognitive-theft", "quest-3", "substack", "writing", "authorship", "provenance"],
   },
