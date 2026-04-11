@@ -26,10 +26,15 @@ export function personSchema() {
     ],
     knowsAbout: [
       "YY Method",
+      "institutional knowledge preservation",
       "Architecture Decision Records",
+      "knowledge hierarchy",
+      "AI grounding",
+      "human-first AI methodology",
+      "tribal knowledge extraction",
+      "decision reasoning artifacts",
       "S Corp tax strategy",
       "AI agent orchestration",
-      "Personal epistemological frameworks",
     ],
   };
 }
