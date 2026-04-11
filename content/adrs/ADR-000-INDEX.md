@@ -41,6 +41,8 @@ ADR-019  Pro-Rata Rule — System Non-Negotiable [CROSS-CUTTING — depends on A
 ADR-022  Employer vs Solo 401(k) Priority   [FORWARD-LOOKING — depends on ADR-019, ADR-005]
 ADR-023  Solo 401(k) Eligibility Correction [CORRECTION — supersedes two claims in ADR-005]
 ADR-024  Build Session — March 30, 2026     [PERMANENT — full session record, build arc, corrections, discipline]
+ADR-025  FICA Correction — Full Payroll Tax  [CORRECTION — supersedes FICA assumption in ADR-002]
+ADR-026  Information Architecture Invariant  [PERMANENT SYSTEM-WIDE — governs all YY Method properties, not this case alone]
 ```
 
 ---
@@ -73,6 +75,8 @@ ADR-024  Build Session — March 30, 2026     [PERMANENT — full session record
 | ADR-022 | Employer 401(k) vs Solo 401(k) — Simplicity First, Optionality Preserved | Decided | Expires if employment ends, LLC income grows materially, or employer plan degrades |
 | ADR-023 | Solo 401(k) Eligibility Correction — LLC Self-Employment Income | Decided — Correction | Permanent correction record. Supersedes two claims in ADR-005 |
 | ADR-024 | Build Session — yymethod-home-v1, March 30, 2026 | Permanent Record | Permanent. Full build arc, corrections, DNS, discrepancy audit. Does not expire. |
+| ADR-025 | FICA Correction — Full Payroll Tax on Final Bonus | Decided — Correction | Permanent correction record. Supersedes FICA assumption in ADR-002. |
+| ADR-026 | Information Architecture Invariant — Share Methodology, Hide Application, Protect Employer | Permanent Record | Permanent. Governs all YY Method properties. Does not expire. |
 
 ---
 
@@ -97,3 +101,4 @@ If ADR-020 rollover not yet complete → backdoor Roth system (ADR-021) cannot r
 If LLC income grows to warrant employer contributions → re-evaluate ADR-022 solo 401(k) activation
 If employment ends → solo 401(k) becomes primary vehicle; employer 401(k) rolls into it (ADR-022)
 If solo 401(k) plan document not updated after S corp terminates → correct plan sponsor entity (ADR-023)
+If any new YY Method property is added to the portfolio → ADR-026 governs its information architecture by default unless an explicit override ADR is filed

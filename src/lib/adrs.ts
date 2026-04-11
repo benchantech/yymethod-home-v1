@@ -368,6 +368,20 @@ export const adrs: ADR[] = [
     summary: "Full build session record: case study selector home page, /case-001 URL structure, ADR-019 through ADR-023, HTTPS DNS diagnosis, discrepancy audit, correction ADR filed. What broke, how it was fixed, and why none of it is magic — it is hardened dev practice applied with intention. AI is a force multiplier for disciplined operators.",
     tags: ["build-session", "methodology", "corrections", "discipline", "permanent", "ai-tooling"],
   },
+  {
+    id: "ADR-026",
+    number: "026",
+    title: "Information Architecture Invariant — Share the Methodology, Hide the Application, Protect the Employer",
+    status: "Permanent Record",
+    freshness: "Permanent",
+    freshnessNote: "Permanent. Governs all current and future YY Method properties. Does not expire.",
+    date: "2026-04-11",
+    domain: "methodology",
+    position: "Permanent",
+    dependsOn: ["ADR-013", "ADR-017"],
+    summary: "Three surfaces, three rules, one invariant. yymethod.com: methodology and schema fully public — it is the product. home.yymethod.com and yysworld.com: reasoning artifacts public, application code private (Vercel, not open-sourced). Employment: employer is invisible in this system — never named, implied, or identifiable. The unified principle: public face is reasoning and schema; private face is implementation and application; employment is invisible. Applies uniformly to all current and future properties. Extends C4-015 and C4-016 to the full portfolio.",
+    tags: ["information-architecture", "methodology-public", "application-private", "employer-protected", "system-invariant", "permanent", "c4-015", "c4-016", "c7-008"],
+  },
 ];
 
 export function getADR(id: string): ADR | undefined {

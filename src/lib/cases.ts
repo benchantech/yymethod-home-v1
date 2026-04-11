@@ -14,6 +14,20 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   {
+    id: "case-007",
+    number: "007",
+    title: "AI-Native Venture Launch — Re-Entry Decision, Asset Decomposition, and the Build Resolution",
+    subtitle: "Build vs. buy · asset decomposition · knowledge transfer limits · reputation debt · prior data as moat",
+    date: "2026-04-11",
+    status: "In Progress",
+    domains: ["Strategy", "Operations", "Evaluation", "Resolution", "Structure"],
+    adrCount: 8,
+    description:
+      "8 ADRs capturing a venture re-entry decision: whether to reacquire a previously owned brand, structure a revenue partnership with the prior acquirer, or build fresh. The reasoning chain traverses three layers — strategic architecture (does AI change the correct operating model?), engagement structure (can a partnership fund the build without transferring the moat?), and asset evaluation (is the distressed brand worth acquiring?). Multiple reversals: the acquisition appeared viable at price; it was closed by quantitative health metrics. The most valuable asset in the bundle had already been extracted before negotiations began. Resolution: build fresh.",
+    href: "/case-007",
+    tags: ["build-vs-buy", "asset-decomposition", "ai-native", "distressed-brand", "reputation-debt", "knowledge-transfer", "cash-flow-bridge", "prior-data", "acquisition-independent-moat"],
+  },
+  {
     id: "case-006",
     number: "006",
     title: "Personal Identity Consolidation — Multi-Property Hub Architecture",
@@ -91,9 +105,9 @@ export const caseStudies: CaseStudy[] = [
     date: "2026-03-29",
     status: "Complete",
     domains: ["Tax", "Identity", "Agent", "Methodology"],
-    adrCount: 25,
+    adrCount: 26,
     description:
-      "A complex multi-domain financial transition — S corp election termination, final payroll structuring, employer 401(k) maximization, DAF charitable strategy, HSA deployment, backdoor Roth system architecture (pro-rata elimination, annual cycle, employer vs solo 401k), and minor child employment planning. 22 knowledge artifacts across two sessions.",
+      "A complex multi-domain financial transition — S corp election termination, final payroll structuring, employer 401(k) maximization, DAF charitable strategy, HSA deployment, backdoor Roth system architecture (pro-rata elimination, annual cycle, employer vs solo 401k), and minor child employment planning. 26 knowledge artifacts including FICA correction and system-wide information architecture invariant.",
     href: "/case-001",
     tags: ["s-corp", "401k", "tax-optimization", "retirement", "entity-transition", "daf", "hsa", "backdoor-roth", "pro-rata", "roth-ira"],
   },

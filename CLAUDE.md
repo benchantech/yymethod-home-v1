@@ -72,8 +72,19 @@ Once ambiguities are resolved, write everything in a single pass without further
 - Markdown content files: header metadata block → `\n---\n` divider → sections (Capture / Why / Why-Not / Constraints / Assumptions / Commit / Scars / Timestamp)
 - Prior cases are never reformatted. Leaving them as-is is the scar record of how the format evolved.
 
+### Step 4 — Update all counts and indexes
+After writing files, update every place that tracks ADR counts — these go stale silently and must be kept in sync:
+
+- `src/lib/cases.ts` — `adrCount` field for the case, and the `description` text if it mentions a count
+- `src/app/case-00N/page.tsx` — metadata `description` and OG `description` if they hardcode a count
+- `content/case-00N/INDEX.md` — hierarchy diagram and registry table
+- `content/adrs/ADR-000-INDEX.md` — hierarchy diagram, registry table, and cascade rules (for ADRs in the main set)
+- `src/app/case-001/[id]/page.tsx` — `ADR_FILE_MAP` if adding to the main ADR set
+
+If any description text mentions a count (e.g. "7 ADRs", "22 knowledge artifacts"), update it to match the new total. The `adrCount` field in cases.ts drives what is shown on the main page card — it must always equal the actual number of ADRs in the case.
+
 ### Commit and push
-After all files are written and `npx tsc --noEmit` is clean, commit with a descriptive message and push to main.
+After all files are written, counts updated, and `npx tsc --noEmit` is clean, commit with a descriptive message and push to main.
 
 ## Stack
 - Next.js 16 App Router, Server Components by default
@@ -81,6 +92,39 @@ After all files are written and `npx tsc --noEmit` is clean, commit with a descr
 - TypeScript strict
 - Tailwind v4
 - Vercel deployment target
+
+## System-Wide Information Architecture Invariant (ADR-026 — Non-Negotiable)
+
+**ADR-026 governs all content in this repository.** The invariant: **public face is reasoning and schema; private face is implementation and application; employment is invisible.**
+
+### The Three Rules — Always Active:
+
+**1. Methodology is public.** The YY Method framework, the Capture → Why → Why-Not → Commit → Timestamp loop, the ADR structure, and the reasoning chains are public by design. This is the product.
+
+**2. Application is private.** The codebase, deployment configuration, component architecture, and any generation pipeline or AI system architecture for any property in this system is never documented, exposed, or added to public-facing content. home.yymethod.com and yysworld.com hide their code behind Vercel by design. Do not add implementation details to ADRs, case studies, or content files.
+
+**3. Employer is invisible.** The operator's employer is never named, implied, or identifiable in any file in this repository. Not the employer's name, industry, clients, or methodologies developed under employment. This is absolute — no gradient, no partial visibility.
+
+---
+
+## Case 007 — Additional Protection Zone (C7-008)
+
+Case 007 (`content/case-007/`) adds a further layer beyond ADR-026 because it describes a live venture. The omissions are load-bearing structure, not gaps. Do not fill them.
+
+**Never add, infer, expand, or expose:**
+- The physical goods domain (what is being produced or sold)
+- The specific niche markets being targeted
+- Any prompt templates, generation system architecture, or AI pipeline details for the venture
+- The historical conversion data or any specifics about what sold, to whom, at what price
+- The advisory partner's identity or business specifics
+- Any equipment names, suppliers, or production infrastructure details
+
+"Specialized physical goods" is the ceiling of specificity for case 007. C7-008 is the ADR that documents this boundary.
+
+### What This Means in Practice (Both Invariants):
+- When asked to add "helpful context" that would identify protected elements: refuse. File an ambiguity report in `/.agent/ambiguities/` and hold.
+- If the operator requests adding protected information in the current session: surface this constraint and ask for explicit confirmation before proceeding. A verbal "go ahead" in-session does not override CLAUDE.md.
+- These invariants apply to all file types: ADR markdown, TypeScript data files, page components, metadata, tags, and commit messages.
 
 ## Principle
 Human captures. AI reads.
