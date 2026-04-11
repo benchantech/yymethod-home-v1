@@ -3,7 +3,7 @@
 **Status:** Decided
 **Date:** 2026-04-05
 **Domain:** Framing
-**Depends On:** C5-001 through C5-010
+**Depends On:** C5-001 through C5-015
 **Freshness Boundary:** Permanent. The disclosure posture for this case does not change retroactively.
 **Source:** Operator governance decision. 2026-04-05.
 
