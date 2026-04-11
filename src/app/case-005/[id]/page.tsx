@@ -23,6 +23,10 @@ const ADR_FILE_MAP: Record<string, string> = {
   "C5-009": "C5-009-wait-one-year.md",
   "C5-010": "C5-010-wait-with-optionality.md",
   "C5-011": "C5-011-framing-notice.md",
+  "C5-012": "C5-012-intentional-stay.md",
+  "C5-013": "C5-013-open-houses-reframed.md",
+  "C5-014": "C5-014-surplus-income.md",
+  "C5-015": "C5-015-dream-home-deferred.md",
 };
 
 async function getADRRaw(adrId: string): Promise<string | null> {

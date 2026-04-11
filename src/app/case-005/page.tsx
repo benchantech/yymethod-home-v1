@@ -7,7 +7,7 @@ import { statusColor } from "@/lib/adrs";
 
 export const metadata: Metadata = {
   title: "Case 005: Family Move Architecture — YY Method™ Home Edition",
-  description: "11 ADRs capturing a live family housing decision in progress. A lifestyle upgrade desire collides with a 7-figure opportunity cost, a split household, a funding trilemma, a rejected tax strategy, school district integrity constraints, and one paramount rule: protect the spouse's time.",
+  description: "15 ADRs capturing a live family housing decision in progress. A lifestyle upgrade desire collides with a 7-figure opportunity cost, a split household, a funding trilemma, a rejected tax strategy, school district integrity constraints, and one paramount rule: protect the spouse's time. Resolved posture: intentional stay, blueprint extraction, surplus deployed deliberately, dream home deferred to the aging-in-place phase.",
   authors: [{ name: "Ben Chan" }],
   openGraph: {
     title: "Case 005: Family Move Architecture — YY Method™ Home Edition",
@@ -36,7 +36,7 @@ export default function Case005Page() {
         </div>
         <h1 className="text-2xl font-semibold tracking-tight">Family Move Architecture</h1>
         <p className="text-sm text-muted-foreground font-mono">
-          Case #005 · {adrsCase005.length} knowledge artifacts · April 5, 2026 · YY Method™ Home Edition v2.3
+          Case #005 · {adrsCase005.length} knowledge artifacts · April 2026 · YY Method™ Home Edition v2.3
         </p>
         <p className="text-sm text-muted-foreground">
           In progress. Decision captured while still fresh. The move has not happened.
