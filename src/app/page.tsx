@@ -101,7 +101,8 @@ export default function Home() {
               href={cs.href}
               className="group block p-5 rounded-lg border border-border bg-card hover:bg-muted/30 transition-colors"
             >
-              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-4">
+              {/* Top row: meta + title (left) · ADR count + domains (right) */}
+              <div className="flex items-start justify-between gap-4">
                 <div className="space-y-2 flex-1 min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="font-mono text-xs text-muted-foreground">Case #{cs.number}</span>
@@ -119,33 +120,16 @@ export default function Home() {
                       {cs.status}
                     </span>
                     <span className="font-mono text-xs text-muted-foreground">{cs.date}</span>
-                    <span className="font-mono text-xs text-muted-foreground sm:hidden">{cs.adrCount} ADRs</span>
                   </div>
-
                   <div>
                     <h3 className="text-base font-semibold group-hover:text-foreground transition-colors">
                       {cs.title}
                     </h3>
                     <p className="text-xs text-muted-foreground font-mono mt-0.5">{cs.subtitle}</p>
                   </div>
-
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {cs.description}
-                  </p>
-
-                  <div className="flex flex-wrap gap-1 pt-1">
-                    {cs.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="text-xs font-mono text-muted-foreground bg-muted/40 px-2 py-0.5 rounded"
-                      >
-                        #{tag}
-                      </span>
-                    ))}
-                  </div>
                 </div>
 
-                <div className="hidden sm:flex shrink-0 flex-col items-end gap-2 pt-0.5">
+                <div className="shrink-0 flex flex-col items-end gap-2 pt-0.5">
                   <span className="text-xs font-mono text-muted-foreground">{cs.adrCount} ADRs</span>
                   <div className="flex flex-wrap justify-end gap-1">
                     {cs.domains.map((d) => (
@@ -155,6 +139,21 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
+              </div>
+
+              {/* Description + hashtags — full card width */}
+              <p className="text-sm text-muted-foreground leading-relaxed mt-3">
+                {cs.description}
+              </p>
+              <div className="flex flex-wrap gap-1 mt-3">
+                {cs.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-xs font-mono text-muted-foreground bg-muted/40 px-2 py-0.5 rounded"
+                  >
+                    #{tag}
+                  </span>
+                ))}
               </div>
             </Link>
           ))}
