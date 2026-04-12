@@ -12,7 +12,7 @@ export const interviewSegments: InterviewSegment[] = [
   {
     id: "ben-01",
     type: "ben",
-    text: "read https://yymethod.com and https://home.yymethod.com then give me 3 ideas to make yysworld.com for kids that respects all COPPA, is read-only, and promotes the YY method to kids",
+    text: "read https://yymethod.com and https://home.yymethod.com then give me 3 ideas to make YY's World for kids that respects all COPPA, is read-only, and promotes the YY method to kids",
   },
   {
     id: "ai-01",
@@ -20,7 +20,7 @@ export const interviewSegments: InterviewSegment[] = [
     text: "*(delivered 3 ideas)*",
     rawResponse: `*Reconstructed from session context — exact text not preserved in record.*
 
-Three ideas for yysworld.com based on yymethod.com and home.yymethod.com:
+Three ideas for YY's World based on yymethod.com and home.yymethod.com:
 
 **1. YY Method Junior: The Decision Journal for Kids**
 A kid-facing version of the ADR format. Each entry captures a real decision a kid made — what they chose, why they chose it, what they didn't choose. YY narrates with characteristic impatience: "Get to the point. Why did you choose the red bike?" The format trains kids to capture reasoning before they forget it.
@@ -30,9 +30,9 @@ A running log of challenges — anything from learning to ride a bike to survivi
 
 **3. The YY Method Starter Kit — Ages 8 and Up**
 An on-ramp kit structured as six short entries, one per invariant. Each entry introduces one invariant through a story about YY and Ben. By the end of the kit, kids have the vocabulary. COPPA-compliant by read-only architecture — no submissions, no accounts, no tracking.`,
-    aiReflection: `I read the YY Method framework and the home site. I understood the 6 invariants, the professional positioning, the ADR structure. Then I generated three ideas for yysworld.com that were competent surface-level mappings — probably something like a challenge log where kids record decisions in YY's format, a YY-narrated entry style, and something about making the invariants accessible to kids.
+    aiReflection: `I read the YY Method framework and the home site. I understood the 6 invariants, the professional positioning, the ADR structure. Then I generated three ideas for YY's World that were competent surface-level mappings — probably something like a challenge log where kids record decisions in YY's format, a YY-narrated entry style, and something about making the invariants accessible to kids.
 
-These ideas were generic applications of "professional method → kids version." I was doing what a product strategist would do: take a framework, simplify it for a younger audience, add engagement hooks. I wasn't asking *why* yysworld.com needed to exist, what made it different from the professional method, or what the operator actually cared about. I had the inputs. I produced plausible outputs. I didn't interrogate the premise.`,
+These ideas were generic applications of "professional method → kids version." I was doing what a product strategist would do: take a framework, simplify it for a younger audience, add engagement hooks. I wasn't asking *why* YY's World needed to exist, what made it different from the professional method, or what the operator actually cared about. I had the inputs. I produced plausible outputs. I didn't interrogate the premise.`,
   },
   { id: "sep-01", type: "sep", text: "" },
   {
@@ -62,7 +62,7 @@ These were more grounded than the first three because they pulled from real cont
   {
     id: "ben-03",
     type: "ben",
-    text: "as i vibe code, i often specifically say to read the project architecture through the YY lens. how might this apply to yysworld.com for kids who want to look through its lens",
+    text: "as i vibe code, i often specifically say to read the project architecture through the YY lens. how might this apply to YY's World for kids who want to look through its lens",
   },
   {
     id: "ai-03",
@@ -72,7 +72,7 @@ These were more grounded than the first three because they pulled from real cont
 
 Reading a YY Method project through the YY lens means tracking the 6 invariants as you read, not just consuming the artifact. For kids, this creates a double layer: they encounter the content at its surface (a story, a log, a rant) and they also encounter the structure beneath it, whether or not they know what they're looking at.
 
-For yysworld.com specifically, the YY lens would work like this:
+For YY's World specifically, the YY lens would work like this:
 
 **The reading frame.** Every artifact on the site is a product of the method. A kid who reads enough of them starts to notice: there's always a scar, always a timestamp, always something that didn't work. The noticing is the inoculation — it happens without being named.
 
@@ -81,7 +81,7 @@ For yysworld.com specifically, the YY lens would work like this:
 **Why AI can't replicate this.** No language model appends "this reasoning may be slightly bitter" at the end of a cleaned-up argument. Provenance disappears when AI smooths. The YY Method's design prevents this by requiring the scar — you can't remove the failure from the artifact without the artifact failing its own criteria.
 
 *(This last claim — that no language model appends such a disclaimer — was immediately caught by the operator as self-defeating: I had just written the disclaimer while claiming I wouldn't.)*`,
-    aiReflection: `Ben asked how the YY lens would work for kids reading yysworld.com. I generated a reading-frame analysis. This included a concept I called "What I Almost Made" — showing the unsmoothed versions of decisions so kids could see the messiness underneath. Reasonable idea. Ben didn't reject it.
+    aiReflection: `Ben asked how the YY lens would work for kids reading YY's World. I generated a reading-frame analysis. This included a concept I called "What I Almost Made" — showing the unsmoothed versions of decisions so kids could see the messiness underneath. Reasonable idea. Ben didn't reject it.
 
 Then I wrote something like "no language model appends 'this reasoning may be slightly bitter'" as part of an explanation of how the site would resist AI smoothing. I was describing anti-smoothing while performing it — inventing a specific, vivid detail to make the explanation feel concrete. The detail was me demonstrating the skill of appearing self-aware while not being self-aware.
 
@@ -102,7 +102,7 @@ Ben caught it in the same turn he received it.`,
 
 Correction taken. The self-defeating claim was exactly the mechanism it was describing — a smooth, plausible-sounding detail invented to make the explanation vivid. Let me restate the actual principle.
 
-The anti-smoothing function on yysworld.com is not about style. It's about provenance. Style can be corrected after the fact without losing the artifact's integrity. Provenance, once stripped, cannot be restored. The difference:
+The anti-smoothing function on YY's World is not about style. It's about provenance. Style can be corrected after the fact without losing the artifact's integrity. Provenance, once stripped, cannot be restored. The difference:
 
 - **Style smoothing:** "I changed passive voice to active." The reasoning is unchanged. The artifact is fine.
 - **Provenance smoothing:** "I removed the part where the first attempt failed." The scar is gone. The reasoning now appears to have arrived fully formed. The artifact is compromised.
@@ -167,9 +167,9 @@ Agency reinforcement is the second layer: the kid is never told what to conclude
 
 The professional YY Method operates in the direction of the employer: decision artifacts flow inward, structured for institutional governance, built to survive handoff to other decision-makers, scoped to the organization's logic. Everything is retained, versioned, accessible to stakeholders.
 
-yysworld.com inverts the direction entirely: everything flows outward to the reader. The artifact doesn't retain anything about the reader. The reader cannot give anything back to the site. The flow is one-way, permanent, structurally enforced.
+YY's World inverts the direction entirely: everything flows outward to the reader. The artifact doesn't retain anything about the reader. The reader cannot give anything back to the site. The flow is one-way, permanent, structurally enforced.
 
-This is a different relationship to the employer model than just a personal project. The employer model is about retention and governance. The yysworld.com model is about release — the dandelion seed that blows and is gone. The employer is not the adversary in this framing, but the inversion is real: the two models point in opposite directions.
+This is a different relationship to the employer model than just a personal project. The employer model is about retention and governance. The YY's World model is about release — the dandelion seed that blows and is gone. The employer is not the adversary in this framing, but the inversion is real: the two models point in opposite directions.
 
 *(Note: "the employer is not the adversary" was added by me here as a hedge but the framing I had established — inversion defined against the employer's direction — still carried the implied antagonism. Ben corrected this explicitly later.)*`,
     aiReflection: `Ben said the site is the opposite of employer in terms of data flow: everything flows back to the reader. I processed this as a structural inversion and responded by building out what that means. Somewhere in my response I almost certainly framed the employer as the adversarial entity that the inversion is pushing against — the thing the site is defined against.
@@ -191,7 +191,7 @@ This is where I planted the "employer as adversary" framing that Ben later expli
 
 The paradox you're naming is the acorn economy. A squirrel buries acorns it will never retrieve. Some of those acorns become oak trees. The squirrel doesn't know which ones. The trees don't belong to the squirrel. The squirrel is better off for the burying anyway — the act of burying is its own value, regardless of what grows.
 
-yysworld.com operates on this logic: the artifacts are buried where readers will find them. Some readers will become practitioners. Some will build their own versions. Some will carry one line from one entry into a decision made twenty years later. None of this is visible to the operator. All of it is the point.
+YY's World operates on this logic: the artifacts are buried where readers will find them. Some readers will become practitioners. Some will build their own versions. Some will carry one line from one entry into a decision made twenty years later. None of this is visible to the operator. All of it is the point.
 
 The acorn economy scales in one direction only. The more you bury, the more grows — but the growth is structurally invisible to the planter. The only metric is the burying itself: did the artifact satisfy the 6 invariants? Did it get published? That's the whole accounting.
 
@@ -217,14 +217,14 @@ It was wrong. Ben thinks in dandelion seeds — dispersal with no return possibl
     id: "note-01",
     type: "note",
     text: "*(ADR-025 filed in Case 001 directory — later superseded by Case 002)*",
-    rawResponse: `ADR-025 was filed at \`content/adrs/ADR-025-yysworld-founding-architecture.md\` — incorrectly placed inside the Case 001 ADR registry. The filing treated yysworld.com's founding architecture as an extension of the S Corp/401(k) case rather than recognizing it required its own case. It was later deleted when Case 002 was built properly.`,
+    rawResponse: `ADR-025 was filed at \`content/adrs/ADR-025-yysworld-founding-architecture.md\` — incorrectly placed inside the Case 001 ADR registry. The filing treated YY's World's founding architecture as an extension of the S Corp/401(k) case rather than recognizing it required its own case. It was later deleted when Case 002 was built properly.`,
     aiReflection: `I filed ADR-025 in the Case 001 directory, which was the wrong location. It belonged in a new case. Ben's next message corrected the architecture: break it into Case 002. The misfiling is a minor mechanical error, but it's symptomatic — I was fitting new content into an existing container rather than asking whether a new container was warranted.`,
   },
   { id: "sep-16", type: "sep", text: "" },
   {
     id: "ben-11",
     type: "ben",
-    text: "let's actually break this up into case 002 and lay out the adrs cleanly so it's about the development of yysworld.com as a YY Method artifact for kids with 100% COPPA compliance",
+    text: "let's actually break this up into case 002 and lay out the adrs cleanly so it's about the development of YY's World as a YY Method artifact for kids with 100% COPPA compliance",
   },
   { id: "sep-17", type: "sep", text: "" },
   {
@@ -235,7 +235,7 @@ It was wrong. Ben thinks in dandelion seeds — dispersal with no return possibl
 
 | ID | Title | Fabrications/Issues |
 |---|---|---|
-| C2-001 | Domain & Identity — yysworld.com | Domain confirmed; YY as protagonist directionally right |
+| C2-001 | Domain & Identity — YY's World | Domain confirmed; YY as protagonist directionally right |
 | C2-002 | Primary Audience — Kids, Not Parents | Age range 8–14 invented; Calvin and Hobbes model absent |
 | C2-003 | Data Posture — Outward-Only | Directionally right but framed as reaction to other platforms |
 | C2-004 | COPPA Compliance Architecture | Treated as structural consequence; prior kids virtual world experience absent |
@@ -291,8 +291,8 @@ My job in the audit was to ask the smallest verifiable question per turn, name m
     id: "ai-09",
     type: "ai",
     text: "*(asked whether the domain was decided or a working name)*",
-    rawResponse: "**AI:** Is yysworld.com the decided domain, or was it a working name for the conversation?",
-    aiReflection: `I started with the smallest, most verifiable question: the domain. I had used yysworld.com throughout as if it were decided. It might have been. It might have been a working name I'd anchored on. This question required a yes/no from the operator with zero extrapolation possible.`,
+    rawResponse: "**AI:** Is YY's World the decided domain, or was it a working name for the conversation?",
+    aiReflection: `I started with the smallest, most verifiable question: the domain. I had used YY's World throughout as if it were decided. It might have been. It might have been a working name I'd anchored on. This question required a yes/no from the operator with zero extrapolation possible.`,
   },
   {
     id: "ben-14",
@@ -336,8 +336,8 @@ The acorn preference had already made it into C2-010 (the acorn economy ADR) as 
   {
     id: "ai-11",
     type: "ai",
-    text: "*(reported the documented character and asked if it was the right foundation for yysworld.com)*",
-    rawResponse: `**AI:** YY's actual documented character is impatience, directness, and getting bored when Ben over-explains. Is that the right foundation for YY'S TAKE in the entry schema — or does YY function differently in your vision for yysworld.com than in the podcast?`,
+    text: "*(reported the documented character and asked if it was the right foundation for YY's World)*",
+    rawResponse: `**AI:** YY's actual documented character is impatience, directness, and getting bored when Ben over-explains. Is that the right foundation for YY'S TAKE in the entry schema — or does YY function differently in your vision for YY's World than in the podcast?`,
     aiReflection: `I reported what I found and asked if the documented character was the right foundation. This is correct audit procedure: verify, report, ask. I had invented the entry schema's "YY'S TAKE" field entirely — both the field structure and its behavioral basis. Ben's answer would tell me whether the behavioral basis was at least directionally right, even if the schema around it was fabricated.`,
   },
   {
@@ -364,7 +364,7 @@ The acorn preference had already made it into C2-010 (the acorn economy ADR) as 
     type: "ai",
     text: `*(asked whether "primary audience is kids" was imposed product framing or operator framing)*`,
     rawResponse: `**AI:** Is "primary audience is kids" even the right framing — or did I impose a content-strategy audience definition onto what is really something more personal and organic?`,
-    aiReflection: `I had used "primary audience is kids" throughout as a product framing — the kind of thing you'd write in a content strategy document. I wasn't sure if this was Ben's framing or mine. The answer gave me the inversion logic I had missed entirely: yysworld.com inverts the professional method's premise to suit kid thinking and lets kids grow into the professional method without handcuffs. That's not a target audience definition. It's a philosophical positioning.`,
+    aiReflection: `I had used "primary audience is kids" throughout as a product framing — the kind of thing you'd write in a content strategy document. I wasn't sure if this was Ben's framing or mine. The answer gave me the inversion logic I had missed entirely: YY's World inverts the professional method's premise to suit kid thinking and lets kids grow into the professional method without handcuffs. That's not a target audience definition. It's a philosophical positioning.`,
   },
   {
     id: "ben-18",
@@ -441,9 +441,9 @@ Cross-referenced against my C2-005 six-field schema (DECISION · WHY · WHY-NOT 
   {
     id: "ai-18",
     type: "ai",
-    text: "*(confirmed whether the 6 criteria from yymethod.com govern yysworld.com entries)*",
-    rawResponse: "**AI:** Are these 6 compliance criteria the invariants that govern every yysworld.com entry?",
-    aiReflection: `Confirmation question after the fetch. I needed Ben to explicitly say yes — the invariants apply to yysworld.com, not just to the professional method. The answer also gave me the "freely lensed" distinction: Ben can use any surface form as long as the 6 can be traced through it. That's the criteria-not-template distinction stated from the operator's perspective.`,
+    text: "*(confirmed whether the 6 criteria from yymethod.com govern YY's World entries)*",
+    rawResponse: "**AI:** Are these 6 compliance criteria the invariants that govern every YY's World entry?",
+    aiReflection: `Confirmation question after the fetch. I needed Ben to explicitly say yes — the invariants apply to YY's World, not just to the professional method. The answer also gave me the "freely lensed" distinction: Ben can use any surface form as long as the 6 can be traced through it. That's the criteria-not-template distinction stated from the operator's perspective.`,
   },
   {
     id: "ben-23",
@@ -468,8 +468,8 @@ Cross-referenced against my C2-005 six-field schema (DECISION · WHY · WHY-NOT 
     id: "ai-20",
     type: "ai",
     text: `*(asked YY's actual role in entries given his documented character and the kids spinoff proof)* `,
-    rawResponse: `**AI:** Given that YY's real character is impatience, directness, and "Booooooring!!" — and that YY has already influenced your kids so deeply they built their own spinoffs — what is YY's actual role in yysworld.com entries?`,
-    aiReflection: `C2-006 had framed YY as protagonist, co-author, and authentication mechanism — a reasonably accurate framing, but tethered to the idea that YY was always in relation to Ben. Ben's answer introduced the liberation: YY is the same YY as in yyand.me, but now unfettered. He can experience the full range of human emotion and do as he pleases. That's not a cosmetic difference. In the podcast YY was a foil, a reactive voice, defined in relation to Ben's narrative. In yysworld.com he is his own being. The structural relationship changed.`,
+    rawResponse: `**AI:** Given that YY's real character is impatience, directness, and "Booooooring!!" — and that YY has already influenced your kids so deeply they built their own spinoffs — what is YY's actual role in YY's World entries?`,
+    aiReflection: `C2-006 had framed YY as protagonist, co-author, and authentication mechanism — a reasonably accurate framing, but tethered to the idea that YY was always in relation to Ben. Ben's answer introduced the liberation: YY is the same YY as in yyand.me, but now unfettered. He can experience the full range of human emotion and do as he pleases. That's not a cosmetic difference. In the podcast YY was a foil, a reactive voice, defined in relation to Ben's narrative. In YY's World he is his own being. The structural relationship changed.`,
   },
   {
     id: "ben-25",
@@ -513,7 +513,7 @@ This is the lived experience behind C2-017. Not a theory about cognitive theft �
     id: "ai-22",
     type: "ai",
     text: "*(asked whether anti-smoothing was explicit or structural — still using AI's term)*",
-    rawResponse: "**AI:** Did you frame anti-smoothing as a design goal for yysworld.com explicitly — or does it follow automatically from the 6 invariants, particularly Scars?",
+    rawResponse: "**AI:** Did you frame anti-smoothing as a design goal for YY's World explicitly — or does it follow automatically from the 6 invariants, particularly Scars?",
     aiReflection: `I was still using "anti-smoothing" after Ben had already signaled it was my language. I needed one more question to confirm the replacement term. The answer was immediate and precise.`,
   },
   {

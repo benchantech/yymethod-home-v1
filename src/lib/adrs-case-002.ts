@@ -24,7 +24,7 @@ export const adrsCase002: ADRCase002[] = [
   {
     id: "C2-001",
     number: "001",
-    title: "Domain & Identity — yysworld.com",
+    title: "Domain & Identity — YY's World",
     status: "AI Extrapolated",
     freshness: "Permanent",
     freshnessNote: "Preserved as scar. Corrected reasoning in C2-013.",
@@ -102,7 +102,7 @@ export const adrsCase002: ADRCase002[] = [
     domain: "content",
     position: "Derived",
     dependsOn: ["C2-001", "C2-005"],
-    summary: "AI fabricated acorn preference, metronome incident, and three-role framework. YY's real character: impatient, direct, 'Booooooring!!', full range of emotion, liberated in yysworld.com. See C2-015.",
+    summary: "AI fabricated acorn preference, metronome incident, and three-role framework. YY's real character: impatient, direct, 'Booooooring!!', full range of emotion, liberated in YY's World. See C2-015.",
     tags: ["ai-extrapolated", "scar", "yy", "fabricated-incidents"],
   },
   {
@@ -172,7 +172,7 @@ export const adrsCase002: ADRCase002[] = [
     domain: "philosophy",
     position: "Derived",
     dependsOn: ["C2-003", "C2-010"],
-    summary: "AI framed employer as adversary and the inversion as protection from institutional absorption. Real WHY: employer is liberation — enables the creative work. yysworld.com is made possible by that security. See C2-021.",
+    summary: "AI framed employer as adversary and the inversion as protection from institutional absorption. Real WHY: employer is liberation — enables the creative work. YY's World is made possible by that security. See C2-021.",
     tags: ["ai-extrapolated", "scar", "employer-framing-wrong"],
   },
   {
@@ -246,7 +246,7 @@ export const adrsCase002: ADRCase002[] = [
     domain: "content",
     position: "Foundational",
     dependsOn: [],
-    summary: "Every yysworld.com artifact satisfies all 6 YY Method compliance criteria: Compression · Scars · Survivability · Explainability · Timestamping · Discipline. These are the DNA — hand and palm from the early version of the method. Not a template. Operator lenses them freely into any surface form. An artifact is valid when all 6 can be traced through it, whatever shape it takes.",
+    summary: "Every YY's World artifact satisfies all 6 YY Method compliance criteria: Compression · Scars · Survivability · Explainability · Timestamping · Discipline. These are the DNA — hand and palm from the early version of the method. Not a template. Operator lenses them freely into any surface form. An artifact is valid when all 6 can be traced through it, whatever shape it takes.",
     tags: ["six-invariants", "dna", "compliance-criteria", "freely-lensed", "operator-supplied"],
   },
   {
@@ -260,7 +260,7 @@ export const adrsCase002: ADRCase002[] = [
     domain: "philosophy",
     position: "Foundational",
     dependsOn: [],
-    summary: "Cognitive theft is YY's archnemesis. Subtle, dangerous, happens to the best and brightest fastest because they use AI most. Inoculation against it is urgent: AI becomes a tsunami in kids' lifetimes. Origin: the Fourth Scar — 5 months, 200+ hours, 6 podcast episodes, 5 essays, all smoothed by AI. Operator experienced it, named it, documented it. yysworld.com plants the antibody before patterns calcify.",
+    summary: "Cognitive theft is YY's archnemesis. Subtle, dangerous, happens to the best and brightest fastest because they use AI most. Inoculation against it is urgent: AI becomes a tsunami in kids' lifetimes. Origin: the Fourth Scar — 5 months, 200+ hours, 6 podcast episodes, 5 essays, all smoothed by AI. Operator experienced it, named it, documented it. YY's World plants the antibody before patterns calcify.",
     tags: ["cognitive-theft", "tsunami", "fourth-scar", "inoculation", "archnemesis", "operator-supplied"],
   },
   {
@@ -274,7 +274,7 @@ export const adrsCase002: ADRCase002[] = [
     domain: "data",
     position: "Derived",
     dependsOn: ["C2-013"],
-    summary: "Operator has prior direct experience with a kids virtual world — learned COPPA from the inside. Designed yysworld.com to have nothing COPPA can grab: no data collected, no consent surface, no liability target. This is not compliance architecture. It is elimination of the regulatory surface entirely, maximizing creative freedom without a constant target on the back.",
+    summary: "Operator has prior direct experience with a kids virtual world — learned COPPA from the inside. Designed YY's World to have nothing COPPA can grab: no data collected, no consent surface, no liability target. This is not compliance architecture. It is elimination of the regulatory surface entirely, maximizing creative freedom without a constant target on the back.",
     tags: ["coppa", "elimination", "prior-experience", "no-target", "operator-supplied"],
   },
   {
@@ -316,7 +316,7 @@ export const adrsCase002: ADRCase002[] = [
     domain: "philosophy",
     position: "Derived",
     dependsOn: ["C2-013"],
-    summary: "The employer is not the adversary — the employer is liberation. Current life secured. Family taken care of. Thriving at the highest level, a force multiplier for AI and for change. yysworld.com is what becomes possible in the margins of that security. Same DNA as the professional method, different direction. Both serve their purpose. Neither competes with the other.",
+    summary: "The employer is not the adversary — the employer is liberation. Current life secured. Family taken care of. Thriving at the highest level, a force multiplier for AI and for change. YY's World is what becomes possible in the margins of that security. Same DNA as the professional method, different direction. Both serve their purpose. Neither competes with the other.",
     tags: ["employer", "liberation", "enabler", "margins", "operator-supplied"],
   },
   {
@@ -330,7 +330,7 @@ export const adrsCase002: ADRCase002[] = [
     domain: "philosophy",
     position: "Foundational",
     dependsOn: ["C2-016"],
-    summary: "yysworld.com is simultaneously a site for kids and a genealogical artifact of Ben's life. The 6 invariants — especially Scars and Timestamping — make every entry a life record. YY has been with Ben for 40 years; entries with YY document both of them. The surface form is open. The genealogical purpose is permanent. Precursor: 300 YouTube videos, 16 million views — practice logs in public, scars visible.",
+    summary: "YY's World is simultaneously a site for kids and a genealogical artifact of Ben's life. The 6 invariants — especially Scars and Timestamping — make every entry a life record. YY has been with Ben for 40 years; entries with YY document both of them. The surface form is open. The genealogical purpose is permanent. Precursor: 300 YouTube videos, 16 million views — practice logs in public, scars visible.",
     tags: ["genealogical-artifact", "life-record", "scars-visible", "yy-40-years", "operator-supplied"],
   },
   {

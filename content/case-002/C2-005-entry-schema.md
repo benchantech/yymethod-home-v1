@@ -9,7 +9,7 @@
 
 ## Capture
 
-Every entry on yysworld.com has exactly six fields. The schema is the same for every entry, every domain, every topic.
+Every entry on YY's World has exactly six fields. The schema is the same for every entry, every domain, every topic.
 
 ```
 DECISION:   What was chosen.

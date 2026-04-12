@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const adr = getADRCase002(id.toUpperCase());
   if (!adr) return {};
   const title = `${adr.id}: ${adr.title} — YY Method™ Home Edition`;
-  const description = `${adr.summary} Decision status: ${adr.status}. Case 002 — yysworld.com founding architecture.`;
+  const description = `${adr.summary} Decision status: ${adr.status}. Case 002 — YY's World founding architecture.`;
   return {
     title,
     description,

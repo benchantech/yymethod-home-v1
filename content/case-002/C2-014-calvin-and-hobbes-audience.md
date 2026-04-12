@@ -14,13 +14,13 @@ The primary voice speaks to kids directly. Anyone who thinks like a kid is welco
 
 The model is Calvin and Hobbes. Ostensibly a kids' comic strip — actually for anyone. The strip never explains itself to parents, never hedges its voice for adult approval, never announces what it is teaching. Kids read it at their level. Adults read it at theirs. Hobbes is real to Calvin. Hobbes is philosophical to the adult. The strip doesn't resolve that tension — it lives in it.
 
-yysworld.com is the same. YY is real to the kid. YY is a creative co-author and genealogical artifact to the adult who has grown into the professional YY Method. The site doesn't resolve that tension either.
+YY's World is the same. YY is real to the kid. YY is a creative co-author and genealogical artifact to the adult who has grown into the professional YY Method. The site doesn't resolve that tension either.
 
 ---
 
 ## Why
 
-The site inverts the YY Method's professional premise. It suits the freedom of kid thinking and encourages it into adulthood. Kids who encounter yysworld.com grow into the professional method naturally — without the handcuffs that come with institutional life. The runway is free first, structured later, by choice.
+The site inverts the YY Method's professional premise. It suits the freedom of kid thinking and encourages it into adulthood. Kids who encounter YY's World grow into the professional method naturally — without the handcuffs that come with institutional life. The runway is free first, structured later, by choice.
 
 The Calvin and Hobbes model delivers this without announcing it. The strip never said "we are teaching you to appreciate the inner life of imagination." It just was the thing. Whoever found it claimed it.
 

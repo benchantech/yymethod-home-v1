@@ -10,7 +10,7 @@
 
 ## Capture
 
-Full COPPA compliance is achieved by designing yysworld.com so COPPA has nothing to regulate. No data collected. No consent surface. No liability target on the back.
+Full COPPA compliance is achieved by designing YY's World so COPPA has nothing to regulate. No data collected. No consent surface. No liability target on the back.
 
 This is not a compliance architecture. It is elimination of the regulatory surface entirely.
 

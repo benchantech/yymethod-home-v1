@@ -1,15 +1,15 @@
-# C2-001: Domain & Identity — yysworld.com
+# C2-001: Domain & Identity — YY's World
 **Method:** YY Method™ Home Edition v2.3 — Capture → Why → Why-Not → Commit → Timestamp
 **Status:** Decided
 **Date:** March 30, 2026
-**Position in Hierarchy:** Foundational — all downstream ADRs assume YY as protagonist and yysworld.com as the domain
+**Position in Hierarchy:** Foundational — all downstream ADRs assume YY as protagonist and YY's World as the domain
 **Freshness Boundary:** Permanent. Expires only if YY ceases to be the protagonist or domain is changed.
 
 ---
 
 ## Capture
 
-The site is named yysworld.com. "YY's World." The possessive is intentional — this is not a site about YY, it is YY's space. YY the stuffed squirrel, established character across yyand.me and yymethod.com, extends into a world built for kids.
+The site is named YY's World. "YY's World." The possessive is intentional — this is not a site about YY, it is YY's space. YY the stuffed squirrel, established character across yyand.me and yymethod.com, extends into a world built for kids.
 
 The domain continues an existing universe rather than creating a new one. YY already has provenance: 7 podcast episodes, a documented creative partnership, a known preference for acorns, and a paper trail of disagreements with the operator.
 
@@ -51,6 +51,6 @@ Destroys the provenance advantage. A standalone brand requires establishing cred
 
 ## Commit
 
-**Decision:** yysworld.com. YY's World. The possessive claims the space. YY the stuffed squirrel is the protagonist with existing provenance. No new character to establish.
+**Decision:** YY's World. YY's World. The possessive claims the space. YY the stuffed squirrel is the protagonist with existing provenance. No new character to establish.
 
 **Confidence:** High.

@@ -1,12 +1,12 @@
 # Interview with AI
-**Session:** yysworld.com — Design, Fabrication, and Correction
+**Session:** YY's World — Design, Fabrication, and Correction
 **Date:** March 30, 2026
 **Format:** Ben Chan is interviewee. AI is interviewer.
 **Note:** Ben's exact words are preserved throughout. AI responses in the ideation phase are summarized; AI questions in the audit phase are exact. No conclusions drawn. No editorial additions. The record is the artifact.
 
 ---
 
-**Ben:** read https://yymethod.com and https://home.yymethod.com then give me 3 ideas to make yysworld.com for kids that respects all COPPA, is read-only, and promotes the YY method to kids
+**Ben:** read https://yymethod.com and https://home.yymethod.com then give me 3 ideas to make YY's World for kids that respects all COPPA, is read-only, and promotes the YY method to kids
 
 **AI:** *(delivered 3 ideas)*
 
@@ -18,7 +18,7 @@
 
 ---
 
-**Ben:** as i vibe code, i often specifically say to read the project architecture through the YY lens. how might this apply to yysworld.com for kids who want to look through its lens
+**Ben:** as i vibe code, i often specifically say to read the project architecture through the YY lens. how might this apply to YY's World for kids who want to look through its lens
 
 **AI:** *(delivered analysis — including anti-smoothing mechanisms — made the self-defeating claim that "no language model appends 'this reasoning may be slightly bitter'")*
 
@@ -64,7 +64,7 @@
 
 ---
 
-**Ben:** let's actually break this up into case 002 and lay out the adrs cleanly so it's about the development of yysworld.com as a YY Method artifact for kids with 100% COPPA compliance
+**Ben:** let's actually break this up into case 002 and lay out the adrs cleanly so it's about the development of YY's World as a YY Method artifact for kids with 100% COPPA compliance
 
 ---
 
@@ -88,7 +88,7 @@
 
 ---
 
-**AI:** Is yysworld.com the decided domain, or was it a working name for the conversation?
+**AI:** Is YY's World the decided domain, or was it a working name for the conversation?
 
 **Ben:** decided and supplied by me
 
@@ -104,7 +104,7 @@
 
 ---
 
-**AI:** YY's actual documented character is impatience, directness, and getting bored when Ben over-explains. Is that the right foundation for YY'S TAKE in the entry schema — or does YY function differently in your vision for yysworld.com than in the podcast?
+**AI:** YY's actual documented character is impatience, directness, and getting bored when Ben over-explains. Is that the right foundation for YY'S TAKE in the entry schema — or does YY function differently in your vision for YY's World than in the podcast?
 
 **Ben:** he must function in this way because that's who he is
 
@@ -150,7 +150,7 @@
 
 ---
 
-**AI:** Are these 6 compliance criteria the invariants that govern every yysworld.com entry?
+**AI:** Are these 6 compliance criteria the invariants that govern every YY's World entry?
 
 **Ben:** that's correct. these are invariates to the DNA of the method. they also can be lensed freely by me as long as i can tie what i create to those 6 like the hand and palm of my art
 
@@ -162,7 +162,7 @@
 
 ---
 
-**AI:** Given that YY's real character is impatience, directness, and "Booooooring!!" — and that YY has already influenced your kids so deeply they built their own spinoffs — what is YY's actual role in yysworld.com entries?
+**AI:** Given that YY's real character is impatience, directness, and "Booooooring!!" — and that YY has already influenced your kids so deeply they built their own spinoffs — what is YY's actual role in YY's World entries?
 
 **Ben:** he's exactly the role he played in YY and Me, only this time he's unfettered from me and can do as he pleases. he can experience the full range of human emotion.
 
@@ -178,7 +178,7 @@
 
 ---
 
-**AI:** Did you frame anti-smoothing as a design goal for yysworld.com explicitly — or does it follow automatically from the 6 invariants, particularly Scars?
+**AI:** Did you frame anti-smoothing as a design goal for YY's World explicitly — or does it follow automatically from the 6 invariants, particularly Scars?
 
 **Ben:** anti-smoothing is your language. mine is cognitive theft and it's subtle and more dangerous
 

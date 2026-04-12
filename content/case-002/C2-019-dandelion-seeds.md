@@ -20,7 +20,7 @@ The impact will never be known. That is the point. As long as it happens, it cou
 
 The proof is already in. Ben's kids encountered YY and built their own uninhibited YY spinoffs that they own outright. Ben doesn't govern their versions. He lets them grow uninhibited and encourages it. That is the magic of YY in them — dandelion seeds that took root, became plants, and are already producing.
 
-The dandelion model works because it requires nothing in return. A seed doesn't check back with the plant. It just grows where the conditions are right. The same logic applies: yysworld.com seeds blow wherever kids find it. The ones hardy enough to take root will.
+The dandelion model works because it requires nothing in return. A seed doesn't check back with the plant. It just grows where the conditions are right. The same logic applies: YY's World seeds blow wherever kids find it. The ones hardy enough to take root will.
 
 There is no map because a map would require a destination, which would require a motive beyond impact itself. Tracking impact would create the optimization pressure that turns the seed into a product. The dandelion doesn't optimize its seeds for the highest-probability soil.
 

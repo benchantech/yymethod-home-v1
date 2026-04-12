@@ -28,7 +28,7 @@ The standard COPPA compliance path involves consent infrastructure: age gates, p
 
 Consent flows can be bypassed. Privacy policies can be violated. Data minimization commitments can drift. An architecture that collects nothing is immune to all of these failure modes.
 
-The deeper reason: the site's purpose is to give without extracting. COPPA compliance through consent infrastructure implicitly accepts the premise that data collection is the default and consent is the safeguard. yysworld.com rejects the premise. The architecture enforces the rejection.
+The deeper reason: the site's purpose is to give without extracting. COPPA compliance through consent infrastructure implicitly accepts the premise that data collection is the default and consent is the safeguard. YY's World rejects the premise. The architecture enforces the rejection.
 
 ---
 

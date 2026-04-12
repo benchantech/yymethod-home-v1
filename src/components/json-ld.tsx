@@ -89,7 +89,7 @@ export function interviewSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Interview with AI — yysworld.com Design, Fabrication, and Correction",
+    headline: "Interview with AI — YY's World Design, Fabrication, and Correction",
     description:
       "Word-for-word audit of the Case 002 first draft. AI extrapolated 12 ADRs from operator seeds; operator corrected. The permanent record of what was built, what was invented, and what the operator actually said.",
     url: "https://home.yymethod.com/interview",

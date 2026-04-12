@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Case 002: yysworld.com Founding Architecture — YY Method™ Home Edition",
-  description: "23 ADRs documenting the founding architecture of yysworld.com — a COPPA-compliant YY Method artifact for kids. Includes the AI extrapolation scars and the operator correction interview.",
+  title: "Case 002: YY's World Founding Architecture — YY Method™ Home Edition",
+  description: "23 ADRs documenting the founding architecture of YY's World — a COPPA-compliant YY Method artifact for kids. Includes the AI extrapolation scars and the operator correction interview.",
   authors: [{ name: "Ben Chan" }],
   openGraph: {
-    title: "Case 002: yysworld.com Founding Architecture — YY Method™ Home Edition",
-    description: "23 ADRs: AI extrapolated scars + operator-corrected founding architecture for yysworld.com.",
+    title: "Case 002: YY's World Founding Architecture — YY Method™ Home Edition",
+    description: "23 ADRs: AI extrapolated scars + operator-corrected founding architecture for YY's World.",
     url: "https://home.yymethod.com/case-002",
     siteName: "YY Method™ Home Edition",
     type: "article",
@@ -35,7 +35,7 @@ export default function Case002Page() {
           <span className="text-muted-foreground text-xs">/</span>
           <span className="text-xs text-foreground">Case #002 · ADR Registry</span>
         </div>
-        <h1 className="text-2xl font-semibold tracking-tight">yysworld.com — A YY Method Artifact for Kids</h1>
+        <h1 className="text-2xl font-semibold tracking-tight">YY's World — A YY Method Artifact for Kids</h1>
         <p className="text-sm text-muted-foreground font-mono">
           Case #002 · {adrsCase002.length} knowledge artifacts · March 30, 2026 · YY Method™ Home Edition v2.3
         </p>

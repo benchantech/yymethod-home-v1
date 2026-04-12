@@ -1,4 +1,4 @@
-# ADR Index — yysworld.com: A YY Method Artifact for Kids
+# ADR Index — YY's World: A YY Method Artifact for Kids
 **Method:** YY Method™ Home Edition v2.3
 **Captured:** March 30, 2026
 **Author:** Case Study Operator
@@ -8,7 +8,7 @@
 
 ## What This Case Is
 
-A structured knowledge artifact capturing the full reasoning chain behind the design of yysworld.com — a read-only site for kids that applies the YY Method to deliver stealth cognitive inoculation against cognitive theft, with 100% COPPA compliance achieved through structural non-collection.
+A structured knowledge artifact capturing the full reasoning chain behind the design of YY's World — a read-only site for kids that applies the YY Method to deliver stealth cognitive inoculation against cognitive theft, with 100% COPPA compliance achieved through structural non-collection.
 
 This is not a product spec. It is a preserved record of founding decisions — what was chosen, what was rejected, and what each decision depends on being true.
 
@@ -33,7 +33,7 @@ The chain is: AI Extrapolated scars (C2-001–C2-012) → corrective interview (
 ## ADR Hierarchy — AI Extrapolated (C2-001–C2-012)
 
 ```
-C2-001  Domain & Identity — yysworld.com        [AI EXTRAPOLATED]
+C2-001  Domain & Identity — YY's World        [AI EXTRAPOLATED]
     └── C2-002  Primary Audience — Kids          [AI EXTRAPOLATED]
 C2-003  Data Posture — Outward-Only             [AI EXTRAPOLATED]
     └── C2-004  COPPA Compliance Architecture   [AI EXTRAPOLATED]
@@ -73,7 +73,7 @@ C2-017  Cognitive Theft — The Tsunami           [FOUNDATIONAL]
 
 | ID | Title | Domain | Status | Freshness |
 |---|---|---|---|---|
-| C2-001 | Domain & Identity — yysworld.com | Founding | AI Extrapolated | — |
+| C2-001 | Domain & Identity — YY's World | Founding | AI Extrapolated | — |
 | C2-002 | Primary Audience — Kids, Not Parents | Founding | AI Extrapolated | — |
 | C2-003 | Data Posture — Outward-Only | Data | AI Extrapolated | — |
 | C2-004 | COPPA Compliance Architecture | Data | AI Extrapolated | — |

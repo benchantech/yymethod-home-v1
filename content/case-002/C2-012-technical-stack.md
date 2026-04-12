@@ -39,7 +39,7 @@ Dynamic rendering creates request logs, session infrastructure, and runtime depe
 Next.js static export provides automatic routing, static params generation, and the same deployment path as home.yymethod.com. No new tooling. The familiarity benefit is real — the operator has already built one production site with this stack in a single session.
 
 **Why not light mode?**
-The YY universe is dark mode. home.yymethod.com is dark mode. The visual consistency is a quiet signal of continuity for readers who encounter both sites. Light mode would also require a separate design decision for a children's site that isn't warranted by the content type — yysworld.com is not editorial or content-first in the way that warrants light mode defaults.
+The YY universe is dark mode. home.yymethod.com is dark mode. The visual consistency is a quiet signal of continuity for readers who encounter both sites. Light mode would also require a separate design decision for a children's site that isn't warranted by the content type — YY's World is not editorial or content-first in the way that warrants light mode defaults.
 
 ---
 

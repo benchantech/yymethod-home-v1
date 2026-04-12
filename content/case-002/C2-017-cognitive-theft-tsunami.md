@@ -14,7 +14,7 @@ Cognitive theft is YY's archnemesis. Provenance is YY DNA.
 
 Cognitive theft is subtle and dangerous. It happens to the best and brightest fastest — because they are the ones using AI most. It must be guarded against at all times when using AI.
 
-The inoculation yysworld.com delivers is specifically against this: AI becomes a tsunami in kids' lifetimes. The antibody must be planted before the wave arrives and the patterns calcify.
+The inoculation YY's World delivers is specifically against this: AI becomes a tsunami in kids' lifetimes. The antibody must be planted before the wave arrives and the patterns calcify.
 
 ---
 
@@ -39,7 +39,7 @@ These are AI's invented distinctions — not the operator's. Cognitive theft is 
 By then the patterns are calcified. The inoculation works at formation stage — before the habits of passive consumption are fully established. Planting the antibody young means it grows with them.
 
 **Why not address adults instead?**
-The professional YY Method addresses adults. yysworld.com addresses kids. The pipeline is: free first (yysworld), structured later (professional method), by choice, without handcuffs. Both ends of the pipeline are necessary.
+The professional YY Method addresses adults. YY's World addresses kids. The pipeline is: free first (yysworld), structured later (professional method), by choice, without handcuffs. Both ends of the pipeline are necessary.
 
 ---
 
@@ -51,7 +51,7 @@ The inoculation is never named on the site. A visible lesson can be opted out of
 
 ## Commit
 
-**Decision:** Cognitive theft is the adversary. The inoculation is urgent. The tsunami is coming. yysworld.com plants the antibody early, in a form kids will find on their own, without knowing what it's doing to protect them.
+**Decision:** Cognitive theft is the adversary. The inoculation is urgent. The tsunami is coming. YY's World plants the antibody early, in a form kids will find on their own, without knowing what it's doing to protect them.
 
 **YY'S TAKE:** YY has been resisting cognitive theft his entire life. "Booooooring!!" is what you say when someone smooths the truth.
 

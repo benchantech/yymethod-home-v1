@@ -17,7 +17,7 @@ The primary audience is kids, approximately ages 8–14. The site speaks to them
 
 The cognitive inoculation this site delivers works at formation stage. A child developing reasoning habits is a different target than an adult whose patterns are already calcified. The antibody to cognitive theft — the reflex to ask "why this and not that, and what breaks this claim?" — is most efficiently planted before the habits of passive consumption are fully formed.
 
-Adults who need this protection can encounter the YY Method through yymethod.com or home.yymethod.com. yysworld.com is not for them. The sites are designed for different moments in the formation arc.
+Adults who need this protection can encounter the YY Method through yymethod.com or home.yymethod.com. YY's World is not for them. The sites are designed for different moments in the formation arc.
 
 The direct address to kids also changes what the content can be. A site that speaks to parents about kids is hedged, explained, permission-seeking. A site that speaks directly to kids can be zany, specific, and structurally weird in ways that adults might find unpolished. That structural weirdness is load-bearing — it is what carries the inoculation without announcing it.
 

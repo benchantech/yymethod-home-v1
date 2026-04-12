@@ -9,7 +9,7 @@
 
 ## Capture
 
-YY the stuffed squirrel is the protagonist of yysworld.com. YY is not a mascot. YY is a co-author with opinions, objections, and a documented paper trail. YY has existed since the yyand.me podcast arc — 7 episodes, established voice, known preference for acorns, history of disagreeing with the operator. The site extends that character into the kids' domain.
+YY the stuffed squirrel is the protagonist of YY's World. YY is not a mascot. YY is a co-author with opinions, objections, and a documented paper trail. YY has existed since the yyand.me podcast arc — 7 episodes, established voice, known preference for acorns, history of disagreeing with the operator. The site extends that character into the kids' domain.
 
 YY occupies three simultaneous roles:
 

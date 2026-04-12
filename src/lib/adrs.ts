@@ -379,7 +379,7 @@ export const adrs: ADR[] = [
     domain: "methodology",
     position: "Permanent",
     dependsOn: ["ADR-013", "ADR-017"],
-    summary: "Three surfaces, three rules, one invariant. yymethod.com: methodology and schema fully public — it is the product. home.yymethod.com and yysworld.com: reasoning artifacts public, application code private (Vercel, not open-sourced). Employment: employer is invisible in this system — never named, implied, or identifiable. The unified principle: public face is reasoning and schema; private face is implementation and application; employment is invisible. Applies uniformly to all current and future properties. Extends C4-015 and C4-016 to the full portfolio.",
+    summary: "Three surfaces, three rules, one invariant. yymethod.com: methodology and schema fully public — it is the product. home.yymethod.com and YY's World: reasoning artifacts public, application code private (Vercel, not open-sourced). Employment: employer is invisible in this system — never named, implied, or identifiable. The unified principle: public face is reasoning and schema; private face is implementation and application; employment is invisible. Applies uniformly to all current and future properties. Extends C4-015 and C4-016 to the full portfolio.",
     tags: ["information-architecture", "methodology-public", "application-private", "employer-protected", "system-invariant", "permanent", "c4-015", "c4-016", "c7-008"],
   },
 ];

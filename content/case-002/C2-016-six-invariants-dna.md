@@ -10,7 +10,7 @@
 
 ## Capture
 
-Every yysworld.com artifact must satisfy all 6 YY Method compliance criteria:
+Every YY's World artifact must satisfy all 6 YY Method compliance criteria:
 
 **Compression · Scars · Survivability · Explainability · Timestamping · Discipline**
 

@@ -10,7 +10,7 @@
 
 ## Capture
 
-yysworld.com is launching now. The domain was bought decades ago and has been incubating. No alternative domains were considered at any point — there was never another candidate. The timing is driven by personal life circumstances: current life secured, kids more grown up. The motivation is fun, exercising AI muscles, and exploring the vast ocean of possibilities.
+YY's World is launching now. The domain was bought decades ago and has been incubating. No alternative domains were considered at any point — there was never another candidate. The timing is driven by personal life circumstances: current life secured, kids more grown up. The motivation is fun, exercising AI muscles, and exploring the vast ocean of possibilities.
 
 The 6 constraints that govern the site paradoxically produce maximum creative freedom while keeping every artifact legible to AI so it can serve both purposes simultaneously.
 
@@ -20,7 +20,7 @@ The 6 constraints that govern the site paradoxically produce maximum creative fr
 
 The domain has been waiting for the right conditions. Those conditions are now met. The creative space opened not because of a strategic opportunity but because the operator's life architecture made it possible — security, family stability, and the margins to explore freely.
 
-The motivation is generative, not obligatory. Fun is load-bearing here. A site built from obligation produces content shaped by obligation. A site built from genuine creative exploration produces content that reflects that freedom — which is exactly what the yysworld.com model requires to work.
+The motivation is generative, not obligatory. Fun is load-bearing here. A site built from obligation produces content shaped by obligation. A site built from genuine creative exploration produces content that reflects that freedom — which is exactly what the YY's World model requires to work.
 
 The 6 constraints are not restrictions on the creativity. They are what make the creative space trustworthy — for kids who find it, for AI that reads it, and for the operator who builds it across time as a genealogical artifact.
 
@@ -41,6 +41,6 @@ Mission-driven projects produce content that looks like mission-driven content. 
 
 ## Commit
 
-**Decision:** Launch yysworld.com now. Decades of incubation complete. The timing is right. The motivation is genuine. The 6 constraints open the creative space rather than close it.
+**Decision:** Launch YY's World now. Decades of incubation complete. The timing is right. The motivation is genuine. The 6 constraints open the creative space rather than close it.
 
 **Confidence:** High.

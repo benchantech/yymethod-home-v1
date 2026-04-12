@@ -10,7 +10,7 @@
 
 ## Capture
 
-yysworld.com is simultaneously a site for kids and a genealogical artifact of Ben's life.
+YY's World is simultaneously a site for kids and a genealogical artifact of Ben's life.
 
 No idea what shape the entries will take. As long as the 6 invariants are honored, the site will take any shape — and will double as genealogical artifact because the invariants ensure that. Scars and Timestamping in particular make every entry a life record whether or not that is their surface intent.
 
@@ -20,7 +20,7 @@ No idea what shape the entries will take. As long as the 6 invariants are honore
 
 YY has been with Ben for 40 years. Every entry that includes YY documents both of them — a 40-year-old stuffed squirrel and the human who has carried him since childhood. That documentation is not incidental. It is structural. The invariants guarantee it.
 
-Precursor: 300 YouTube videos, 16 million views. Practice logs in public. That body of work already demonstrated what provenance at scale looks like — scars visible, timeline intact, reasoning traceable. yysworld.com is the same posture applied to a different medium.
+Precursor: 300 YouTube videos, 16 million views. Practice logs in public. That body of work already demonstrated what provenance at scale looks like — scars visible, timeline intact, reasoning traceable. YY's World is the same posture applied to a different medium.
 
 The genealogical purpose requires no announcement. The 6 invariants produce it automatically. Compression preserves the core. Scars preserve the failures. Survivability ensures the record outlasts the moment. Explainability makes it legible to future readers — including grandchildren. Timestamping anchors every artifact in its historical position. Discipline keeps the whole thing from drifting.
 
@@ -43,6 +43,6 @@ The dual purpose is the point. The same artifact that is legible to a kid is leg
 
 ## Commit
 
-**Decision:** yysworld.com is a genealogical artifact. The 6 invariants make every entry a life record. The genealogical purpose requires no announcement. It is structural.
+**Decision:** YY's World is a genealogical artifact. The 6 invariants make every entry a life record. The genealogical purpose requires no announcement. It is structural.
 
 **Confidence:** Absolute — the invariants guarantee it by definition.

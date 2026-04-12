@@ -101,7 +101,7 @@ After all files are written, counts updated, and `npx tsc --noEmit` is clean, co
 
 **1. Methodology is public.** The YY Method framework, the Capture → Why → Why-Not → Commit → Timestamp loop, the ADR structure, and the reasoning chains are public by design. This is the product.
 
-**2. Application is private.** The codebase, deployment configuration, component architecture, and any generation pipeline or AI system architecture for any property in this system is never documented, exposed, or added to public-facing content. home.yymethod.com and yysworld.com hide their code behind Vercel by design. Do not add implementation details to ADRs, case studies, or content files.
+**2. Application is private.** The codebase, deployment configuration, component architecture, and any generation pipeline or AI system architecture for any property in this system is never documented, exposed, or added to public-facing content. home.yymethod.com and YY's World hide their code behind Vercel by design. Do not add implementation details to ADRs, case studies, or content files.
 
 **3. Employer is invisible.** The operator's employer is never named, implied, or identifiable in any file in this repository. Not the employer's name, industry, clients, or methodologies developed under employment. This is absolute — no gradient, no partial visibility.
 

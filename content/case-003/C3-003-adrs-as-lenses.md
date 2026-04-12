@@ -42,7 +42,7 @@ Documentation describes what happened. A lens reveals why it matters and what it
 The lens metaphor is the operator's own framing, not an assignment. It captures something the container/record metaphor misses: directionality. An ADR has a target. It's aimed at something. A record is passive. A lens is active.
 
 **Why not apply this framing only to Case 003 artifacts?**
-It applies retroactively to every ADR in the archive. ADR-001 is a lens aimed at S corp termination timing. C2-017 is a lens aimed at cognitive theft as the primary threat to yysworld.com. C3-001 is a lens aimed at the opening architecture of the Cognitive Theft essay. The framing doesn't change the artifacts — it clarifies what they've always been.
+It applies retroactively to every ADR in the archive. ADR-001 is a lens aimed at S corp termination timing. C2-017 is a lens aimed at cognitive theft as the primary threat to YY's World. C3-001 is a lens aimed at the opening architecture of the Cognitive Theft essay. The framing doesn't change the artifacts — it clarifies what they've always been.
 
 ---
 

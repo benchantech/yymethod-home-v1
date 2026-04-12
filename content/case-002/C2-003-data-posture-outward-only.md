@@ -19,7 +19,7 @@ The reader owns what they take. The operator owns what is published. Those are s
 
 Every platform a child uses demands identity in exchange for access. Create an account. Confirm your email. Accept cookies. Allow tracking. The implicit transaction is: give us something about yourself and we will give you the content.
 
-yysworld.com inverts this. It gives without asking. That asymmetry is not a COPPA compliance decision — it is the site's foundational ethical posture. The site exists to extend provenance outward to readers. It cannot do that while simultaneously capturing the reader's data. Those two directions cannot coexist without one eventually dominating.
+YY's World inverts this. It gives without asking. That asymmetry is not a COPPA compliance decision — it is the site's foundational ethical posture. The site exists to extend provenance outward to readers. It cannot do that while simultaneously capturing the reader's data. Those two directions cannot coexist without one eventually dominating.
 
 The practical consequence: the site has nothing to comply with. The most COPPA-reliable architecture is one where COPPA has nothing to regulate. No data collected means no data misused, no consent flow to bypass, no privacy policy to violate.
 
