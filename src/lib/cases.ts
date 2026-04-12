@@ -95,7 +95,7 @@ export const caseStudies: CaseStudy[] = [
     description:
       "The founding architecture of YY's World — a read-only site for kids where YY the stuffed squirrel delivers stealth inoculation against cognitive theft. 23 knowledge artifacts: C2-001–C2-012 preserved as AI Extrapolated scars from the first draft, C2-013–C2-023 operator-supplied reasoning from the corrective interview. The full chain is provable. Provenance flows outward. Nothing returns.",
     href: "/case-002",
-    tags: ["yysworld", "kids", "coppa", "cognitive-theft", "provenance", "anti-smoothing", "yy", "acorn-economy", "static-site"],
+    tags: ["yys-world", "kids", "coppa", "cognitive-theft", "provenance", "anti-smoothing", "yy", "acorn-economy", "static-site"],
   },
   {
     id: "case-001",

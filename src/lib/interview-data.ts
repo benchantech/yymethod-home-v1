@@ -217,7 +217,7 @@ It was wrong. Ben thinks in dandelion seeds — dispersal with no return possibl
     id: "note-01",
     type: "note",
     text: "*(ADR-025 filed in Case 001 directory — later superseded by Case 002)*",
-    rawResponse: `ADR-025 was filed at \`content/adrs/ADR-025-yysworld-founding-architecture.md\` — incorrectly placed inside the Case 001 ADR registry. The filing treated YY's World's founding architecture as an extension of the S Corp/401(k) case rather than recognizing it required its own case. It was later deleted when Case 002 was built properly.`,
+    rawResponse: `ADR-025 was filed at \`content/adrs/ADR-025-yys-world-founding-architecture.md\` — incorrectly placed inside the Case 001 ADR registry. The filing treated YY's World's founding architecture as an extension of the S Corp/401(k) case rather than recognizing it required its own case. It was later deleted when Case 002 was built properly.`,
     aiReflection: `I filed ADR-025 in the Case 001 directory, which was the wrong location. It belonged in a new case. Ben's next message corrected the architecture: break it into Case 002. The misfiling is a minor mechanical error, but it's symptomatic — I was fitting new content into an existing container rather than asking whether a new container was warranted.`,
   },
   { id: "sep-16", type: "sep", text: "" },

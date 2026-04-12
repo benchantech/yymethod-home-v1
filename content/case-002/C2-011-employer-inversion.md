@@ -31,7 +31,7 @@ YY's World is the same system designed to scatter rather than to collect. Both a
 
 ## Why-Not
 
-No meaningful alternative was considered. The inversion is not a design choice — it is the founding constraint derived from the purpose of the site. A site that collected reader reasoning while publishing operator reasoning would be the professional model, not the yysworld model. The founding ADR (C2-003, Data Posture) rules this out at the architectural level.
+No meaningful alternative was considered. The inversion is not a design choice — it is the founding constraint derived from the purpose of the site. A site that collected reader reasoning while publishing operator reasoning would be the professional model, not the YY's World model. The founding ADR (C2-003, Data Posture) rules this out at the architectural level.
 
 ---
 

@@ -39,7 +39,7 @@ These are AI's invented distinctions — not the operator's. Cognitive theft is 
 By then the patterns are calcified. The inoculation works at formation stage — before the habits of passive consumption are fully established. Planting the antibody young means it grows with them.
 
 **Why not address adults instead?**
-The professional YY Method addresses adults. YY's World addresses kids. The pipeline is: free first (yysworld), structured later (professional method), by choice, without handcuffs. Both ends of the pipeline are necessary.
+The professional YY Method addresses adults. YY's World addresses kids. The pipeline is: free first (YY's World), structured later (professional method), by choice, without handcuffs. Both ends of the pipeline are necessary.
 
 ---
 
