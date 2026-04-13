@@ -4,7 +4,7 @@ export interface CaseStudy {
   title: string;
   subtitle: string;
   date: string;
-  status: "Complete" | "In Progress" | "Coming Soon" | "Rejected";
+  status: "Complete" | "In Progress" | "Coming Soon" | "Rejected" | "Superseded";
   domains: string[];
   adrCount: number;
   description: string;
@@ -89,13 +89,13 @@ export const caseStudies: CaseStudy[] = [
     title: "YY's World — A YY Method Artifact for Kids",
     subtitle: "Founding architecture · COPPA compliance · stealth inoculation · cognitive theft defense",
     date: "2026-03-30",
-    status: "In Progress",
+    status: "Superseded",
     domains: ["Founding", "Data", "Content", "Philosophy", "Architecture"],
-    adrCount: 23,
+    adrCount: 24,
     description:
-      "The founding architecture of YY's World — a read-only site for kids where YY the stuffed squirrel delivers stealth inoculation against cognitive theft. 23 knowledge artifacts: C2-001–C2-012 preserved as AI Extrapolated scars from the first draft, C2-013–C2-023 operator-supplied reasoning from the corrective interview. The full chain is provable. Provenance flows outward. Nothing returns.",
+      "Superseded 2026-04-13 by yysworld (YY Branching World) — see C2-024. The kids-only, COPPA-by-elimination, dandelion model is abandoned. 24 knowledge artifacts preserved as a scar record: C2-001–C2-012 AI Extrapolated first draft, C2-013–C2-023 operator-supplied corrective reasoning, C2-024 supersession record. YY as protagonist and the Calvin-and-Hobbes model carry into yysworld. The audience restriction and outward-only posture do not.",
     href: "/case-002",
-    tags: ["yys-world", "kids", "coppa", "cognitive-theft", "provenance", "anti-smoothing", "yy", "acorn-economy", "static-site"],
+    tags: ["yys-world", "kids", "coppa", "cognitive-theft", "provenance", "anti-smoothing", "yy", "acorn-economy", "static-site", "superseded"],
   },
   {
     id: "case-001",
