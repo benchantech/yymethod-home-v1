@@ -66,18 +66,37 @@ Volume of plays does not maximize expected score if the plays are not positioned
 
 ## Word Candidates by Theme (Non-Exhaustive)
 
-**Food:** SQUEEZING (Z, Q), MARZIPANS (Z), GLAZING (Z), EQUALIZING (Q, Z), ANALYZING (Z)
-**Transportation:** MOBILIZING (Z), JUNCTIONS (J), MAXIMIZING (X, Z)
-**Science:** OXYPHENBUTAZONE (15L — opportunistic; X, Z, Q), ANALYZING (Z), PARALYZING (Y, Z)
-**General high-value:** EXERCISING (X), REALIZING (Z), SUBJECTS (B+J+X alignment dependent)
+### 9x Plays — Primary Engine
 
-The Z plays are particularly valuable because Z=10 and typically lands usefully in the middle of many common words where it aligns with bonus squares in standard board routing.
+Shorter words (8–12 letters) with high-value tiles that align with bonus squares in a TW–TW lane. These are the default plays.
+
+**Food:** SQUEEZING (Q + Z), MARZIPANS (Z — 4th letter), GLAZING (Z), EQUALIZING (Q, Z), ANALYZING (Z)
+
+**Transportation:** MOBILIZING (Z), JUNCTIONS (J), MAXIMIZING (X, Z)
+
+**Science / General knowledge:** ANALYZING (Z), PARALYZING (Z), EXERCISING (X)
+
+**Summer / outdoors:** BLAZING (Z), GLAZING (Z), MAXIMIZING (X, Z)
+
+**General high-value:** REALIZING (Z), SUBJECTS (J — alignment dependent), JOCKEYING (J)
+
+MARZIPANS is particularly reliable: Z lands at the 4th letter position, creating consistent Double Letter alignment in most lane routing configurations. SQUEEZING carries both Q and Z, making it the highest-potential single 9x play when both premium tiles can be aligned.
+
+### 15-Letter Candidates — Opportunistic 27x Upside Only
+
+These are not the round plan. Per C8-011, they are the bonus track — execute only if the triple lane is clear, the tiles are available, and the theme is defensible before mid-round. Do not design the round around them.
+
+**Letter counts independently verified by manual count.** AI-stated letter counts are unreliable (C8-010): the LLM proposed PREQUALIFICATIONS (16), INSTITUTIONALIZING (18), and DECRIMINALIZATION (16) as 15-letter candidates — all wrong. The three words below were challenged and confirmed.
+
+- **OXYPHENBUTAZONE** — 15 letters ✓ · Key tiles: X, Z, Q · Theme: science / pharmacology
+- **PSYCHOANALYZING** — 15 letters ✓ · Key tile: Z · Theme: science / psychology
+- **REVOLUTIONIZING** — 15 letters ✓ · Key tile: Z · Theme: general; one-sentence connection to most themes is constructible
 
 ---
 
 ## Commit
 
-**Decision:** The 9x + high-value-letter-premium play is the primary scoring engine for this format. Round preparation focuses on identifying the strongest 9x candidate words per theme, understanding where Z/Q/X/J tend to fall within those words, and how to route them through available TW lanes. Two strong 9x plays per round is the target. 27x plays are the bonus track.
+**Decision:** The 9x + high-value-letter-premium play is the primary scoring engine for this format. Round preparation focuses on identifying the strongest 9x candidates per theme (list above), understanding where Z/Q/X/J fall within those words, and routing them through available TW lanes. Two strong 9x plays per round is the target. The 15-letter candidates are held in reserve as 27x upside; they enter the plan only if conditions align before mid-round.
 
 **Confidence:** High. The expected-value calculation strongly favors this approach over 15-letter-first strategy.
 
