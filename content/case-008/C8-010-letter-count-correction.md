@@ -1,61 +1,74 @@
-# C8-010: Correction — Letter Count Discipline and the 15-Letter Word Error
+# C8-010: Correction — AI Miscounted the 15-Letter Words; Operator Challenge Caught It
 **Method:** YY Method™ Home Edition v2.3 — Capture → Why → Why-Not → Commit → Timestamp
 **Status:** Decided — Correction
 **Date:** 2026-04-25
 **Domain:** Analysis
 **Depends On:** None — independent correction record
-**Freshness Boundary:** Permanent scar record. The correction stands regardless of future preparation. Mandatory letter-counting is a discipline that does not expire.
+**Freshness Boundary:** Permanent scar record. LLMs have a documented, persistent weakness with letter counting. The discipline of challenging AI counts does not expire.
 **Source:** Operator reasoning session. 2026-04-25.
 
 ---
 
 ## Capture
 
-During preparation for the tournament, the operator identified a set of candidate words for triple-lane plays — words intended to span two or more premium squares for high multipliers. The candidate set required 15-letter words that could fill an entire row or column on a standard board.
+During AI-assisted preparation, the operator asked an LLM to generate candidate 15-letter words for triple-lane play — words that could fill an entire row or column on a standard 15×15 board. The LLM returned the following words as 15-letter candidates:
 
-The following words were entered into the candidate set under the assumption of 15 letters:
+- **PREQUALIFICATIONS** — stated as 15 letters by the AI. **Actual count: 16.** Disqualified.
+- **INSTITUTIONALIZING** — stated as 15 letters by the AI. **Actual count: 18.** Disqualified.
+- **DECRIMINALIZATION** — stated as 15 letters by the AI. **Actual count: 16.** Disqualified.
 
-- PREQUALIFICATIONS — assumed 15 letters. **Actual count: 16.** Disqualified.
-- INSTITUTIONALIZING — assumed 15 letters. **Actual count: 18.** Disqualified.
-- DECRIMINALIZATION — assumed 15 letters. **Actual count: 16.** Disqualified.
+The operator challenged the AI's counts. The challenges caught the errors before they reached game execution. Without the challenge, these words would have entered the candidate set and failed at the board.
 
-This error recurred across multiple words and multiple preparation sessions. The words were mentally categorized as "long enough for a triple lane" without being explicitly counted.
+Words that were independently verified at exactly 15 letters:
+- OXYPHENBUTAZONE — 15 letters, verified by count.
+- PSYCHOANALYZING — 15 letters, verified by count.
+- REVOLUTIONIZING — 15 letters, verified by count.
 
-Words that were counted and confirmed at 15 letters:
-- OXYPHENBUTAZONE — 15 letters, verified.
-- PSYCHOANALYZING — 15 letters, verified.
-- REVOLUTIONIZING — 15 letters, verified.
+---
+
+## Why This Is an AI Error, Not an Operator Error
+
+The error class here is not "operator failed to count carefully." It is "AI returned confident, incorrect counts and the operator's challenge process is what caught it."
+
+Large language models do not count letters by enumeration. They process text as tokens — chunks of characters that often correspond to subwords rather than individual letters. When asked "how many letters does PREQUALIFICATIONS have," an LLM does not spell the word out and count; it pattern-matches against training data and produces a number that feels associatively correct. The number is often wrong, and crucially, the model produces it with the same confidence as a factually grounded answer. There is no uncertainty signal that indicates "I'm guessing here."
+
+This failure mode is well-documented and consistent. It is not a one-time hallucination on an unusual word — it recurs across multiple words, multiple prompts, and multiple sessions. An LLM that miscounts one long word will miscount others. The errors are not random; they cluster around words that are plausibly close to the target length (16 is close to 15; the model isn't off by 10, it's off by 1 or 2 in a way that looks credible).
+
+**The implications for any AI-assisted preparation workflow:**
+- AI-generated letter counts are unreliable by default.
+- The unreliability does not announce itself — the AI sounds certain.
+- The only reliable path is to treat every AI-stated letter count as unverified until independently confirmed.
 
 ---
 
 ## Why
 
-The error is significant enough to warrant a dedicated ADR because it recurred. A single miscounting incident is a one-time slip. A systematic pattern of assuming word lengths without verification is a bias — specifically, a tendency to overestimate the length of long words by pattern-matching on "feels like 15" rather than counting.
+The error recurred. A single miscounted word could be a fluke. Three miscounted words across the same preparation session confirms a systematic weakness, not an edge case. Any workflow that accepts AI letter counts without verification will be contaminated by this error repeatedly.
 
-The consequences of this error in practice: a word carried through preparation and into a game situation that turns out to be 16 letters does not fit the 15-tile board row. The play fails at execution. Time is lost. The fallback position may not be ready because the failed play was the primary plan. Under time pressure, this kind of execution failure is costly.
+The consequences in game execution are severe. A 16-letter word that was prepared as a 15-letter candidate does not fit the board row. The play is impossible. Time is consumed discovering the failure. The fallback position may not exist because the preparation was built around the failed word. Under the 20-minute time pressure of the actual game, discovering mid-round that your primary play is one tile too long is a significant and avoidable loss.
 
-The correction is simple: mandatory counting. Every word in the candidate set for premium-lane strategy must have its letters counted explicitly and verified before entry into the set. This is a discipline rule, not a suggestion.
+The operator's challenge instinct — "let me verify that count" — was the correct behavior. This ADR exists to encode that instinct as a standing rule rather than an ad-hoc impulse, because the next time an LLM provides a word count, the correct behavior is the same: challenge it, verify it independently, never accept it as stated.
 
 ---
 
 ## Why-Not
 
-**Why not just verify at game time rather than in preparation?**
-Game time is the worst moment to count letters. You are under time pressure, mid-board, tracking multiple decisions simultaneously. The counting should happen in the quiet of preparation when there is no cost to getting it right slowly. Deferring verification to game time produces the same error under worse conditions.
+**Why not just use AI for initial suggestions and manually verify everything before use?**
+Yes — that is exactly the corrected process. The ADR does not reject AI assistance in preparation; it rejects accepting AI-stated letter counts without independent verification. AI is useful for generating candidate words across themes and tile combinations. It is unreliable for verifying that those words meet the 15-letter constraint. The workflow is: AI for generation, human (or dictionary) for verification.
 
-**Why not just use a dictionary or word-checking tool during preparation?**
-Using a tool is appropriate and is what the corrected process should do. The point is that the process that was used — mental classification without explicit verification — is the one that produced the repeated error. The corrected process is: use the tool, count the letters, mark them as verified before they enter the candidate set. The tool prevents the bias from expressing.
+**Why not prompt the AI more carefully to get accurate counts?**
+Constraining the prompt reduces the error rate somewhat but does not eliminate it. An LLM asked "give me only words that are exactly 15 letters, and count each one carefully before responding" will still miscount on some fraction of words. The constraint helps; it does not make AI counting reliable. The only ground truth for letter count is manual enumeration or a deterministic tool. Prompt engineering is a supplement to verification, not a replacement for it.
 
-**Why not just memorize fewer words and focus on counting accuracy for a smaller set?**
-Smaller set with accurate counting is better than a larger set with unverified entries. The correction is not primarily about set size — it is about the verification step. The set can be as large as preparation time allows, provided each entry is verified.
+**Why not accept a small error rate as tolerable since manual verification catches it anyway?**
+The error rate is not small — it is systematic. And "manual verification catches it anyway" is only true if the discipline of always challenging is maintained. The failure mode this ADR guards against is the session where the operator skips the verification step because the AI sounded confident. That is exactly when the wrong word enters the candidate set. The discipline must be unconditional: challenge every AI-stated count, every time, regardless of how confident the AI appears.
 
 ---
 
 ## Commit
 
-**Decision:** Mandatory letter-counting is established as a preparation discipline. No word enters the premium-lane candidate set without explicit letter verification (counted, or dictionary-confirmed). PREQUALIFICATIONS, INSTITUTIONALIZING, and DECRIMINALIZATION are removed from all candidate lists. OXYPHENBUTAZONE, PSYCHOANALYZING, and REVOLUTIONIZING are confirmed at 15 letters. This ADR is preserved as a scar record: the error recurred, which means the tendency is systematic, which means the correction must be explicit.
+**Decision:** AI-stated letter counts are treated as unverified until independently confirmed by manual count or dictionary lookup. No word enters the premium-lane candidate set on the basis of an AI count alone. PREQUALIFICATIONS (16), INSTITUTIONALIZING (18), and DECRIMINALIZATION (16) are removed permanently. OXYPHENBUTAZONE (15), PSYCHOANALYZING (15), and REVOLUTIONIZING (15) are confirmed. The operator's challenge process caught the errors; the discipline is to make that challenge process mandatory and automatic rather than ad-hoc.
 
-**Confidence:** High. The discipline is simple and the error is well-characterized.
+**Confidence:** High. The LLM counting failure is documented, systematic, and the mitigation is straightforward.
 
 ---
 
