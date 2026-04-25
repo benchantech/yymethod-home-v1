@@ -61,6 +61,7 @@ C8-010  Correction — Letter Count Discipline (SCAR)                        [IN
                 └── C8-014  Mid-Round Pivot Rule                           [depends on C8-013]
                 └── C8-015  Physical Letter Staging                        [depends on C8-013]
             └── C8-016  Letter Buying — High-EV Alignment Only            [depends on C8-012]
+            └── C8-029  Letter Buying as a Charitable Multiplier           [depends on C8-016, C8-027]
 
 C8-003  Emotional Calibration                                               [see Framing branch]
 C8-023  Commit Not to Relitigate the Prior Year                             [depends on C8-003, C8-008]
@@ -100,6 +101,7 @@ C8-023  Commit Not to Relitigate the Prior Year                             [dep
 | C8-026 | Clean Victory — Win Under Objective Constraints | Posture | Decided | Permanent |
 | C8-027 | Play the Actual Game Being Run, Not the Idealized Version | Posture | Decided | Active |
 | C8-028 | Final Operating Posture for the Next Tournament | Posture | Decided | Active — update after each tournament |
+| C8-029 | Letter Buying as a Charitable Multiplier — Competitive Inspiration Without Compulsion | Posture | Decided | Permanent |
 
 ---
 

@@ -21,9 +21,9 @@ export const caseStudies: CaseStudy[] = [
     date: "2026-04-25",
     status: "Complete",
     domains: ["Framing", "Integrity", "Analysis", "Strategy", "Execution", "Posture"],
-    adrCount: 28,
+    adrCount: 29,
     description:
-      "28 ADRs documenting a Scrabble-variant tournament strategy overhaul after finishing 2nd despite extensive preparation and a record of 3 wins in 4 prior years. The case separates competitive frustration from structural scoring analysis, establishes premium square exhaustion as the central integrity invariant, corrects a systematic letter-count error, reframes 15-letter words from core strategy to opportunistic upside, builds a 9x expected-value scoring engine, and defines the operational posture for pre-clarifying rules, proposing winning board display, and winning clean. Two explicit rejections: strict theme enforcement and 15-letter-first strategy. The board should speak.",
+      "29 ADRs documenting a Scrabble-variant tournament strategy overhaul after finishing 2nd despite extensive preparation and a record of 3 wins in 4 prior years. The case separates competitive frustration from structural scoring analysis, establishes premium square exhaustion as the central integrity invariant, corrects a systematic letter-count error, reframes 15-letter words from core strategy to opportunistic upside, builds a 9x expected-value scoring engine, and defines the operational posture for pre-clarifying rules, proposing winning board display, and winning clean. Includes a charitable multiplier ADR on how competitive letter buying can inspire — not compel — additional donations. Two explicit rejections: strict theme enforcement and 15-letter-first strategy. The board should speak.",
     href: "/case-008",
     tags: ["scrabble-variant", "scoring-integrity", "premium-square-exhaustion", "expected-value", "9x-strategy", "competitive-posture", "clean-play", "judgment-under-constraint", "emotional-calibration", "letter-count-correction"],
   },

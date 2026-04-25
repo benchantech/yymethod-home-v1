@@ -40,6 +40,7 @@ const ADR_FILE_MAP: Record<string, string> = {
   "C8-026": "C8-026-clean-victory.md",
   "C8-027": "C8-027-play-actual-game.md",
   "C8-028": "C8-028-final-operating-posture.md",
+  "C8-029": "C8-029-letter-buying-charitable-multiplier.md",
 };
 
 async function getADRRaw(adrId: string): Promise<string | null> {

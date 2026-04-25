@@ -410,6 +410,20 @@ export const adrsCase008: ADRCase008[] = [
     summary: "The complete operating posture: (1) Before play — ask the organizer to clarify premium square rules and theme standard; propose winning board display as a celebration mechanic. (2) During tile selection — use physical staging to externalize working memory; identify primary 9x play and secondary fallback simultaneously. (3) During board construction — apply the pivot rule at the mid-round mark; apply the one-sentence theme test before every placement; speak in the moment if scoring appears inconsistent with the rules. (4) At scoring — verify own board is clean before submitting; confirm every premium multiplier was applied only once. (5) At results — accept clean defeat without complaint; display clean win with pride. The posture is aggressive competitive play inside clean execution. Preparation, word-game calibration, scoring geometry knowledge, and tile-staging discipline should produce the competitive edge. The board should speak for itself.",
     tags: ["final-posture", "operating-checklist", "before-during-after", "aggressive-clean-play", "board-should-speak", "tournament-execution"],
   },
+  {
+    id: "C8-029",
+    number: "029",
+    title: "Letter Buying as a Charitable Multiplier — Competitive Inspiration Without Compulsion",
+    status: "Decided",
+    freshness: "Permanent",
+    freshnessNote: "Permanent. The principle — that visible competitive enthusiasm in a charity event can benefit the organization without coercing participants — is stable across iterations of this format.",
+    date: "2026-04-25",
+    domain: "posture",
+    position: "Derived",
+    dependsOn: ["C8-016", "C8-027"],
+    summary: "In a charity event, every letter purchased at $5 is a direct contribution to the organization's fundraising goal. When the operator buys letters strategically and scores well, the visible outcome — a high-scoring board, an enthusiastic account of how a Z tile was worth every penny — can inspire other participants to buy letters themselves. This is a genuine charitable multiplier: competitive play raises the floor of total donations. The distinction that governs the social execution is between inspiration and compulsion. Enthusiastically using the mechanic and sharing the enjoyment of it is inspiration; pressuring other players to buy letters to remain competitive is coercion, which undermines the voluntary spirit of the event. The correct posture is to play with visible enthusiasm for the letter-buying mechanic, offer commentary that invites without pressuring, and let the table's energy do the rest.",
+    tags: ["charitable-multiplier", "letter-buying-cascade", "inspiration-not-compulsion", "charity-context", "sportsmanship", "fundraising-benefit", "voluntary-spirit"],
+  },
 ];
 
 export function getADRCase008(id: string): ADRCase008 | undefined {
