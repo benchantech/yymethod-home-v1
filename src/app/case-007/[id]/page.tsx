@@ -20,6 +20,11 @@ const ADR_FILE_MAP: Record<string, string> = {
   "C7-006": "C7-006-reputation-debt-nonrecoverable-liability.md",
   "C7-007": "C7-007-prior-data-as-acquisition-independent-moat.md",
   "C7-008": "C7-008-publish-reasoning-protect-deployment.md",
+  "C7-009": "C7-009-acquisition-rejection-final.md",
+  "C7-010": "C7-010-operator-role-transition.md",
+  "C7-011": "C7-011-advisory-time-boundary.md",
+  "C7-012": "C7-012-family-talent-channel.md",
+  "C7-013": "C7-013-partner-control-build-independence.md",
 };
 
 async function getADRRaw(adrId: string): Promise<string | null> {
