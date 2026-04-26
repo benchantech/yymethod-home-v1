@@ -1,4 +1,4 @@
-export type ADRStatus = "Decided" | "Decided — Rejected" | "Decided — Correction" | "Decided — Partially Corrected" | "Pending" | "Permanent Record" | "AI Extrapolated";
+export type ADRStatus = "Decided" | "Decided — Rejected" | "Decided — Superseded" | "Decided — Correction" | "Decided — Partially Corrected" | "Pending" | "Permanent Record" | "AI Extrapolated";
 
 export type ADRFreshness = "Active" | "Executed" | "Pending" | "Permanent";
 
@@ -399,6 +399,7 @@ export function getADRsByStatus(status: ADRStatus): ADR[] {
 export const statusColor: Record<ADRStatus, string> = {
   "Decided": "bg-emerald-500/15 text-emerald-400 border-emerald-500/20",
   "Decided — Rejected": "bg-red-500/15 text-red-400 border-red-500/20",
+  "Decided — Superseded": "bg-slate-500/15 text-slate-400 border-slate-500/20",
   "Decided — Correction": "bg-amber-500/15 text-amber-400 border-amber-500/20",
   "Decided — Partially Corrected": "bg-orange-500/15 text-orange-400 border-orange-500/20",
   "Pending": "bg-blue-500/15 text-blue-400 border-blue-500/20",

@@ -1,10 +1,10 @@
 # C5-009: Wait One Year — Accumulate Until You Answer to No One
 **Method:** YY Method™ Home Edition v2.3 — Capture → Why → Why-Not → Commit → Timestamp
-**Status:** Decided
+**Status:** Decided — Superseded
 **Date:** 2026-04-05
 **Domain:** Resolution
 **Depends On:** C5-002, C5-003, C5-007, C5-008
-**Freshness Boundary:** Active. Reverify at the one-year mark or if accumulation pace changes materially.
+**Freshness Boundary:** Superseded by C5-016 (2026-04-26). The wait served its purpose. The resolution is the default stay, not a move-after-accumulation. C5-016 explicitly notes this ADR already served its function.
 **Source:** Operator oral decompression. 2026-04-05.
 
 ---

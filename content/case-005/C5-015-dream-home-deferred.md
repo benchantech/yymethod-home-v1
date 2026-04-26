@@ -1,10 +1,10 @@
 # C5-015: Dream Home Deferred — Optimize the Current Phase, Build Toward the Aging-in-Place Phase
 **Method:** YY Method™ Home Edition v2.3 — Capture → Why → Why-Not → Commit → Timestamp
-**Status:** Decided
+**Status:** Decided — Superseded
 **Date:** 2026-04-11
 **Domain:** Resolution
 **Depends On:** C5-012, C5-013, C5-014
-**Freshness Boundary:** Active. Reverify if a unicorn property appears, if the current home stops working materially, or as the family approaches the next life-phase transition.
+**Freshness Boundary:** Superseded by C5-016, C5-017 (2026-04-26). The deferral logic and sequencing reasoning were absorbed into the formal close-out. The unicorn gate and reopen triggers replace the open-ended "when the time is right" framing.
 **Source:** Operator oral decompression. 2026-04-11.
 
 ---

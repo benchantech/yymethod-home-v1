@@ -1,10 +1,10 @@
 # C5-007: Rent First Path — De-Risk Alignment and Sidestep the Funding Trilemma
 **Method:** YY Method™ Home Edition v2.3 — Capture → Why → Why-Not → Commit → Timestamp
-**Status:** Decided
+**Status:** Decided — Superseded
 **Date:** 2026-04-05
 **Domain:** Paths Considered
 **Depends On:** C5-002, C5-003, C5-006
-**Freshness Boundary:** Active. Remains viable until the decision to buy is made or conditions change.
+**Freshness Boundary:** Superseded by C5-016, C5-017, C5-020 (2026-04-26). The active search is closed. Any future move requires the unicorn gate and non-forced financing. This was a valid exploration path; superseded by the formal close-out decision.
 **Source:** Operator oral decompression. 2026-04-05.
 
 ---

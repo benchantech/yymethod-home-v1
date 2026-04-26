@@ -1,10 +1,10 @@
 # C5-012: Intentional Stay — Current Home Wins Unless a Unicorn Appears
 **Method:** YY Method™ Home Edition v2.3 — Capture → Why → Why-Not → Commit → Timestamp
-**Status:** Decided
+**Status:** Decided — Superseded
 **Date:** 2026-04-11
 **Domain:** Resolution
 **Depends On:** C5-002, C5-003, C5-005, C5-009, C5-010
-**Freshness Boundary:** Active. Reverify if family constraints change materially, the school situation degrades, or a property appears that delivers multiple first-order gains simultaneously.
+**Freshness Boundary:** Superseded by C5-016, C5-017 (2026-04-26). C5-016 formalized and closed the decision. The open-market posture and "continue exploring" clause in this ADR are replaced by the default stay and unicorn gate structure.
 **Source:** Operator oral decompression. 2026-04-11.
 
 ---

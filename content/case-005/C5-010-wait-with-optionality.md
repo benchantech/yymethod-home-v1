@@ -1,10 +1,10 @@
 # C5-010: Wait With Optionality — Active Readiness, No Settling
 **Method:** YY Method™ Home Edition v2.3 — Capture → Why → Why-Not → Commit → Timestamp
-**Status:** Decided
+**Status:** Decided — Superseded
 **Date:** 2026-04-05
 **Domain:** Resolution
 **Depends On:** C5-006, C5-007, C5-008, C5-009
-**Freshness Boundary:** Active. This is the live operating decision. Re-evaluate at the one-year mark.
+**Freshness Boundary:** Superseded by C5-016 (2026-04-26). Was the live operating posture during the evaluation period. C5-016 formally closed the search and replaced active readiness with the default stay decision.
 **Source:** Operator oral decompression. 2026-04-05.
 
 ---
