@@ -4,7 +4,7 @@
 **Date:** 2026-04-11
 **Domain:** Resolution
 **Depends On:** C5-010, C5-012
-**Freshness Boundary:** Active. Reverify if the household returns to an active move window or if market conditions change enough to make buying near-term again.
+**Freshness Boundary:** Active under the default stay posture (C5-016). Blueprint extraction remains the correct function. The 'active move window' framing is replaced by the unicorn gate (C5-017) — open houses inform the blueprint; they do not create purchase pressure.
 **Source:** Operator oral decompression. 2026-04-11.
 
 ---

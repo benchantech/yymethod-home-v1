@@ -4,7 +4,7 @@
 **Date:** 2026-04-05
 **Domain:** Paths Considered
 **Depends On:** C5-001, C5-005
-**Freshness Boundary:** Active. Reverify when actual tenants are secured and operational details are live.
+**Freshness Boundary:** Active. The REPS rejection is permanent. The rental strategy (property manager) activates only if the unicorn gate triggers a move (C5-017). Under the default stay (C5-016), no tenants are imminent.
 **Source:** Operator oral decompression. 2026-04-05.
 
 ---

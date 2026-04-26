@@ -4,7 +4,7 @@
 **Date:** 2026-04-05
 **Domain:** Paths Considered
 **Depends On:** C5-002, C5-003
-**Freshness Boundary:** Active. Reverify if one path becomes foreclosed by circumstances or if financial constraints shift materially.
+**Freshness Boundary:** Active. The optionality framework survives and directly informs the unicorn gate (C5-017) and non-forced financing gate (C5-020). Reverify if a viable future is foreclosed by external circumstances.
 **Source:** Operator oral decompression. 2026-04-05.
 
 ---

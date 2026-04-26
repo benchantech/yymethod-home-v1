@@ -1,10 +1,10 @@
 # C5-001: Initial Idea — Upgrade Home, Rent Current to Trusted Tenants
 **Method:** YY Method™ Home Edition v2.3 — Capture → Why → Why-Not → Commit → Timestamp
-**Status:** Decided
+**Status:** Decided — Partially Corrected
 **Date:** 2026-04-05
 **Domain:** Framing
 **Depends On:** None — foundational premise
-**Freshness Boundary:** Active. Expires if the trusted tenants are no longer suitable or if the upgrade direction changes materially.
+**Freshness Boundary:** Partially corrected by C5-016 (2026-04-26). The 'keep current as anchor' premise was correct and formalized in the default stay. The 'explore upgrade' direction was superseded. Preserved as the historical record of how the case began.
 **Source:** Operator oral decompression. 2026-04-05.
 
 ---
