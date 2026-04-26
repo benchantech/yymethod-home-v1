@@ -19,13 +19,14 @@ The standard 9x lane runs from an outer Triple Word square to an inner Triple Wo
 
 Adding a high-value tile on a Double Letter square within the word: the tile contributes (face value × 2) to the word's base value before the 9x multiplier applies.
 
-**Example — SQUEEZING on a 9x lane with Z on Double Letter:**
+**Example — SQUEEZING on a 9x lane with Z on Double Letter (Q at face value):**
 - S(1) + Q(10) + U(1) + E(1) + E(1) + Z(10×2=20) + I(1) + N(1) + G(2) = 38 base value
-- 38 × 9 = 342 points from that single play
+- 38 × 9 = hundreds of points from that single play
+- If Q also lands on a Double Letter square, base rises to 48 × 9 = still hundreds of points, higher still
 
 **Example — MARZIPANS on a 9x lane with Z on Double Letter:**
 - M(3) + A(1) + R(1) + Z(10×2=20) + I(1) + P(3) + A(1) + N(1) + S(1) = 32 base value
-- 32 × 9 = 288 points
+- 32 × 9 = hundreds of points from that single play
 
 Two such plays in a round: 400–700 points from primary plays alone, before standard board scoring accumulates. This is a realistic target, not a theoretical ceiling.
 
@@ -86,7 +87,7 @@ MARZIPANS is particularly reliable: Z lands at the 4th letter position, creating
 
 These are not the round plan. Per C8-011, they are the bonus track — execute only if the triple lane is clear, the tiles are available, and the theme is defensible before mid-round. Do not design the round around them.
 
-**Letter counts independently verified by manual count.** AI-stated letter counts are unreliable (C8-010): the LLM proposed PREQUALIFICATIONS (16), INSTITUTIONALIZING (18), and DECRIMINALIZATION (16) as 15-letter candidates — all wrong. The three words below were challenged and confirmed.
+**Letter counts independently verified by manual count.** AI-stated letter counts are unreliable (C8-010): the LLM proposed PREQUALIFICATIONS (17), INSTITUTIONALIZING (18), and DECRIMINALIZATION (17) as 15-letter candidates — all wrong. The three words below were challenged and confirmed.
 
 - **OXYPHENBUTAZONE** — 15 letters ✓ · Key tiles: X, Z, Q · Theme: science / pharmacology
 - **PSYCHOANALYZING** — 15 letters ✓ · Key tile: Z · Theme: science / psychology

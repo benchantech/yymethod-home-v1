@@ -13,9 +13,9 @@
 
 During AI-assisted preparation, the operator asked an LLM to generate candidate 15-letter words for triple-lane play — words that could fill an entire row or column on a standard 15×15 board. The LLM returned the following words as 15-letter candidates:
 
-- **PREQUALIFICATIONS** — stated as 15 letters by the AI. **Actual count: 16.** Disqualified.
+- **PREQUALIFICATIONS** — stated as 15 letters by the AI. **Actual count: 17.** Disqualified.
 - **INSTITUTIONALIZING** — stated as 15 letters by the AI. **Actual count: 18.** Disqualified.
-- **DECRIMINALIZATION** — stated as 15 letters by the AI. **Actual count: 16.** Disqualified.
+- **DECRIMINALIZATION** — stated as 15 letters by the AI. **Actual count: 17.** Disqualified.
 
 The operator challenged the AI's counts. The challenges caught the errors before they reached game execution. Without the challenge, these words would have entered the candidate set and failed at the board.
 
@@ -23,6 +23,8 @@ Words that were independently verified at exactly 15 letters:
 - OXYPHENBUTAZONE — 15 letters, verified by count.
 - PSYCHOANALYZING — 15 letters, verified by count.
 - REVOLUTIONIZING — 15 letters, verified by count.
+
+**Meta-note:** The first version of this ADR recorded PREQUALIFICATIONS and DECRIMINALIZATION as 16 letters. They are 17. An ADR about AI miscounting letters contained an AI letter-count error, caught by the operator on review. The correction is preserved here because it is a perfect illustration of the ADR's own argument: AI letter counts require challenge every time, including in the documents that document the discipline.
 
 ---
 
@@ -32,7 +34,7 @@ The error class here is not "operator failed to count carefully." It is "AI retu
 
 Large language models do not count letters by enumeration. They process text as tokens — chunks of characters that often correspond to subwords rather than individual letters. When asked "how many letters does PREQUALIFICATIONS have," an LLM does not spell the word out and count; it pattern-matches against training data and produces a number that feels associatively correct. The number is often wrong, and crucially, the model produces it with the same confidence as a factually grounded answer. There is no uncertainty signal that indicates "I'm guessing here."
 
-This failure mode is well-documented and consistent. It is not a one-time hallucination on an unusual word — it recurs across multiple words, multiple prompts, and multiple sessions. An LLM that miscounts one long word will miscount others. The errors are not random; they cluster around words that are plausibly close to the target length (16 is close to 15; the model isn't off by 10, it's off by 1 or 2 in a way that looks credible).
+This failure mode is well-documented and consistent. It is not a one-time hallucination on an unusual word — it recurs across multiple words, multiple prompts, and multiple sessions. An LLM that miscounts one long word will miscount others. The errors are not random; they cluster around words that are plausibly close to the target length (17 is close to 15; the model isn't off by 10, it's off by 2 in a way that looks credible).
 
 **The implications for any AI-assisted preparation workflow:**
 - AI-generated letter counts are unreliable by default.
@@ -45,7 +47,7 @@ This failure mode is well-documented and consistent. It is not a one-time halluc
 
 The error recurred. A single miscounted word could be a fluke. Three miscounted words across the same preparation session confirms a systematic weakness, not an edge case. Any workflow that accepts AI letter counts without verification will be contaminated by this error repeatedly.
 
-The consequences in game execution are severe. A 16-letter word that was prepared as a 15-letter candidate does not fit the board row. The play is impossible. Time is consumed discovering the failure. The fallback position may not exist because the preparation was built around the failed word. Under the 20-minute time pressure of the actual game, discovering mid-round that your primary play is one tile too long is a significant and avoidable loss.
+The consequences in game execution are severe. A 17-letter word that was prepared as a 15-letter candidate does not fit the board row. The play is impossible. Time is consumed discovering the failure. The fallback position may not exist because the preparation was built around the failed word. Under the 20-minute time pressure of the actual game, discovering mid-round that your primary play is two tiles too long is a significant and avoidable loss.
 
 The operator's challenge instinct — "let me verify that count" — was the correct behavior. This ADR exists to encode that instinct as a standing rule rather than an ad-hoc impulse, because the next time an LLM provides a word count, the correct behavior is the same: challenge it, verify it independently, never accept it as stated.
 
@@ -66,7 +68,7 @@ The error rate is not small — it is systematic. And "manual verification catch
 
 ## Commit
 
-**Decision:** AI-stated letter counts are treated as unverified until independently confirmed by manual count or dictionary lookup. No word enters the premium-lane candidate set on the basis of an AI count alone. PREQUALIFICATIONS (16), INSTITUTIONALIZING (18), and DECRIMINALIZATION (16) are removed permanently. OXYPHENBUTAZONE (15), PSYCHOANALYZING (15), and REVOLUTIONIZING (15) are confirmed. The operator's challenge process caught the errors; the discipline is to make that challenge process mandatory and automatic rather than ad-hoc.
+**Decision:** AI-stated letter counts are treated as unverified until independently confirmed by manual count or dictionary lookup. No word enters the premium-lane candidate set on the basis of an AI count alone. PREQUALIFICATIONS (17), INSTITUTIONALIZING (18), and DECRIMINALIZATION (17) are removed permanently. OXYPHENBUTAZONE (15), PSYCHOANALYZING (15), and REVOLUTIONIZING (15) are confirmed. The operator's challenge process caught the errors; the discipline is to make that challenge process mandatory and automatic rather than ad-hoc.
 
 **Confidence:** High. The LLM counting failure is documented, systematic, and the mitigation is straightforward.
 
