@@ -17,10 +17,11 @@ export function personSchema() {
     name: "Ben Chan",
     url: "https://benchantech.com",
     sameAs: [
+      "https://benchantech.com",
       "https://yymethod.com",
       "https://home.yymethod.com",
       "https://yyand.me",
-      "https://benchantech.com",
+      "https://yysworld.com",
       "https://www.youtube.com/@benchanviolin",
       "https://benchanviolin.substack.com",
     ],
