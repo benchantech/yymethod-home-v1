@@ -7,11 +7,11 @@ import { statusColor } from "@/lib/adrs";
 
 export const metadata: Metadata = {
   title: "Case 008: Scrabblerama Scoring Integrity — YY Method™ Home Edition",
-  description: "28 ADRs documenting competitive strategy, rule ambiguity, and clean execution under constraint in a Scrabble-variant tournament: premium square integrity, expected-value scoring strategy, emotional calibration, and the operating posture for winning clean.",
+  description: "36 ADRs documenting competitive strategy, rule ambiguity, and clean execution under constraint in a Scrabble-variant tournament: premium square integrity, expected-value scoring strategy, emotional calibration, solvability finding, role transition, and the principle of participation in systems you can solve.",
   authors: [{ name: "Ben Chan" }],
   openGraph: {
     title: "Case 008: Scrabblerama Scoring Integrity — YY Method™ Home Edition",
-    description: "28 ADRs: scoring integrity analysis, 9x strategy engine, 15-letter word correction, theme gray-zone reframe, pre-clarification posture, and the commitment to play a game whose board can be proudly displayed.",
+    description: "36 ADRs: scoring integrity, 9x strategy engine, letter-count correction, theme reframe, pre-clarification posture, clean-play standards, solvability finding, role transition from competitor to coach, and the generalizable principle on participation in systems you can solve.",
     url: "https://home.yymethod.com/case-008",
     siteName: "YY Method™ Home Edition",
     type: "article",

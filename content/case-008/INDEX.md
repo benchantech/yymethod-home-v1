@@ -65,6 +65,16 @@ C8-010  Correction — Letter Count Discipline (SCAR)                        [IN
 
 C8-003  Emotional Calibration                                               [see Framing branch]
 C8-023  Commit Not to Relitigate the Prior Year                             [depends on C8-003, C8-008]
+            └── C8-030  Prior Anomaly Resolved — Rule Clarification Closes the Integrity Question  [depends on C8-004, C8-005, C8-023]
+
+C8-009  Personal 1,500-Point Score as Calibrated Benchmark                  [see Analysis branch]
+C8-012  9x + High-Value Letter as the Practical Scoring Engine              [see Strategy branch]
+    └── C8-031  Solvability Finding — Near-Deterministic Dominance          [depends on C8-009, C8-012]
+        └── C8-032  No Intentional Underperformance                         [depends on C8-031]
+            └── C8-033  Full Optimization Disclosure Rejected               [depends on C8-031, C8-032]
+                └── C8-034  Role Transition — Competitor to Coach           [depends on C8-032, C8-033]
+                    └── C8-035  Public and Private Reasoning Layers         [depends on C8-034]
+                        └── C8-036  Final Principle — Solvable Systems      [depends on C8-034, C8-035]
 ```
 
 ---
@@ -102,6 +112,13 @@ C8-023  Commit Not to Relitigate the Prior Year                             [dep
 | C8-027 | Play the Actual Game Being Run, Not the Idealized Version | Posture | Decided | Active |
 | C8-028 | Final Operating Posture for the Next Tournament | Posture | Decided | Active — update after each tournament |
 | C8-029 | Letter Buying as a Charitable Multiplier — Competitive Inspiration Without Compulsion | Posture | Decided | Permanent |
+| C8-030 | Prior Anomaly Resolved — Rule Clarification as Retroactive Structural Evidence | Integrity | Decided | Permanent |
+| C8-031 | Solvability Finding — Near-Deterministic Dominance Under Full Optimization | Analysis | Decided | Permanent |
+| C8-032 | No Intentional Underperformance — The Integrity Constraint Is Symmetric | Posture | Decided | Permanent |
+| C8-033 | Full Optimization Disclosure Rejected — Preserving the Event's Accessibility | Posture | Decided | Permanent |
+| C8-034 | Role Transition — From Direct Competitor to Coach | Posture | Decided | Active — revisit after next event |
+| C8-035 | Public and Private Reasoning Layers — The Abstraction Architecture of This Case | Posture | Decided | Permanent |
+| C8-036 | Final Principle — On Participation in Systems You Can Solve | Posture | Decided | Permanent |
 
 ---
 

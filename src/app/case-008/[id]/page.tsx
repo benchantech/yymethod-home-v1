@@ -41,6 +41,13 @@ const ADR_FILE_MAP: Record<string, string> = {
   "C8-027": "C8-027-play-actual-game.md",
   "C8-028": "C8-028-final-operating-posture.md",
   "C8-029": "C8-029-letter-buying-charitable-multiplier.md",
+  "C8-030": "C8-030-prior-anomaly-resolved.md",
+  "C8-031": "C8-031-solvability-finding.md",
+  "C8-032": "C8-032-no-intentional-underperformance.md",
+  "C8-033": "C8-033-optimization-disclosure-rejected.md",
+  "C8-034": "C8-034-role-transition-competitor-to-coach.md",
+  "C8-035": "C8-035-public-private-reasoning-layers.md",
+  "C8-036": "C8-036-final-principle.md",
 };
 
 async function getADRRaw(adrId: string): Promise<string | null> {
