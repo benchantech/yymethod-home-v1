@@ -54,9 +54,11 @@ Trust that rules will be enforced is not a substitute for confirming what the ru
 
 ## Commit
 
-**Decision:** Before play begins at every tournament: ask about premium square usage (confirming the exhaustion rule), ask about theme standard (confirming what level of connection is acceptable), and ask about any other rule that creates uncertainty. Ask as clarification, not challenge. Record the answer. Apply it during play. Speak in the moment if a rule confirmed before play appears to be violated.
+**Decision:** Before play begins at every tournament: confirm premium square usage (exhaustion rule), confirm theme standard, and confirm any other rule creating uncertainty. Ask as clarification, not challenge. Record the answer. Apply it during play. Speak in the moment if a rule confirmed before play appears to be violated.
 
-**Confidence:** High. This is the single most direct correction to the identified gap from the prior year.
+**Post-event update:** For the current year, the organizers proactively addressed the premium square gap via a scoring guide presented before play — an initiative the operator infers was prompted by the post-event email (C8-023). The specific gap this ADR targeted was resolved not by the operator's pre-play asking but by the organizers' proactive improvement. The principle remains valid for future iterations where such guidance may not be provided: if the organizers' scoring guide is absent or ambiguous, the operator asks. If it is present and clear, the operator acknowledges it and applies it. The pre-clarification posture now means verifying the existing guidance, not necessarily asking from scratch.
+
+**Confidence:** High. The principle does not expire. Its form adapts to whether the organizers have already addressed it.
 
 ---
 

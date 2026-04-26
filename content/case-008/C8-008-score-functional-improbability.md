@@ -1,63 +1,80 @@
-# C8-008: Score Above 2,500 as Functionally Improbable Under Event Conditions
+# C8-008: Score Above 2,500 as Functionally Improbable for Unprepared Participants
 **Method:** YY Method™ Home Edition v2.3 — Capture → Why → Why-Not → Commit → Timestamp
-**Status:** Decided
+**Status:** Decided — Partially Corrected
 **Date:** 2026-04-25
 **Domain:** Integrity
 **Depends On:** C8-006, C8-007
 **Freshness Boundary:** Active. Reverify if the game format changes significantly — extended time limit, formal scoring referee, pre-registration of word lists — any of which would change the plausibility ceiling.
-**Source:** Operator reasoning session. 2026-04-25.
+**Source:** Operator reasoning session. 2026-04-25. Partially corrected post-event.
+
+---
+
+## Correction Notice
+
+The original version of this ADR used the operator's prior benchmark of approximately 1,500 as "the ceiling of what systematic preparation produces," and concluded that a 1,000-point gap above it was the empirical anchor for functional improbability. This framing was partially wrong.
+
+The current year's result (C8-031) demonstrated that the operator, applying the Boggle/Scrabble skill combination with 27x plays on every board, produced scores significantly above the prior 1,500 benchmark under fully rule-compliant play. The 1,500 benchmark was the ceiling of the *prior* preparation approach — one that incorrectly treated 15-letter words as core strategy and did not yet leverage the combined technique. It was not the ceiling of rule-compliant play by a prepared participant.
+
+The corrected claim: scores above 2,500 are functionally improbable for **unprepared participants** who lack the specific Boggle/Scrabble skill combination. They are achievable under proper rules for a participant who has both. The prior year's anomalous result was not produced by a participant with that combination — which makes the charitable hypothesis (accidental error, not extraordinary skill) more compelling, not less.
 
 ---
 
 ## Capture
 
-A score above 2,500 was produced at the prior year's tournament. The question is how to characterize this score given the analysis in C8-005 through C8-007.
+A score above 2,500 was produced at the prior year's tournament. The question is how to characterize this score given the analysis in C8-005 through C8-007, and given what the current year's result revealed.
 
 The characterization options are:
 
-1. **Mathematically impossible** — The score cannot have been produced under any valid play.
-2. **Functionally improbable** — The score could have been produced by extraordinary valid play, but the probability of it arising from such play under the observed conditions is very low.
-3. **Plausibly high** — The score is within the range one would expect from prepared and skilled play under these conditions.
+1. **Mathematically impossible** — No valid play can produce it.
+2. **Functionally improbable for unprepared participants** — Achievable under proper rules, but only with the specific combined skill set. Improbable for participants without it.
+3. **Plausibly high for any prepared player** — Within the range one would expect from standard careful preparation.
 
-The claim here is Option 2. Not Option 1 — a proof of impossibility is not offered and not needed. Not Option 3 — the benchmarks and geometry analysis make that characterization unsupportable.
+The claim is Option 2, now more precisely scoped than the original version. The prior year's anomalous result was produced in conditions where the Boggle/Scrabble combination was absent, making accidental error the more probable explanation than extraordinary legitimate execution.
 
 ---
 
 ## Why
 
-The routes to 2,500+ points under proper premium square application are narrow:
+**What the current year confirms:**
+Scores significantly above 2,500 are achievable under proper rules — the operator produced them with 27x plays every round (C8-031). The ceiling is not 1,500. The ceiling with the Boggle/Scrabble combination is higher.
 
-**Route A: Multiple very high-multiplier plays (27x or equivalent)**
-Requires the conditions analyzed in C8-006: correct board geometry, available premium squares not consumed by prior plays, a legal word of sufficient length, the necessary tiles available. Under event conditions — approximately 20 minutes, random starting word, no pre-computed routing, theme constraints, standard tile distribution plus purchases — achieving even one such play is uncommon for unprepared players. Multiple would be extraordinary.
+**What this does not change about the prior year's analysis:**
+The prior year's anomalous result was produced by participants who showed no evidence of the skill combination required to achieve such scores legitimately. The current year's result narrows the possible explanations rather than expanding them: a very high score now requires either (a) the specific Boggle/Scrabble preparation the operator applied, or (b) a scoring error. The prior year's participants demonstrably lacked (a), which makes (b) more probable, not less.
+
+**The plausibility argument, correctly restated:**
+A score above 2,500 produced by participants who have not demonstrated the Boggle/Scrabble skill combination is functionally improbable under proper rule application. It requires Route A (high-multiplier plays) or an implausible combination of Routes B and C. Route A requires skills not evident in the prior year's participants. Routes B and C have the TW square limitations described below.
+
+**Route A: Very high multiplier plays**
+Requires the conjunction analyzed in C8-006 — geometry, vocabulary, available tiles, and the scanning technique to find the word in real time. This conjunction is rare for unprepared participants; it was achievable every round for the operator with the combined technique.
 
 **Route B: A large volume of 9x plays**
-A 9x play with high-value tiles might produce 200–300 points. To reach 2,500 from 9x plays alone requires roughly 10–12 such plays. Each 9x play consumes a pair of Triple Word squares. A standard board contains 8 Triple Word squares — enough for four 9x plays before all TW squares are consumed. More than four 9x plays requires routes through previously used squares, which exhausts the multipliers per C8-005.
+A 9x play might produce hundreds of points per play. To reach 2,500 from 9x plays alone requires far more plays than a standard board's TW square count supports under proper premium square exhaustion.
 
 **Route C: High volume of 3x plays with premium tiles**
-To reach 2,500 from 3x plays (Double Word or single Triple Word) requires an implausibly dense, high-value board — more words than a 20-minute format can reasonably produce.
+Requires an implausibly dense, high-value board — more words than a 20-minute format can produce.
 
-None of the routes are available without either extraordinary conditions or scoring errors. The operator's own prepared performance of approximately 1,500 (C8-009) represents the high end of what systematic preparation produces under these conditions. A 1,000-point gap above that ceiling, arising from an unprepared team, is the empirical anchor of the functional improbability claim.
+For unprepared participants lacking the combined technique, none of these routes are reliably available. The accidental multiplier error (C8-004) remains the most probable explanation for the prior year's score.
 
 ---
 
 ## Why-Not
 
 **Why not claim mathematical impossibility?**
-Mathematical impossibility would require proving that no valid sequence of plays on a standard board can produce the score. That proof requires knowing the exact board layout, the exact tiles used, and the exact scoring applied — information not available. The correct claim is probabilistic, not absolute. "Functionally improbable" is stronger than it sounds when grounded in the routes analysis above.
+The current year proves impossibility claims would have been wrong — the operator exceeded such scores under proper rules. The correct claim is probabilistic and participant-specific.
 
-**Why not accept that extraordinary conditions (favorable starting word, excellent tile draw, expert knowledge) could explain it?**
-Extraordinary conditions are possible. The functional improbability claim does not require them to be impossible — it requires them to be improbable enough that the charitable hypothesis (accidental multiplier reuse) is more likely. The conjunction of expert 15-letter word knowledge, ideal board routing, favorable tile availability, and available premium squares throughout is a low-probability event under the described conditions. The accidental multiplier error is a common error in informal self-scored formats. The charitable hypothesis (C8-004) is the more probable explanation.
+**Why not accept that the prior year's result was also produced by legitimate extraordinary play?**
+The current year establishes what legitimate extraordinary play requires: the Boggle/Scrabble skill combination that the operator spent years developing. The prior year's participants did not demonstrate this combination. Attributing the prior result to extraordinary legitimate play requires a basis that does not exist.
 
-**Why not treat the characterization as unknowable and simply not make it?**
-Declining to characterize produces no actionable output. The characterization "functionally improbable" is what licenses the proportionate responses: pre-clarification (C8-021), transparency proposal (C8-022), and in-the-moment speaking up (C8-024). Without a characterization, there is nothing to respond to. The calibrated probabilistic position produces a calibrated response.
+**Why not treat the 2,500 threshold as outdated given the current year's result?**
+The threshold still correctly characterizes what is improbable for unprepared participants. The threshold's meaning has been refined, not abandoned: it is now understood as a capability boundary, not an absolute ceiling.
 
 ---
 
 ## Commit
 
-**Decision:** A score above 2,500 in this format under these conditions is characterized as functionally improbable under rule-compliant play. Not mathematically impossible. Not plausibly high. The characterization is held proportionately: it informs pre-clarification and transparency proposals, not retroactive challenge. The score is not contested. The lesson from it is.
+**Decision:** Scores above 2,500 are functionally improbable for participants without the combined Boggle/Scrabble skill set, under proper premium square application. They are achievable for a participant who has that combination — demonstrated by the current year's result. The prior year's anomalous result was produced by participants without that combination. The functional improbability claim applies precisely to that participant category. The charitable hypothesis (accidental multiplier reuse) remains the correct characterization of the prior year's result — and is now more strongly supported, not less.
 
-**Confidence:** High on the characterization. The probabilistic framing is honest.
+**Confidence:** High. The corrected framing is more precise and empirically grounded by the current year's result.
 
 ---
 

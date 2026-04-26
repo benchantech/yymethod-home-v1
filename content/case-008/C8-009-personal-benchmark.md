@@ -51,9 +51,11 @@ Yes — the strategy errors in C8-010 and C8-011 (15-letter word obsession, misc
 
 ## Commit
 
-**Decision:** The approximately 1,500-point personal score is used as the calibrated benchmark for the plausibility analysis. It is treated as the high end of the "prepared under correct rules" range for this game format given the operator's preparation level and word-game baseline. The benchmark will be updated after the next tournament.
+**Decision:** The approximately 1,500-point personal score is used as the calibrated benchmark for the plausibility analysis as it stood at the time of the prior year's preparation. It is the high end of the "prepared with 15-letter-first strategy under correct rules" range. It is not the ceiling of rule-compliant play.
 
-**Confidence:** High. The benchmark is empirically grounded.
+**Post-event update:** The current year's result significantly exceeded this benchmark. The operator executed 27x plays on every board using the combined Boggle/Scrabble technique (C8-031), producing scores well above 1,500 under fully rule-compliant play. The 1,500 figure is now a historical reference point for the prior preparation approach — the floor that the strategy revision was designed to improve from, which it did. The benchmark for future plausibility comparisons should use the current-year result, not the prior-year result. The specific current-year figure is not published in this case (C8-035 private-layer distinction); the relevant claim is that the current ceiling under the evolved strategy is substantially higher.
+
+**Confidence:** High for the historical benchmark. The current-year result supersedes it as the relevant calibration point.
 
 ---
 

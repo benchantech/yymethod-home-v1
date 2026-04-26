@@ -50,9 +50,11 @@ An unknown ceiling is not useful for evaluation. The analysis is not claiming ce
 
 ## Commit
 
-**Decision:** Acknowledge that high-multiplier plays are geometry-constrained in addition to vocabulary-constrained. Multiple very high multiplier plays on a single board require a specific and rare conjunction of available premium squares, compatible word lengths, and matching tiles. Under event conditions, this conjunction is uncommon. The operator's own score ceiling under preparation reflects this correctly. The structural constraint informs the plausibility analysis in C8-008.
+**Decision:** Acknowledge that high-multiplier plays are geometry-constrained in addition to vocabulary-constrained. Multiple very high multiplier plays on a single board require a specific and rare conjunction of available premium squares, compatible word lengths, and matching tiles. Under event conditions, this conjunction is uncommon for the general participant population. The structural constraint informs the plausibility analysis in C8-008.
 
-**Confidence:** High. The geometry is fixed and the constraint is real.
+**Post-event update (C8-031):** The operator executed 27x plays on every board in the current year. This does not contradict the geometry analysis — it confirms it. The conjunction is uncommon in general; the specific combination of Boggle-speed tile scanning and Scrabble geometric routing (C8-031) is what made it achievable every round for this operator. The geometry constraint remains valid as the reason the prior year's anomalous score, produced by an unprepared team without that skill combination, was suspicious. The constraint applies differently depending on who is playing.
+
+**Confidence:** High. The geometry is fixed and the constraint is real. Its effect scales with preparation and skill combination.
 
 ---
 

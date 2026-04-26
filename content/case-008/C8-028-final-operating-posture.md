@@ -19,7 +19,7 @@ This ADR integrates all 27 preceding ADRs into a single operating posture: what 
 
 **Before play begins:**
 
-1. Confirm with the organizer: how do premium squares work when a later word passes through a square used by an earlier word? (Establishes premium square exhaustion rule; C8-021, C8-005)
+1. Verify the organizers' scoring guidance is present and clear — specifically that premium square exhaustion is covered. If a scoring guide is provided (as in the current year), acknowledge it; if absent or ambiguous, ask directly. (C8-021, C8-005, C8-030)
 2. Confirm with the organizer: what is the theme connection standard — direct references, or broader connections acceptable? (Establishes the gray-zone boundary; C8-021, C8-017)
 3. Propose winning board display: "It would be fun to display the winning boards at the end so everyone can see how people scored and learn from each other." (C8-022)
 4. Recall the three gaps encoded in the 2nd place medal — rules confirmed, board display proposed. The third gap (speak in the moment) is held in readiness throughout the round. (C8-024)
@@ -39,7 +39,7 @@ This ADR integrates all 27 preceding ADRs into a single operating posture: what 
 12. After the primary play is complete, build toward the secondary play.
 13. Fill the board with standard scoring plays.
 14. Speak in the moment if scoring appears inconsistent with the confirmed premium square rule. Framing: "Can we check this square? I think a prior word may have already used it." (C8-021, C8-024)
-15. If a 15-letter lane opens and conditions align — available lane, available tiles, theme-defensible word — execute the 27x play as bonus upside. (C8-011)
+15. Actively pursue 27x lanes throughout — do not wait for conditions to align passively. The Boggle/Scrabble combination makes 27x achievable in every round when applied; treat it as the primary ceiling, not a passive bonus. If the round's starting position forecloses a 27x lane by mid-round, apply the pivot rule and execute the strongest 9x play remaining. (C8-011, C8-031)
 
 **At scoring:**
 

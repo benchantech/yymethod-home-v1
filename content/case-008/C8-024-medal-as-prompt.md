@@ -30,6 +30,8 @@ The three specific gaps that the medal represents:
 **Gap 1: Rule clarification was not sought before play.**
 The premium square rule (exhaustion on first use) was not confirmed with the organizer before the round began. Confirming it takes 30 seconds and establishes shared understanding. It was not done.
 
+*Post-event update:* For the current year, this gap was closed by the organizers proactively — via a scoring guide presented before play, inferred as a response to the operator's post-event email (C8-023). The operator did not need to ask; the organizers provided the clarity. Gap 1's remaining standing prompt is: verify that the existing guidance is present and clear; if it is, acknowledge it; if it is absent or unclear, ask. The gap is resolved for this iteration; the discipline remains for future ones.
+
 **Gap 2: Board display was not proposed.**
 A winning board display — which would have made the end-of-round results visible and verifiable — was not proposed at setup. It could have been proposed simply and positively ("it would be fun to display boards at the end"). It was not.
 
