@@ -1,4 +1,4 @@
-# ADR Index — Scrabblerama Scoring Integrity: Competitive Strategy, Rule Ambiguity, and Clean Execution Under Constraint
+# ADR Index — Local Scrabble-like Charity Event — Scoring Integrity, Competitive Strategy, Rule Ambiguity, and Clean Execution Under Constraint
 **Method:** YY Method™ Home Edition v2.3
 **Captured:** 2026-04-25
 **Author:** Case Study Operator

@@ -16,7 +16,7 @@ export const caseStudies: CaseStudy[] = [
   {
     id: "case-008",
     number: "008",
-    title: "Scrabblerama Scoring Integrity — Competitive Strategy, Rule Ambiguity, and Clean Execution Under Constraint",
+    title: "Local Scrabble-like Charity Event — Scoring Integrity, Competitive Strategy, Rule Ambiguity, and Clean Execution Under Constraint",
     subtitle: "Scoring integrity · premium square exhaustion · expected-value strategy · competitive posture · play the actual game",
     date: "2026-04-25",
     status: "Complete",

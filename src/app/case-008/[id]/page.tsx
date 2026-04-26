@@ -78,7 +78,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const adr = getADRCase008(id.toUpperCase());
   if (!adr) return {};
   const title = `${adr.id}: ${adr.title} — YY Method™ Home Edition`;
-  const description = `${adr.summary} Decision status: ${adr.status}. Case 008 — Scrabblerama Scoring Integrity.`;
+  const description = `${adr.summary} Decision status: ${adr.status}. Case 008 — Local Scrabble-like Charity Event.`;
   return {
     title,
     description,

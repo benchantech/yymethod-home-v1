@@ -449,8 +449,8 @@ export const adrsCase008: ADRCase008[] = [
     domain: "analysis",
     position: "Derived",
     dependsOn: ["C8-009", "C8-012"],
-    summary: "The operator won the current year's event by a significant margin, without deploying all available optimization mechanisms. The 9x expected-value engine alone was sufficient for a decisive result. This reveals a structural property of the event: when the scoring system is understood at the optimization level, the outcome becomes near-deterministic. The event is not broken — it is simply not designed to resist a fully optimized participant. The competition baseline does not currently include other participants applying optimization analysis. In that baseline, genuine uncertainty is absent.",
-    tags: ["solvability-finding", "near-deterministic-dominance", "optimization-ceiling", "competition-baseline", "structural-property", "post-event-finding"],
+    summary: "Operator-corrected ADR. The AI's initial version stated the result was achieved without 27x plays and the 9x engine alone was sufficient — a smoothing error derived from prior ADRs that framed 27x as preparation-strategy upside rather than predicting execution outcome. Corrected record: every board produced a 27x multiplier. The combination of Boggle-speed tile pattern recognition (adaptive scanning under time pressure) and Scrabble geometric routing (word knowledge, premium square positioning) made 27x consistently executable. Boggle scanning found 15-letter possibilities that advance memorization alone would have missed; Scrabble geometry routed them for the multiplier. The preparation strategy not to plan around 27x was correct; the execution outcome exceeded the floor that strategy set. The AI confused preparation posture with execution result — the same class of error as C8-010. Operator challenge was required.",
+    tags: ["solvability-finding", "27x-every-board", "boggle-scrabble-combination", "ai-smoothing-error", "operator-corrected", "preparation-vs-execution", "near-deterministic-dominance"],
   },
   {
     id: "C8-032",

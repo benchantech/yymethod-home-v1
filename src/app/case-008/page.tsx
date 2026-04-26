@@ -6,11 +6,11 @@ import { adrsCase008, domainLabelCase008, type ADRCase008Domain } from "@/lib/ad
 import { statusColor } from "@/lib/adrs";
 
 export const metadata: Metadata = {
-  title: "Case 008: Scrabblerama Scoring Integrity — YY Method™ Home Edition",
+  title: "Case 008: Local Scrabble-like Charity Event — Scoring Integrity — YY Method™ Home Edition",
   description: "36 ADRs documenting competitive strategy, rule ambiguity, and clean execution under constraint in a Scrabble-variant tournament: premium square integrity, expected-value scoring strategy, emotional calibration, solvability finding, role transition, and the principle of participation in systems you can solve.",
   authors: [{ name: "Ben Chan" }],
   openGraph: {
-    title: "Case 008: Scrabblerama Scoring Integrity — YY Method™ Home Edition",
+    title: "Case 008: Local Scrabble-like Charity Event — Scoring Integrity — YY Method™ Home Edition",
     description: "36 ADRs: scoring integrity, 9x strategy engine, letter-count correction, theme reframe, pre-clarification posture, clean-play standards, solvability finding, role transition from competitor to coach, and the generalizable principle on participation in systems you can solve.",
     url: "https://home.yymethod.com/case-008",
     siteName: "YY Method™ Home Edition",
@@ -36,7 +36,7 @@ export default function Case008Page() {
           <span className="text-muted-foreground text-xs">/</span>
           <span className="text-xs text-foreground">Case #008 · ADR Registry</span>
         </div>
-        <h1 className="text-2xl font-semibold tracking-tight">Scrabblerama Scoring Integrity — Competitive Strategy, Rule Ambiguity, and Clean Execution Under Constraint</h1>
+        <h1 className="text-2xl font-semibold tracking-tight">Local Scrabble-like Charity Event — Scoring Integrity, Competitive Strategy, Rule Ambiguity, and Clean Execution Under Constraint</h1>
         <p className="text-sm text-muted-foreground font-mono">
           Case #008 · {adrsCase008.length} knowledge artifacts · April 25, 2026 · YY Method™ Home Edition v2.3
         </p>
