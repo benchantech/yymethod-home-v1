@@ -1,56 +1,91 @@
-# C8-023: Commit Not to Relitigate the Prior Year
+# C8-023: Post-Event Notification and the Commitment Not to Relitigate
 **Method:** YY Method™ Home Edition v2.3 — Capture → Why → Why-Not → Commit → Timestamp
-**Status:** Decided
+**Status:** Decided — Correction
 **Date:** 2026-04-25
 **Domain:** Posture
 **Depends On:** C8-003, C8-008
-**Freshness Boundary:** Permanent. This commitment does not expire regardless of future evidence or results.
-**Source:** Operator reasoning session. 2026-04-25.
+**Freshness Boundary:** Permanent. The distinction between clean notification and adversarial relitigating does not expire.
+**Source:** Operator reasoning session. 2026-04-25. Operator-corrected after AI mischaracterized what actually happened.
+
+---
+
+## Correction Notice
+
+The first version of this ADR stated: "The result is not being raised with the organizers." This was wrong. The operator did raise it with the organizers — via email, same-day evening, after taking time to reflect objectively. The AI's version also argued in the Why-Not section against raising it informally, which was doubly incorrect: not only did the raising happen, it was the appropriate action.
+
+The corrected ADR preserves the correct reasoning about what "not relitigating" means while accurately capturing what the operator actually did.
 
 ---
 
 ## Capture
 
-The prior tournament result stands. The score that placed above the operator's score is not being challenged. The result is not being raised with the organizers. It is not the subject of any conversation in the social context of the event. It is not framed as an injustice in any public or semi-public context.
+The same evening of the prior year's event, after stepping back and considering objectively what might have happened, the operator sent an email to the organizers.
 
-This is an explicit, deliberate commitment — not a casual decision to "let it go." The commitment requires acknowledging the case for relitigating, considering it, and then deciding against it for reasons that hold regardless of how the operator feels about the result.
+The email:
+- Explained how premium square scoring works and specifically the exhaustion rule (a multiplier may only be applied to a square once).
+- Described how the prior year's result appeared likely to have resulted from accidental reuse of those multipliers.
+- Did not request any change to the prior year's result.
+- Did not accuse anyone of deliberate misreporting.
+- Was informational: here is how this rule works, here is what may have happened, you should be aware of this going forward.
+
+The organizers acknowledged the email.
+
+In the following year, the organizers introduced a PowerPoint presentation explaining how to score the game correctly, and the ambiguities in the format's rules were substantially reduced. Whether the email was the direct cause of these changes has not been confirmed — the operator assumes the connection but has not asked directly. The alignment between what the email raised and what was subsequently addressed is striking enough to treat as the likely explanation.
 
 ---
 
-## Why
+## Why the Email Was the Correct Action
 
-**The practical case against retroactive challenge is strong.**
+The email went to the people responsible for the event — the organizers who design the format, set the rules, and run the competition. These are exactly the people who can do something about a scoring integrity problem. Informing them is not adversarial; it is informing the responsible parties of a problem they are positioned to address.
 
-Retroactive challenges in informal community events have no resolution mechanism. There is no appeals process, no independent arbiter with the expertise to review scoring, and no authority to revise a result that has already been celebrated and recorded. A challenge produces no outcome other than social friction.
+The email was:
+- **Private:** Not a public accusation. Not a conversation in the social context of the event. Not an announcement to other participants.
+- **Informational:** It described the scoring rule and what likely happened. It did not demand a specific outcome.
+- **Proportionate:** Sent once. Not followed up repeatedly. The response (acknowledgment) was the closure.
+- **Timely:** Same-day, after objective reflection. Not surfaced weeks later in a heated follow-up.
 
-The social cost of a retroactive challenge is high and asymmetric. Even a well-reasoned, evidence-based challenge to a prior result is perceived as sore-loser behavior by most observers. The perception persists regardless of the quality of the argument. The challenger carries the cost; the challenged team carries nothing. The event organizers are put in an impossible position. The community relationship is damaged.
+This is the correct form of raising a concern. It informs the responsible party, it is not adversarial, and it does not seek to overturn a result that cannot be retroactively adjudicated.
 
-The analytical confidence is high but not absolute. The analysis in C8-006 through C8-008 establishes functional improbability, not mathematical certainty. "Functionally improbable" is not the threshold for a formal challenge. A formal challenge requires either direct evidence of deliberate misreporting or a specific, identifiable, provable scoring error — neither of which the operator can produce from memory of an informal event that has already concluded.
+---
 
-**The forward-looking case for letting it stand is also strong.**
+## What "Not Relitigating" Actually Means
 
-The lessons from the prior result — pre-clarify rules, propose board display, speak in the moment — are fully actionable without relitigating. The corrections have been identified and adopted. The 2nd place medal is a cue to those corrections (C8-024). The prior result did its work as a signal (C8-002). Continuing to treat it as an active grievance is carrying a cost with no further return.
+Not relitigating means:
+- Not pursuing the prior result as a social grievance.
+- Not discussing the prior year's result in any context where the participants are identifiable.
+- Not framing what happened as an injustice in conversation with other event participants.
+- Not making repeated demands or follow-up challenges after the email was acknowledged.
+
+Not relitigating does not mean:
+- Saying nothing to the people responsible for the event's integrity.
+- Suppressing information that would improve the event for future participants.
+- Treating a well-founded concern as equivalent to sore-loser behavior simply because it involves a competitive result.
+
+The email was the single correct action. Acknowledgment was the closure. The matter is addressed, not suppressed.
 
 ---
 
 ## Why-Not
 
-**Why not at least raise the concern informally to a trusted organizer?**
-Informal concerns travel informally. A concern raised as a quiet aside to a trusted contact becomes a known position of the operator within the event community. The distinction between "informal concern" and "formal challenge" does not survive social transmission. The concern, once expressed, is on the record regardless of how it was offered. The commitment to not relitigate must be total to be meaningful.
+**Why not send a more formal or demanding email?**
+The email's value came from its informational character. An email that demands a specific outcome (rescoring, disqualification) would be adversarial and would be correctly perceived as a challenge to the result. The operator's goal was not to obtain a different result — it was to ensure the organizers understood the scoring rule. An informational email achieves that goal without the adversarial cost.
 
-**Why not preserve the right to raise the concern if new evidence emerges?**
-If new evidence emerges — a specific, documented scoring record that can be independently verified and shows a clear error — the decision to raise it can be made then, with the evidence in hand. The current commitment is against relitigating on the basis of current evidence, which is inferential rather than documented. The commitment does not close the question permanently in every possible future state; it closes it for the current state.
+**Why not raise it with the participants directly?**
+Raising it with other participants is relitigating in exactly the sense this ADR rejects. Other participants did not cause the problem and cannot fix it. Direct engagement with them about a scoring concern is social accusation territory. The email to organizers was the correct path precisely because organizers are responsible and positioned to act.
 
-**Why not distinguish between "relitigating" and "educating" — framing the prior result as a learning example?**
-Framing the prior result as a learning example while the people involved are present at the same event is relitigating in educational clothing. The distinction does not survive the proximity of the actual people. The commitment to not relitigate applies to any context where the prior result is identifiable.
+**Why not follow up after the email was acknowledged?**
+The acknowledgment was the response. A single well-formed communication was sent; it was received; the organizers had the information. Repeated follow-up converts an informational exchange into a sustained complaint. The email was one action; acknowledgment was the closure. That is the end of the chain.
+
+**Why assume the rule changes were a response to the email rather than an independent decision?**
+The assumption is noted explicitly as an assumption. The operator has not confirmed the connection directly. The circumstantial evidence is strong — the changes specifically addressed what the email raised — but the organizers have not stated the cause. The assumption produces no behavioral consequence, and the inferred connection does not affect what the operator did or will do. It is recorded as context, not as confirmed fact.
 
 ---
 
 ## Commit
 
-**Decision:** The prior year's result is not challenged, referenced as an injustice, or raised in any context where the people involved are present or the event is identifiable. The result stands. The lessons are applied forward. The grievance is set down.
+**Decision:** The operator raised the concern with the organizers via a single informational email sent same-day, describing the scoring rule and the likely cause of the anomalous result, without requesting any change to the prior year's result. The organizers acknowledged the email. The operator assumes (without direct confirmation) that the subsequent rule improvements — detailed scoring guidance and removal of prior ambiguities — were a response to the concern. No further pursuit was made. No social discussion of the prior result is undertaken. This is what "not relitigating" means: one clean notification to the responsible party, then closure.
 
-**Confidence:** High. The commitment is clear and the reasons are sound.
+**Confidence:** High. The distinction between notification and adversarial challenge is clear and the corrected record reflects what actually happened.
 
 ---
 
