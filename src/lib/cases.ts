@@ -14,6 +14,20 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   {
+    id: "case-009",
+    number: "009",
+    title: "Writing for the Future — Voice, AI, and the Inheritance",
+    subtitle: "Primary audience declaration · AI scars · cognitive muscle · multi-generational corpus",
+    date: "2026-04-26",
+    status: "In Progress",
+    domains: ["Origin", "Architecture", "Scars", "Method", "Inheritance"],
+    adrCount: 14,
+    description:
+      "14 ADRs capturing the meta-decision behind all public-facing work: writing for children and grandchildren, not a chased audience, across four surfaces maintained in parallel for 18+ years. Documents five AI scars derived from live experience: cognitive smoothing, the accountability requirement, incremental drift (the bridled horse), the muscle-formation failure mode, and the Level 5 attribution corridor that required an external circuit breaker. Records the AI writing coach corridor that produced Q1 and necessitated a week-long AI fast. Establishes the four quests as a training program aimed at Q4, where the voice writes bedtime stories for grandkids without AI assistance. Closes with the inheritance architecture: a multi-generational corpus where each generation reads one layer up, the reasoning is always public, and no generation inherits the debt blind.",
+    href: "/case-009",
+    tags: ["primary-audience", "kids", "grandkids", "ai-scars", "cognitive-smoothing", "bridled-horse", "level-5", "attribution-corridor", "ai-writing-coach", "ai-fast", "four-quests", "training-program", "inheritance-architecture", "multi-generational"],
+  },
+  {
     id: "case-008",
     number: "008",
     title: "Local Scrabble-like Charity Event — Scoring Integrity, Competitive Strategy, Rule Ambiguity, and Clean Execution Under Constraint",
