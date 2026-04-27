@@ -214,6 +214,20 @@ export const adrsCase009: ADRCase009[] = [
     summary: "Case 009 was written in a single reasoning session on 2026-04-26. The operator brought the content — the experiences, the scars, the decisions — and the conversation surfaced connections not previously made explicit: that the YouTube origin, yyand.me, the Substack, and the case study site are four surfaces of the same project; that 'The First Echo' is the origin document for all of it; that 'Paying Attention' was already the Q2/Q3 bridge before Q3 was planned; that the Substack image subconsciously captured the child following the ascending figure. None of these were post-rationalized. They were discovered. This is the YY Method running on itself: AI surfaces structure, operator confirms and corrects, ADRs are the permanent record. Case 009 does not supersede or modify any prior case. It sits above them as the meta-record: the reasoning chain across properties, made visible.",
     tags: ["meta-record", "reasoning-chain", "session-discovery", "yy-method-on-itself", "four-surfaces-one-project", "first-echo-origin", "paying-attention-bridge", "substack-image", "q3-raw-material"],
   },
+  {
+    id: "C9-015",
+    number: "015",
+    title: "Registry Integrity — Rejected Cases Are Never Superseded",
+    status: "Decided",
+    freshness: "Permanent",
+    freshnessNote: "Permanent. The distinction between Rejected and Superseded is a stable invariant of the registry's information architecture.",
+    date: "2026-04-26",
+    domain: "inheritance",
+    position: "Cross-cutting",
+    dependsOn: ["C9-013"],
+    summary: "Rejected and Superseded are distinct statuses with different meanings. Superseded means a case's content was replaced or absorbed by a successor — the reasoning evolved, the decision was revisited, a better version exists. Rejected means a case lacked the substance to carry its own weight — the method correctly identified an empty case and called it out. A Rejected case is a scar record of the method applied to the registry itself. It is never converted to Superseded by a new case covering similar territory. Case 003 (Rejected) and Case 009 are related by subject matter; Case 009 does not supersede Case 003. The Rejected status is load-bearing: removing it would erase the demonstration that the registry is self-auditing. This is the first occurrence of a Rejected case adjacent to a new case on similar territory; the principle is documented here to prevent future operators or AI agents from incorrectly treating proximity of subject matter as grounds for supersession.",
+    tags: ["registry-integrity", "rejected-vs-superseded", "scar-record", "self-auditing-registry", "status-invariant", "first-occurrence", "agent-defense"],
+  },
 ];
 
 export function getADRCase009(id: string): ADRCase009 | undefined {

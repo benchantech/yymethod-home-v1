@@ -26,6 +26,7 @@ const ADR_FILE_MAP: Record<string, string> = {
   "C9-012": "C9-012-inheritance-architecture.md",
   "C9-013": "C9-013-case-003-rejected-predecessor.md",
   "C9-014": "C9-014-reasoning-chain-made-visible.md",
+  "C9-015": "C9-015-registry-integrity-rejected-vs-superseded.md",
 };
 
 async function getADRRaw(adrId: string): Promise<string | null> {
