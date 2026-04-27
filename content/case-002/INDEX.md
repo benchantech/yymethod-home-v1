@@ -65,6 +65,8 @@ C2-016  Six Invariants as DNA                   [FOUNDATIONAL]
             └── C2-023  Stack — Pending         [depends on C2-018]
 C2-017  Cognitive Theft — The Tsunami           [FOUNDATIONAL]
     └── C2-020  AI as Force Multiplier          [depends on C2-016, C2-017]
+
+C2-024  Supersession Record — yysworld Replaces YY's World Entirely  [TERMINAL — supersedes all prior operational direction; 2026-04-13]
 ```
 
 ---
@@ -96,6 +98,7 @@ C2-017  Cognitive Theft — The Tsunami           [FOUNDATIONAL]
 | C2-021 | Employer as Liberation — The Enabler | Philosophy | Decided | Active |
 | C2-022 | Genealogical Artifact — A Life Structured to Survive | Philosophy | Decided | Permanent |
 | C2-023 | Technical Stack — Pending Operator Decision | Architecture | Pending | Pending |
+| C2-024 | Supersession Record — yysworld Replaces YY's World Entirely | Architecture | Supersession Record | Permanent |
 
 ---
 

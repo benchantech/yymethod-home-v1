@@ -2,45 +2,45 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { adrsCase009, domainLabelCase009, type ADRCase009Domain } from "@/lib/adrs-case-009";
+import { adrsCase010, domainLabelCase010, type ADRCase010Domain } from "@/lib/adrs-case-010";
 import { statusColor } from "@/lib/adrs";
 
 export const metadata: Metadata = {
-  title: "Case 009: Writing for the Future — Voice, AI, and the Inheritance — YY Method™ Home Edition",
-  description: "15 ADRs documenting the meta-decision behind all public-facing work: writing for children and grandchildren across four surfaces, five AI scars derived from live experience, the four-quest training arc, the multi-generational corpus architecture, and the registry invariant: Rejected cases are never superseded.",
+  title: "Case 010: Child-Originated Character Studio — Authorship Architecture, IP Origin, and the Private Release Lifecycle — YY Method™ Home Edition",
+  description: "10 ADRs documenting the architecture of a child-safe creative portfolio system: child as author, AI as rendering layer, original character requirement, private prototype boundary, Google OAuth with allowlist, pseudonymous structure, no indexing, provenance logging, parent-built engine, adult consent lifecycle, and commercialization gate.",
   authors: [{ name: "Ben Chan" }],
   openGraph: {
-    title: "Case 009: Writing for the Future — Voice, AI, and the Inheritance — YY Method™ Home Edition",
-    description: "15 ADRs: YouTube origin, primary audience declaration, four-surface architecture, five AI scars, the writing coach corridor, the AI fast, four quests as training program, the inheritance architecture, and the registry invariant: Rejected cases are never superseded.",
-    url: "https://home.yymethod.com/case-009",
+    title: "Case 010: Child-Originated Character Studio — YY Method™ Home Edition",
+    description: "10 ADRs: child as author, AI as rendering layer, derivative character path rejected, squirrel prototype bounded, OAuth plus allowlist, pseudonymous portfolios, no indexing, provenance logging, adult consent lifecycle, and commercialization gate.",
+    url: "https://home.yymethod.com/case-010",
     siteName: "YY Method™ Home Edition",
     type: "article",
   },
 };
 
-const domainGroups: { domain: ADRCase009Domain; label: string; description: string }[] = [
-  { domain: "origin", label: "Origin", description: "The YouTube founding act — gap-filling, unscripted, before any method" },
-  { domain: "architecture", label: "Architecture", description: "Primary audience declaration and the four-surface design" },
-  { domain: "scars", label: "Scars", description: "Five AI scars derived from live experience: smoothing, accountability, drift, muscle formation, and the attribution corridor" },
-  { domain: "method", label: "Method", description: "The AI fast as recovery protocol and the four quests as training program" },
-  { domain: "inheritance", label: "Inheritance", description: "What compounds across generations, Case 003 as rejected predecessor, and this case as the reasoning chain made visible" },
+const domainGroups: { domain: ADRCase010Domain; label: string; description: string }[] = [
+  { domain: "authorship", label: "Authorship", description: "The authorship split as governing invariant, and why the derivative-character path was rejected" },
+  { domain: "containment", label: "Containment", description: "Keeping the squirrel prototype internal and keeping the portfolio invisible to crawlers and training pipelines" },
+  { domain: "structure", label: "Structure", description: "OAuth plus allowlist, pseudonymous organization, and the parent-as-engineer role division" },
+  { domain: "provenance", label: "Provenance", description: "Logging process artifacts so the authorship chain is demonstrable and the memory of creation is retrievable" },
+  { domain: "lifecycle", label: "Lifecycle", description: "Adult consent as the release trigger, three valid outcomes, and the commercialization gate" },
 ];
 
-export default function Case009Page() {
+export default function Case010Page() {
   return (
     <main className="min-h-screen p-6 md:p-10 max-w-5xl mx-auto space-y-8">
       <div className="space-y-2">
         <div className="flex items-center gap-2">
           <Link href="/" className="text-xs text-muted-foreground hover:text-foreground">← Case Studies</Link>
           <span className="text-muted-foreground text-xs">/</span>
-          <span className="text-xs text-foreground">Case #009 · ADR Registry</span>
+          <span className="text-xs text-foreground">Case #010 · ADR Registry</span>
         </div>
-        <h1 className="text-2xl font-semibold tracking-tight">Writing for the Future — Voice, AI, and the Inheritance</h1>
+        <h1 className="text-2xl font-semibold tracking-tight">Child-Originated Character Studio — Authorship Architecture, IP Origin, and the Private Release Lifecycle</h1>
         <p className="text-sm text-muted-foreground font-mono">
-          Case #009 · {adrsCase009.length} knowledge artifacts · April 26, 2026 · YY Method™ Home Edition v2.3
+          Case #010 · {adrsCase010.length} knowledge artifacts · April 27, 2026 · YY Method™ Home Edition v2.3
         </p>
         <p className="text-sm text-muted-foreground">
-          In Progress. The founding decision is made. Q3 and Q4 are ahead.
+          In Progress. The architecture is decided. The system is being built.
         </p>
       </div>
 
@@ -50,7 +50,7 @@ export default function Case009Page() {
       <Card className="border-violet-500/20 bg-violet-500/5">
         <CardContent className="pt-4 pb-4">
           <p className="text-xs text-violet-400 font-mono leading-relaxed">
-            In an AI-saturated world, the deepest threat is not replacement but substitution of voice — and the deepest purpose is not audience but inheritance. Writing for your children and grandchildren changes everything: what you protect, how honest you must be, and what the corpus is built to survive.
+            A character that springs entirely from a child&apos;s imagination is owned outright — no IP gray area, no derivative risk, no permission to seek. AI renders what the child creates. The work is private until the author is old enough to decide its fate.
           </p>
         </CardContent>
       </Card>
@@ -59,7 +59,7 @@ export default function Case009Page() {
       <Card className="border-amber-500/20 bg-amber-500/5">
         <CardContent className="pt-4 pb-4">
           <p className="text-xs text-amber-400 font-mono leading-relaxed">
-            C9-002 (Primary Audience Declaration) is the load-bearing anchor. The AI disciplines, the quest training arc, the four-surface architecture, and the inheritance plan are all infrastructure built to honor one commitment: write something worth keeping for the people who will need it when you are not there.
+            C10-001 (Child as Author, AI as Rendering Layer) is the load-bearing anchor. The original character requirement, the private prototype boundary, the no-indexing posture, the provenance logging, and the commercialization gate all flow from one invariant: the child is the author. Every protection in this system exists to preserve the value of that authorship until the child is old enough to wield it.
           </p>
         </CardContent>
       </Card>
@@ -70,11 +70,11 @@ export default function Case009Page() {
           <p className="text-xs font-mono text-muted-foreground font-semibold uppercase tracking-wider">Five Decision Layers</p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {[
-              { layer: "Origin", adrs: "C9-001", note: "The YouTube founding act: not 'I want to be a creator' but 'this specific thing isn't being said and I can say it.'" },
-              { layer: "Architecture", adrs: "C9-002 – C9-003", note: "Primary audience declared. Four surfaces maintained in parallel, each doing what the others cannot." },
-              { layer: "Scars", adrs: "C9-004 – C9-009", note: "Five AI scars from live experience: smoothing, accountability, drift, muscle formation, and Level 5." },
-              { layer: "Method", adrs: "C9-010 – C9-011", note: "The AI fast as recovery. The four quests as training program. Q4 is the exam." },
-              { layer: "Inheritance", adrs: "C9-012 – C9-015", note: "What compounds across generations. Case 003 as rejected predecessor. This case as the reasoning chain made visible. Registry invariant: Rejected cases are never superseded." },
+              { layer: "Authorship", adrs: "C10-001 – C10-002", note: "Child authors, AI renders. Derivative characters rejected. The squirrel plush path exposed the IP risk; the original-character requirement closes it." },
+              { layer: "Containment", adrs: "C10-003, C10-006", note: "The squirrel prototype stays private and bounded. The portfolio is invisible to crawlers, indexers, and AI training pipelines." },
+              { layer: "Structure", adrs: "C10-004, C10-005, C10-008", note: "OAuth plus allowlist. Pseudonymous identifiers. The parent builds the engine so the child can focus entirely on creating." },
+              { layer: "Provenance", adrs: "C10-007", note: "Process artifacts alongside outputs. Origin sketches, voice memos, iteration notes. Authorship is demonstrable; the memory of creation is retrievable." },
+              { layer: "Lifecycle", adrs: "C10-009 – C10-010", note: "Private until adulthood. Three valid outcomes: keep private, share selectively, or publish fully. Commercialization gated behind adult consent." },
             ].map((item) => (
               <div key={item.layer} className="space-y-1">
                 <div className="space-y-0.5">
@@ -90,7 +90,7 @@ export default function Case009Page() {
 
       {/* By domain */}
       {domainGroups.map(({ domain, label, description }) => {
-        const group = adrsCase009.filter((a) => a.domain === domain);
+        const group = adrsCase010.filter((a) => a.domain === domain);
         if (group.length === 0) return null;
         return (
           <div key={domain} className="space-y-3">
@@ -102,7 +102,7 @@ export default function Case009Page() {
               {group.map((adr) => (
                 <Link
                   key={adr.id}
-                  href={`/case-009/${adr.id.toLowerCase()}`}
+                  href={`/case-010/${adr.id.toLowerCase()}`}
                   className="flex items-start gap-4 p-3 rounded-lg border border-border hover:bg-muted/40 transition-colors group"
                 >
                   <span className="font-mono text-xs text-muted-foreground pt-1 shrink-0 w-16">

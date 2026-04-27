@@ -14,6 +14,20 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   {
+    id: "case-010",
+    number: "010",
+    title: "Child-Originated Character Studio — Authorship Architecture, IP Origin, and the Private Release Lifecycle",
+    subtitle: "Character authorship · original IP · private portfolio · provenance · adult consent",
+    date: "2026-04-27",
+    status: "In Progress",
+    domains: ["Authorship", "Containment", "Structure", "Provenance", "Lifecycle"],
+    adrCount: 10,
+    description:
+      "10 ADRs documenting the architecture of a child-safe creative portfolio system where children originate characters entirely from imagination and AI acts as a rendering and consistency layer. Establishes the authorship split as the governing invariant, rejects the derivative-character path on IP grounds, documents the private prototype boundary for the squirrel plush reference, specifies Google OAuth with email allowlist as the access model, defines pseudonymous portfolio structure and no-indexing posture, requires provenance and process logging, defines the parent as engine-builder, and gates commercialization behind adult consent. The system is private until the child is old enough to decide otherwise.",
+    href: "/case-010",
+    tags: ["character-studio", "child-authorship", "ai-rendering-layer", "original-characters", "ip-ownership", "private-portfolio", "google-oauth", "allowlist", "no-public-indexing", "provenance-logging", "adult-consent", "commercialization-gate", "pseudonymous-portfolio", "parent-built-engine", "derivative-character-risk", "release-lifecycle"],
+  },
+  {
     id: "case-009",
     number: "009",
     title: "Writing for the Future — Voice, AI, and the Inheritance",

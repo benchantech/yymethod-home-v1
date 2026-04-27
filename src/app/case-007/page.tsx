@@ -7,11 +7,11 @@ import { statusColor } from "@/lib/adrs";
 
 export const metadata: Metadata = {
   title: "Case 007: AI-Native Venture Launch — YY Method™ Home Edition",
-  description: "7 ADRs capturing a venture re-entry decision: whether to reacquire a previously owned brand, structure a revenue partnership, or build fresh using compounded domain expertise and AI generation capability.",
+  description: "13 ADRs closing a venture re-entry decision. Acquisition rejected after full component decomposition. Closing ADRs define the operator's final posture: time-gated strategic advisor with no ownership or governance rights; advisory availability bounded to weekend synchronous and off-hours asynchronous; family talent channel as performance-bound referral; partner controls the build with full independence.",
   authors: [{ name: "Ben Chan" }],
   openGraph: {
     title: "Case 007: AI-Native Venture Launch — YY Method™ Home Edition",
-    description: "7 ADRs: strategic architecture, AI-native vs. retrofit, cash flow bridge, knowledge transfer limits, asset decomposition, reputation debt, and why the most valuable asset was already owned before negotiations began.",
+    description: "13 ADRs: strategic architecture, AI-native vs. retrofit, cash flow bridge, knowledge transfer limits, asset decomposition, reputation debt, prior data as acquisition-independent moat, acquisition rejection, role transition to time-gated advisor, advisory time boundary, family talent channel, and partner build independence.",
     url: "https://home.yymethod.com/case-007",
     siteName: "YY Method™ Home Edition",
     type: "article",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
 
 const domainGroups: { domain: ADRCase007Domain; label: string; description: string }[] = [
   { domain: "strategy", label: "Strategy", description: "Operating model, AI-native vs. retrofit, and the cash flow bridge to fund the transition" },
-  { domain: "operations", label: "Operations", description: "What to share and what to withhold in an advisory-adjacent engagement" },
+  { domain: "operations", label: "Operations", description: "Knowledge transfer limits, advisory time boundary, and the family talent channel as performance-bound referral" },
   { domain: "evaluation", label: "Evaluation", description: "Asset decomposition methodology and the disqualifying findings applied to each component" },
-  { domain: "resolution", label: "Resolution", description: "Why the most valuable asset was already owned — and what that closed" },
+  { domain: "resolution", label: "Resolution", description: "Prior data as acquisition-independent moat, acquisition rejection, role transition, and partner build independence" },
   { domain: "structure", label: "Structure", description: "The information architecture of this case — what is deliberately public and what is deliberately protected" },
 ];
 
@@ -40,7 +40,7 @@ export default function Case007Page() {
           Case #007 · {adrsCase007.length} knowledge artifacts · April 11, 2026 · YY Method™ Home Edition v2.3
         </p>
         <p className="text-sm text-muted-foreground">
-          In progress. The decision chain is resolved. Reasoning is captured.
+          Complete. The case is closed. The operator is structurally outside day-to-day execution.
         </p>
       </div>
 
@@ -59,7 +59,7 @@ export default function Case007Page() {
       <Card className="border-amber-500/20 bg-amber-500/5">
         <CardContent className="pt-4 pb-4">
           <p className="text-xs text-amber-400 font-mono leading-relaxed">
-            C7-007 is the closing anchor — Prior Data as Acquisition-Independent Moat. It resolved the acquisition path by establishing that the most valuable component of the bundle (historical conversion data) was already owned before negotiations began. The bundle&apos;s remaining value could not survive the disqualifying findings in C7-006. Every evaluation decision flows upstream of it.
+            C7-007 (Prior Data as Acquisition-Independent Moat) closed the acquisition path: the most valuable component was already owned, the remaining bundle failed decomposition. C7-013 (Partner Control and Build Independence) closes the case entirely: acquisition rejected, role defined, time bounded, talent channel structured, partner autonomous. The operator is structurally outside day-to-day execution.
           </p>
         </CardContent>
       </Card>
@@ -67,12 +67,14 @@ export default function Case007Page() {
       {/* Decision layers */}
       <Card className="border-border bg-muted/10">
         <CardContent className="pt-4 pb-4 space-y-2">
-          <p className="text-xs font-mono text-muted-foreground font-semibold uppercase tracking-wider">Three Decision Layers</p>
+          <p className="text-xs font-mono text-muted-foreground font-semibold uppercase tracking-wider">Five Decision Layers</p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {[
-              { layer: "Strategic Architecture", adrs: "C7-001 – C7-003", note: "Does the AI capability change the correct operating model? What funds the transition?" },
-              { layer: "Engagement Structure", adrs: "C7-004", note: "Can a partnership fund the build without transferring the moat that makes the venture viable?" },
-              { layer: "Asset Evaluation", adrs: "C7-005 – C7-007", note: "Is the distressed brand worth acquiring? Which components carry value, which carry liability?" },
+              { layer: "Strategic Architecture", adrs: "C7-001 – C7-003", note: "Does AI change the correct operating model? What funds the transition without external capital?" },
+              { layer: "Engagement + Evaluation", adrs: "C7-004 – C7-007", note: "Can partnership fund the build? Is the distressed brand worth acquiring? Which component was already owned?" },
+              { layer: "Closing", adrs: "C7-009 – C7-013", note: "Acquisition rejected. Role transition to time-gated advisor. Advisory access bounded. Partner controls the build." },
+              { layer: "Operations", adrs: "C7-011 – C7-012", note: "Explicit time boundary prevents implicit availability. Family talent channel structured as performance-bound referral." },
+              { layer: "Information Architecture", adrs: "C7-008", note: "What is deliberately public and what is deliberately protected in this case. The abstraction is load-bearing." },
             ].map((item) => (
               <div key={item.layer} className="space-y-1">
                 <div className="space-y-0.5">

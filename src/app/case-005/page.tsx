@@ -7,11 +7,11 @@ import { statusColor } from "@/lib/adrs";
 
 export const metadata: Metadata = {
   title: "Case 005: Family Move Architecture — YY Method™ Home Edition",
-  description: "15 ADRs capturing a live family housing decision in progress. A lifestyle upgrade desire collides with a 7-figure opportunity cost, a split household, a funding trilemma, a rejected tax strategy, school district integrity constraints, and one paramount rule: protect the spouse's time. Resolved posture: intentional stay, blueprint extraction, surplus deployed deliberately, dream home deferred to the aging-in-place phase.",
+  description: "20 ADRs capturing and closing a family housing decision. A lifestyle upgrade collides with a 7-figure opportunity cost, a split household, a rejected split-time model, and a funding trilemma. Closing ADRs establish the decision architecture: default stay as the permanent baseline, a six-condition unicorn gate, three event-driven reopen triggers, a hard ban on time-based review, and non-forced financing as a structural disqualifier. The question is closed.",
   authors: [{ name: "Ben Chan" }],
   openGraph: {
     title: "Case 005: Family Move Architecture — YY Method™ Home Edition",
-    description: "10 ADRs: housing upgrade vs. compounding, family alignment, spouse protection, and the discipline of waiting without settling.",
+    description: "20 ADRs: housing upgrade vs. compounding, family alignment, spouse protection, intentional stay, unicorn move gate, reopen triggers, no time-based review, and non-forced financing as structural disqualifier.",
     url: "https://home.yymethod.com/case-005",
     siteName: "YY Method™ Home Edition",
     type: "article",
@@ -39,7 +39,7 @@ export default function Case005Page() {
           Case #005 · {adrsCase005.length} knowledge artifacts · April 2026 · YY Method™ Home Edition v2.3
         </p>
         <p className="text-sm text-muted-foreground">
-          In progress. Decision captured while still fresh. The move has not happened.
+          Complete. The decision architecture is closed. It reopens only when reality changes.
         </p>
       </div>
 

@@ -2,7 +2,7 @@
 **Method:** YY Method™ Home Edition v2.3
 **Captured:** 2026-04-11
 **Author:** Case Study Operator
-**Freshness Boundary:** C7-001 and C7-002 are permanent structural arguments. C7-003 is active with a 12–18 month reverification trigger. C7-004 is active for the duration of the advisory engagement. C7-005, C7-006, C7-007 are permanent records of the evaluation and its conclusions.
+**Freshness Boundary:** C7-001 and C7-002 are permanent structural arguments. C7-003 is active with a 12–18 month reverification trigger. C7-004 and C7-011 are active for the duration of the advisory engagement. C7-005, C7-006, C7-007, C7-008, C7-009, C7-010, C7-013 are permanent records. C7-012 is active while a family member is eligible and the partner has capacity.
 
 ---
 
@@ -10,15 +10,17 @@
 
 A structured knowledge artifact capturing the full reasoning chain behind a venture re-entry decision: whether to reacquire a previously owned brand, structure a revenue partnership with the prior acquirer, or build a new operation from scratch using the operator's compounded domain expertise and AI generation capability.
 
-The case traverses three distinct decision layers:
+The case traverses five decision layers:
 
 1. **Strategic architecture** — Does the AI capability change the correct operating model, and if so, how?
 2. **Engagement structure** — Can a partnership with the prior acquirer serve as a cash flow bridge without transferring the moat that makes the independent venture viable?
 3. **Asset evaluation** — Is the distressed brand worth acquiring, and if so, which components of the bundle carry value versus liability?
+4. **Closing** — Acquisition rejected. Role transition to time-gated strategic advisor. Advisory access bounded. Partner controls the build with full independence.
+5. **Information architecture** — What is deliberately public and what is deliberately protected in this case.
 
 The reasoning chain includes multiple reversals. The acquisition path appeared viable at price-alone; it was closed by quantitative health metrics. The partnership appeared complex strategically; it was simplified by clearly separating the two knowledge classes. The moat appeared vulnerable to transfer; it was protected by the operational discipline of delivering outputs rather than systems.
 
-This is not a summary. It is a preserved record of judgment exercised under conditions of genuine optionality — where multiple paths remained viable until specific evidence closed them.
+This is not a summary. It is a preserved record of judgment exercised under conditions of genuine optionality — where multiple paths remained viable until specific evidence closed them. C7-013 closes the case.
 
 ---
 
@@ -39,6 +41,12 @@ C7-001  Strategic Architecture — Marketplace Dependency vs. Full-Stack Ownersh
         └── C7-006  Reputation Debt — Platform Ratings as Non-Recoverable Liability [depends on C7-005]
             └── C7-007  Prior Data as Acquisition-Independent Moat                  [depends on C7-005, C7-006]
 C7-008  Publish Reasoning, Protect Deployment — Information Architecture            [CROSS-CUTTING — governs all of C7-001–C7-007]
+
+C7-009  Acquisition Rejection — Final Close                                          [depends on C7-006, C7-007]
+    └── C7-010  Operator Role Transition — From Principal to Time-Gated Strategic Advisor  [depends on C7-009]
+        └── C7-011  Advisory Time Boundary — Synchronous Weekend Block, Off-Hours Async    [depends on C7-010]
+        └── C7-012  Family Talent Channel — Performance-Bound Access                       [depends on C7-010, C7-011]
+        └── C7-013  Partner Control and Build Independence — Structural Separation          [depends on C7-009, C7-010]
 ```
 
 ---
@@ -55,6 +63,11 @@ C7-008  Publish Reasoning, Protect Deployment — Information Architecture      
 | C7-006 | Reputation Debt — Platform Ratings as Non-Recoverable Liability | Evaluation | Decided — Disqualifying | Permanent — disqualifying finding record |
 | C7-007 | Prior Data as Acquisition-Independent Moat | Resolution | Decided | Permanent |
 | C7-008 | Publish Reasoning, Protect Deployment — Information Architecture of This Case | Structure | Decided | Permanent |
+| C7-009 | Acquisition Rejection — Final Close | Resolution | Decided | Permanent |
+| C7-010 | Operator Role Transition — From Principal to Time-Gated Strategic Advisor | Resolution | Decided | Permanent |
+| C7-011 | Advisory Time Boundary — Synchronous Weekend Block, Asynchronous Off-Hours | Operations | Decided | Active — for duration of engagement |
+| C7-012 | Family Talent Channel — Performance-Bound Access, Not Guaranteed Placement | Operations | Decided | Active — when family member eligible and partner has capacity |
+| C7-013 | Partner Control and Build Independence — Structural Separation | Resolution | Decided | Permanent |
 
 ---
 
