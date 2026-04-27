@@ -54,7 +54,7 @@ export default function ADRsPage() {
             This ADR registry is an illustrative case study demonstrating the YY Method™ Home Edition v2.3.
             Numbers are approximate and generalized. Math is illustrative only.
             Not financial, tax, or legal advice. See{" "}
-            <a href="/case-001/adr-017" className="underline underline-offset-2 hover:text-foreground transition-colors">ADR-017</a>{" "}
+            <Link href="/case-001/adr-017" className="underline underline-offset-2 hover:text-foreground transition-colors">ADR-017</Link>{" "}
             for the full framing notice.
           </p>
         </CardContent>

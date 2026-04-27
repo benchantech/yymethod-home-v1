@@ -35,7 +35,7 @@ export default function Case002Page() {
           <span className="text-muted-foreground text-xs">/</span>
           <span className="text-xs text-foreground">Case #002 · ADR Registry</span>
         </div>
-        <h1 className="text-2xl font-semibold tracking-tight">YY's World — A YY Method Artifact for Kids</h1>
+        <h1 className="text-2xl font-semibold tracking-tight">YY&apos;s World — A YY Method Artifact for Kids</h1>
         <p className="text-sm text-muted-foreground font-mono">
           Case #002 · {adrsCase002.length} knowledge artifacts · March 30, 2026 · YY Method™ Home Edition v2.3
         </p>

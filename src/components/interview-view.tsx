@@ -74,7 +74,7 @@ export function InterviewView({ segments }: { segments: ProcessedSegment[] }) {
         </div>
         <h1 className="text-2xl font-semibold tracking-tight">Interview with AI</h1>
         <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
-          AI is interviewer. Ben Chan is interviewee. Session: YY's World — Design, Fabrication, and Correction.
+          AI is interviewer. Ben Chan is interviewee. Session: YY&apos;s World — Design, Fabrication, and Correction.
         </p>
       </div>
 
