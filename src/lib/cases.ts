@@ -14,6 +14,20 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   {
+    id: "case-011",
+    number: "011",
+    title: "YY Method Academy — Real YY as First-Class Guide, Family AI Literacy, and the Graduation Field",
+    subtitle: "Real YY · adult syntax · family AI literacy · gamification · family-first boundary",
+    date: "2026-06-06",
+    status: "In Progress",
+    domains: ["Canon", "Voice", "Positioning", "Progression", "Pathway", "Business", "Worldview", "Funding", "Boundary", "Architecture"],
+    adrCount: 12,
+    description:
+      "12 ADRs capturing the mission crystallization for YY Method Home Edition: real YY from yyand.me is promoted from mascot/reference to first-class viewpoint; childlike wonder is carried through adult syntax; the product is adult-directed and family-shareable rather than kids-only; badges, XP, quests, and family victories become the learning loop; yyworld becomes the kids' safe sandbox while yymethod-home becomes the graduation field where ideas become doctrine; Ben Chan Tech graduates toward a family-first YY Method learning academy; client advisory work funds and informs the mission without owning it; yymethod.com remains the personally owned home surface while professional use is limited to 1:1 training/advisory; the fantasy theme is fixed as an immutable golden seed while the adaptive proof layer maps New Game Plus onto accepted 2026/27 gamification and social-proof patterns; yysworld's code structure becomes the early architecture kernel for the new yymethod.",
+    href: "/case-011",
+    tags: ["real-yy", "yyandme", "adult-syntax", "childlike-wonder", "family-ai-literacy", "gamification", "badges", "xp", "quests", "yyworld", "graduation-field", "benchantech", "learning-academy", "client-advisory", "one-to-one", "family-first", "fantasy-theme", "golden-seed", "social-proof", "adaptive-proof", "yysworld-kernel", "architecture", "anti-slop", "non-corporate", "coppa-posture"],
+  },
+  {
     id: "case-010",
     number: "010",
     title: "Child-Originated Character Studio — Authorship Architecture, IP Origin, and the Private Release Lifecycle",
