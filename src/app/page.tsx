@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   },
 };
 
+const HOME_DOMAIN_LIMIT = 4;
+const HOME_TAG_LIMIT = 10;
+
 export default function Home() {
   return (
     <main className="min-h-screen p-6 md:p-10 max-w-4xl mx-auto space-y-12">
@@ -95,70 +98,89 @@ export default function Home() {
         </div>
 
         <div className="space-y-3">
-          {caseStudies.map((cs) => (
-            <Link
-              key={cs.id}
-              href={cs.href}
-              className="group block p-5 rounded-lg border border-border bg-card hover:bg-muted/30 transition-colors"
-            >
-              {/* Top row: meta + title (left) · ADR count + domains (right) */}
-              <div className="flex items-start justify-between gap-4">
-                <div className="space-y-2 flex-1 min-w-0">
-                  <div className="flex items-center gap-2 flex-wrap">
-                    <span className="font-mono text-xs text-muted-foreground">Case #{cs.number}</span>
+          {caseStudies.map((cs) => {
+            const visibleDomains = cs.domains.slice(0, HOME_DOMAIN_LIMIT);
+            const hiddenDomainCount = Math.max(0, cs.domains.length - visibleDomains.length);
+            const visibleTags = cs.tags.slice(0, HOME_TAG_LIMIT);
+            const hiddenTagCount = Math.max(0, cs.tags.length - visibleTags.length);
+
+            return (
+              <Link
+                key={cs.id}
+                href={cs.href}
+                className="group block rounded-lg border border-border bg-card p-5 transition-colors hover:bg-muted/30"
+              >
+                {/* Top row: meta + title (left) · compact case shape (right) */}
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                  <div className="space-y-2 min-w-0">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="font-mono text-xs text-muted-foreground">Case #{cs.number}</span>
+                      <span
+                        className={`text-xs px-1.5 py-0.5 rounded border font-mono ${
+                          cs.status === "Complete"
+                            ? "bg-emerald-500/15 text-emerald-400 border-emerald-500/20"
+                            : cs.status === "In Progress"
+                            ? "bg-blue-500/15 text-blue-400 border-blue-500/20"
+                            : cs.status === "Rejected"
+                            ? "bg-red-500/15 text-red-400 border-red-500/20"
+                            : cs.status === "Superseded"
+                            ? "bg-amber-500/15 text-amber-400 border-amber-500/20"
+                            : "bg-muted/50 text-muted-foreground border-border"
+                        }`}
+                      >
+                        {cs.status}
+                      </span>
+                      <span className="font-mono text-xs text-muted-foreground">{cs.date}</span>
+                    </div>
+                    <div>
+                      <h3 className="text-base font-semibold leading-snug group-hover:text-foreground transition-colors">
+                        {cs.title}
+                      </h3>
+                      <p className="text-xs text-muted-foreground font-mono mt-0.5 leading-relaxed">
+                        {cs.subtitle}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex shrink-0 flex-col gap-2 sm:items-end sm:max-w-64">
+                    <span className="text-xs font-mono text-muted-foreground sm:text-right">{cs.adrCount} ADRs</span>
+                    <div className="flex flex-wrap gap-1 sm:justify-end">
+                      {visibleDomains.map((d) => (
+                        <Badge key={d} variant="outline" className="text-xs font-mono">
+                          {d}
+                        </Badge>
+                      ))}
+                      {hiddenDomainCount > 0 && (
+                        <Badge variant="outline" className="text-xs font-mono text-muted-foreground">
+                          +{hiddenDomainCount}
+                        </Badge>
+                      )}
+                    </div>
+                  </div>
+                </div>
+
+                {/* Description + hashtags — summarized for home-card scanability */}
+                <p className="text-sm text-muted-foreground leading-relaxed mt-3 line-clamp-4">
+                  {cs.description}
+                </p>
+                <div className="flex flex-wrap gap-1 mt-3">
+                  {visibleTags.map((tag) => (
                     <span
-                      className={`text-xs px-1.5 py-0.5 rounded border font-mono ${
-                        cs.status === "Complete"
-                          ? "bg-emerald-500/15 text-emerald-400 border-emerald-500/20"
-                          : cs.status === "In Progress"
-                          ? "bg-blue-500/15 text-blue-400 border-blue-500/20"
-                          : cs.status === "Rejected"
-                          ? "bg-red-500/15 text-red-400 border-red-500/20"
-                          : cs.status === "Superseded"
-                          ? "bg-amber-500/15 text-amber-400 border-amber-500/20"
-                          : "bg-muted/50 text-muted-foreground border-border"
-                      }`}
+                      key={tag}
+                      className="text-xs font-mono text-muted-foreground bg-muted/40 px-2 py-0.5 rounded"
                     >
-                      {cs.status}
+                      #{tag}
                     </span>
-                    <span className="font-mono text-xs text-muted-foreground">{cs.date}</span>
-                  </div>
-                  <div>
-                    <h3 className="text-base font-semibold group-hover:text-foreground transition-colors">
-                      {cs.title}
-                    </h3>
-                    <p className="text-xs text-muted-foreground font-mono mt-0.5">{cs.subtitle}</p>
-                  </div>
+                  ))}
+                  {hiddenTagCount > 0 && (
+                    <span className="text-xs font-mono text-muted-foreground bg-muted/40 px-2 py-0.5 rounded">
+                      +{hiddenTagCount}
+                    </span>
+                  )}
                 </div>
-
-                <div className="shrink-0 flex flex-col items-end gap-2 pt-0.5">
-                  <span className="text-xs font-mono text-muted-foreground">{cs.adrCount} ADRs</span>
-                  <div className="flex flex-wrap justify-end gap-1">
-                    {cs.domains.map((d) => (
-                      <Badge key={d} variant="outline" className="text-xs font-mono">
-                        {d}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Description + hashtags — full card width */}
-              <p className="text-sm text-muted-foreground leading-relaxed mt-3">
-                {cs.description}
-              </p>
-              <div className="flex flex-wrap gap-1 mt-3">
-                {cs.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs font-mono text-muted-foreground bg-muted/40 px-2 py-0.5 rounded"
-                  >
-                    #{tag}
-                  </span>
-                ))}
-              </div>
-            </Link>
-          ))}
+              </Link>
+            );
+          })}
         </div>
 
       </div>

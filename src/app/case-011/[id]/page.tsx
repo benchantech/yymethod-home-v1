@@ -22,6 +22,11 @@ const ADR_FILE_MAP: Record<string, string> = {
   "C11-010": "C11-010-fantasy-golden-seed.md",
   "C11-011": "C11-011-adaptive-proof-layer.md",
   "C11-012": "C11-012-yysworld-kernel-architecture.md",
+  "C11-013": "C11-013-founder-parent-non-coercion-invariant.md",
+  "C11-014": "C11-014-non-coercive-upside-disclosure.md",
+  "C11-015": "C11-015-child-journey-private-key-public-key.md",
+  "C11-016": "C11-016-yy-lens-safe-distance-narrator.md",
+  "C11-017": "C11-017-founder-led-golden-path-opt-in-expansion.md",
 };
 
 async function getADRRaw(adrId: string): Promise<string | null> {

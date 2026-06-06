@@ -12,7 +12,12 @@ export type ADRCase011Domain =
   | "boundary"
   | "seed"
   | "adaptation"
-  | "architecture";
+  | "architecture"
+  | "consent"
+  | "disclosure"
+  | "privacy"
+  | "lens"
+  | "expansion";
 
 export interface ADRCase011 {
   id: string;
@@ -198,6 +203,76 @@ export const adrsCase011: ADRCase011[] = [
     summary: "The new YY Method Home Edition should adopt yysworld's actual construction kernel: versioned seeds, typed schemas, append-only records, explicit AI roles, generated artifacts with provenance, branch/comparison mechanics, static human projections, and machine-readable data projections. Case 011 supplies the mental scaffolding and purpose; yysworld supplies the early operating architecture that keeps quests, badges, sandbox graduation, family proof, and AI personalization from collapsing into generated content.",
     tags: ["yysworld-kernel", "architecture", "operating-system", "method-seed", "typed-schemas", "append-only", "provenance", "ai-role-separation", "machine-readable-data", "branch-comparison", "proof-artifacts", "anti-slop", "construction-discipline"],
   },
+  {
+    id: "C11-013",
+    number: "013",
+    title: "Founder-Parent Non-Coercion Invariant",
+    status: "Decided",
+    freshness: "Permanent",
+    freshnessNote: "Permanent. This invariant must be satisfied before the child-led AI learning ledger is introduced to any child. Revisit only to strengthen the protection, not to weaken it.",
+    date: "2026-06-06",
+    domain: "consent",
+    position: "Foundational",
+    dependsOn: ["C11-003", "C11-005", "C11-010", "C11-012"],
+    summary: "The first system under test is the founder-parent. A child-led AI learning ledger is valid only if participation is opt-in, reversible, non-punitive, and emotionally safe. The child may decline, pause, narrow scope, or stop without explanation. Clean opt-out is required proof that the model is safe, not a failure case.",
+    tags: ["founder-parent", "non-coercion", "clean-opt-out", "child-agency", "consent", "emotionally-safe", "parent-training-ground", "no-pressure", "breaks-if"],
+  },
+  {
+    id: "C11-014",
+    number: "014",
+    title: "Non-Coercive Upside Disclosure",
+    status: "Decided",
+    freshness: "Permanent",
+    freshnessNote: "Permanent. Revisit if the invitation script, child-facing language, or participant onboarding changes.",
+    date: "2026-06-06",
+    domain: "disclosure",
+    position: "Derived",
+    dependsOn: ["C11-013"],
+    summary: "The child should understand the upside of participation: resume strengthening, portfolio proof, career foundation, AI literacy, fun experimentation, flexible pacing, guardrailed review, and parent-built scaffolding. These benefits must be presented as opportunities, not obligations. Upside disclosure is valid only when paired with clean opt-out.",
+    tags: ["upside-disclosure", "resume-proof", "portfolio", "career-foundation", "ai-literacy", "flexible-schedule", "guardrails", "not-pressure"],
+  },
+  {
+    id: "C11-015",
+    number: "015",
+    title: "Child Journey as Private Key, YY Method as Public Key",
+    status: "Decided",
+    freshness: "Permanent",
+    freshnessNote: "Permanent for minor-child source material. Revisit only when the child is legally able to control disclosure, or if the private repository/access model changes materially.",
+    date: "2026-06-06",
+    domain: "privacy",
+    position: "Foundational",
+    dependsOn: ["C11-005", "C11-012", "C11-013", "C11-014"],
+    summary: "The child's actual AI learning journey is the private key: journals, prompts, attempts, artifacts, corrections, AI guardrail reviews, and parent decisions. YY Method is the public key: it may derive safe-distance projections, quests, badges, lessons, and proof metadata. The public key may change surface by audience and intent, but it may not mutate, overwrite, disclose, or define the private key.",
+    tags: ["private-key", "public-key", "child-owned-repo", "private-git", "public-projection", "source-truth", "portfolio-proof", "disclosure-consent", "one-way-flow"],
+  },
+  {
+    id: "C11-016",
+    number: "016",
+    title: "YY Lens as Safe-Distance Narrator and Self-Narration Model",
+    status: "Decided",
+    freshness: "Permanent",
+    freshnessNote: "Permanent. Revisit only if YY's role changes from narrator/guide into author, evaluator, or public substitute for the child.",
+    date: "2026-06-06",
+    domain: "lens",
+    position: "Derived",
+    dependsOn: ["C11-001", "C11-002", "C11-010", "C11-015"],
+    summary: "The power is in the YY lens. YY narrates what happened at a safe distance, translates private learning into public patterns, and models how learners can self-narrate in their own way. YY and Me is the guide: not because everyone must adopt YY, but because it demonstrates how a personal companion, character, or metaphor can make experience legible over time.",
+    tags: ["yy-lens", "safe-distance", "narrator", "self-narration", "yy-and-me", "public-pattern", "not-author", "private-source", "learner-lens"],
+  },
+  {
+    id: "C11-017",
+    number: "017",
+    title: "Founder-Led Golden Path and Personal Opt-In Expansion",
+    status: "Decided",
+    freshness: "Active",
+    freshnessNote: "Active. Revisit before inviting siblings, trusted families, parent-child participants, adult learners, or any school/community cohort.",
+    date: "2026-06-06",
+    domain: "expansion",
+    position: "Derived",
+    dependsOn: ["C11-013", "C11-014", "C11-015", "C11-016"],
+    summary: "The first child-led AI learning ledger may become the founder-led golden path if the child personally opts in and can cleanly opt out. It can prove the repo structure, guardrail review, parent gate, YY projection, badge criteria, and portfolio tags for siblings, trusted families, parent-child learners, and adults. It models agency; it does not create obligation.",
+    tags: ["founder-led", "golden-path", "personal-opt-in", "siblings", "trusted-families", "adult-learners", "no-obligation", "pattern-transfer", "agency"],
+  },
 ];
 
 export function getADRCase011(id: string): ADRCase011 | undefined {
@@ -217,4 +292,9 @@ export const domainLabelCase011: Record<ADRCase011Domain, string> = {
   seed: "Seed",
   adaptation: "Adaptation",
   architecture: "Architecture",
+  consent: "Consent",
+  disclosure: "Disclosure",
+  privacy: "Privacy",
+  lens: "Lens",
+  expansion: "Expansion",
 };

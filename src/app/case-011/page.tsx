@@ -7,7 +7,7 @@ import { statusColor } from "@/lib/adrs";
 
 export const metadata: Metadata = {
   title: "Case 011: YY Method Academy — Real YY as First-Class Guide — YY Method™ Home Edition",
-  description: "12 ADRs crystallizing the YY Method Academy mission: real YY as first-class viewpoint, adult syntax with childlike wonder, family AI literacy, gamification, yyworld sandbox, yymethod-home graduation field, Ben Chan Tech learning academy model, client advisory funding boundary, family-first yymethod.com domain boundary, immutable fantasy golden seed, adaptive 2026 social-proof layer, and yysworld kernel architecture.",
+  description: "17 ADRs crystallizing the YY Method Academy mission: real YY as first-class viewpoint, adult syntax with childlike wonder, family AI literacy, gamification, yyworld sandbox, yymethod-home graduation field, Ben Chan Tech learning academy model, client advisory funding boundary, family-first yymethod.com domain boundary, immutable fantasy golden seed, adaptive proof layer, yysworld kernel architecture, founder-parent non-coercion, private/public key learning records, YY narration lens, and opt-in expansion.",
   authors: [{ name: "Ben Chan" }],
   openGraph: {
     title: "Case 011: YY Method Academy — YY Method™ Home Edition",
@@ -31,6 +31,11 @@ const domainGroups: { domain: ADRCase011Domain; label: string; description: stri
   { domain: "seed", label: "Seed", description: "The fantasy theme grows from childhood thinking modes matured into adult method" },
   { domain: "adaptation", label: "Adaptation", description: "New Game Plus maps onto current gamification and social proof without replacing the seed" },
   { domain: "architecture", label: "Architecture", description: "yysworld's code structure becomes the early kernel for the new yymethod" },
+  { domain: "consent", label: "Consent", description: "The founder-parent's non-coercion posture is the first system under test" },
+  { domain: "disclosure", label: "Disclosure", description: "Upside is named clearly without turning future benefit into pressure" },
+  { domain: "privacy", label: "Privacy", description: "The child's journey is the private key; YY Method is the public key" },
+  { domain: "lens", label: "Lens", description: "YY narrates learning at safe distance and models self-narration" },
+  { domain: "expansion", label: "Expansion", description: "The founder-led path can transfer only through personal opt-in" },
 ];
 
 export default function Case011Page() {
@@ -68,7 +73,7 @@ export default function Case011Page() {
             {[
               { layer: "YY", adrs: "C11-001 – C11-002", note: "Real YY from yyand.me becomes the first-class lens. The voice preserves wonder while speaking in adult syntax." },
               { layer: "Family Learning", adrs: "C11-003 – C11-005", note: "Adult-directed, family-shareable, gamified AI literacy. yyworld protects sandbox play; yymethod-home graduates ideas into doctrine." },
-              { layer: "Seed + Kernel", adrs: "C11-006 – C11-012", note: "Ben Chan Tech becomes a family-first learning academy. The fantasy layer stays anchored in childhood truth while yysworld's kernel gives the new method construction discipline." },
+              { layer: "Seed + Kernel", adrs: "C11-006 – C11-017", note: "Ben Chan Tech becomes a family-first learning academy. The fantasy layer stays anchored in childhood truth while yysworld's kernel, consent invariants, and YY lens give the new method construction discipline." },
             ].map((item) => (
               <div key={item.layer} className="space-y-1">
                 <div className="space-y-0.5">
