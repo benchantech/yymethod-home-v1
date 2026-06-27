@@ -12,7 +12,7 @@
 
 ---
 
-**Ben:** read https://yyand.me and https://benchantech.com and give 3 new synthesized ideas
+**Ben:** read https://yyandme.benchantech.com and https://benchantech.com and give 3 new synthesized ideas
 
 **AI:** *(delivered 3 synthesized ideas)*
 
@@ -96,7 +96,7 @@
 
 **AI:** Does YY actually have a documented acorn preference and a recorded history of disagreeing with you — or did I fabricate those details?
 
-**Ben:** read https://yyand.me more thoroughly including the transcriptions themselves. tell me if you can't find them
+**Ben:** read https://yyandme.benchantech.com more thoroughly including the transcriptions themselves. tell me if you can't find them
 
 ---
 

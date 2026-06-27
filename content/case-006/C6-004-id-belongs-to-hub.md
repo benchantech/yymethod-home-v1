@@ -23,7 +23,7 @@ The hub domain is the correct home for the `@id` URI for three reasons.
 
 First, the hub's explicit purpose is to represent the whole. It is the property designed to surface all other properties. Placing the canonical identity anchor on the hub is the natural topology: the hub is the center, the spokes radiate from it, and the `@id` lives at the center.
 
-Second, the hub has no product identity of its own. The spokes have competing claims on their namespace — yymethod.com is a methodology framework; yyand.me is a podcast brand; home.yymethod.com is a case registry. The hub is purely personal and relational. Its `@id` namespace is uncontested.
+Second, the hub has no product identity of its own. The spokes have competing claims on their namespace — yymethod.com is a methodology framework; yyandme.benchantech.com is a podcast brand; home.yymethod.com is a case registry. The hub is purely personal and relational. Its `@id` namespace is uncontested.
 
 Third, concentrating the canonical signal on the hub strengthens the hub's authority as an entity anchor. As more properties reference the hub's `@id`, the hub accumulates cross-domain citations for the entity it represents. This strengthens the overall entity graph.
 

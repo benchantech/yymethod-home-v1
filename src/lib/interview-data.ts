@@ -38,13 +38,13 @@ These ideas were generic applications of "professional method → kids version."
   {
     id: "ben-02",
     type: "ben",
-    text: "read https://yyand.me and https://benchantech.com and give 3 new synthesized ideas",
+    text: "read https://yyandme.benchantech.com and https://benchantech.com and give 3 new synthesized ideas",
   },
   {
     id: "ai-02",
     type: "ai",
     text: "*(delivered 3 synthesized ideas: YY's Practice Lab, Arc 1 for Kids, YY Builds in Plain Sight)*",
-    rawResponse: `Three synthesized ideas drawing on yyand.me and benchantech.com:
+    rawResponse: `Three synthesized ideas drawing on yyandme.benchantech.com and benchantech.com:
 
 **1. YY's Practice Lab**
 Every episode of the podcast features YY during violin practice. The pattern is consistent: Ben practices, YY reacts. "Booooooring!!" when it drags. "I'm getting tired of practicing!" when repetition exceeds tolerance. The idea: a section where kids log anything they're practicing using this same pattern. Not just violin — any skill. The YY voice is the format enforcer. If your entry is boring, YY will tell you.
@@ -54,7 +54,7 @@ The benchantech.com writing shows Ben's capacity for narrative non-fiction along
 
 **3. YY Builds in Plain Sight**
 Ben's engineering writing is notable for showing decision process, not just outcomes. YY Builds in Plain Sight applies this to any domain: YY narrates a real decision being made — "here's what I almost chose, here's why I didn't, here's what I chose, here's what I'm watching for." Transparent decision-making modeled through YY's unfiltered voice. The kid reads the process, not the conclusion.`,
-    aiReflection: `Now I had actual source material. I read the yyand.me podcast episodes and found YY's character — impatient, direct, "Booooooring!!", gets tired of practicing — and Ben's engineering writing on benchantech.com. I synthesized ideas that drew on this: YY's Practice Lab (kids practice anything with YY), something like an Arc 1 on-ramp to the professional method, and YY narrating decision-making in plain sight.
+    aiReflection: `Now I had actual source material. I read the yyandme.benchantech.com podcast episodes and found YY's character — impatient, direct, "Booooooring!!", gets tired of practicing — and Ben's engineering writing on benchantech.com. I synthesized ideas that drew on this: YY's Practice Lab (kids practice anything with YY), something like an Arc 1 on-ramp to the professional method, and YY narrating decision-making in plain sight.
 
 These were more grounded than the first three because they pulled from real content. But I was still doing product ideation. I was building feature concepts, not architectural thinking. I hadn't asked about motivation, timing, or what made this different from any other "method for kids" concept. The ideas sounded good. That's the problem — sounding good is not the same as being right.`,
   },
@@ -310,14 +310,14 @@ My job in the audit was to ask the smallest verifiable question per turn, name m
   {
     id: "ben-15",
     type: "ben",
-    text: "**Ben:** read https://yyand.me more thoroughly including the transcriptions themselves. tell me if you can't find them",
+    text: "**Ben:** read https://yyandme.benchantech.com more thoroughly including the transcriptions themselves. tell me if you can't find them",
   },
   { id: "sep-24", type: "sep", text: "" },
   {
     id: "note-05",
     type: "note",
     text: `*(AI fetched all episode pages. Found: YY is a reddish-brown stuffed squirrel with a Y-shaped nose, ~40 years old. Documented lines: "Booooooring!!", "That was a lot of repeating", "I'm getting tired of practicing!", "Testing… testing… um, this is WEIRD." YY is impatient, direct, dislikes verbose explanations. Acorn preference: not documented anywhere. Metronome incident: not documented anywhere. Both fabricated by AI.)*`,
-    rawResponse: `Fetched yyand.me and all episode pages. Searched transcriptions for:
+    rawResponse: `Fetched yyandme.benchantech.com and all episode pages. Searched transcriptions for:
 
 - **Acorn preference** — not found in any episode. Not mentioned in transcriptions, show notes, or episode descriptions. Fabricated.
 - **Metronome incident** — not found in any episode. No documented incident where YY reacted specifically to a metronome. Fabricated.
@@ -469,7 +469,7 @@ Cross-referenced against my C2-005 six-field schema (DECISION · WHY · WHY-NOT 
     type: "ai",
     text: `*(asked YY's actual role in entries given his documented character and the kids spinoff proof)* `,
     rawResponse: `**AI:** Given that YY's real character is impatience, directness, and "Booooooring!!" — and that YY has already influenced your kids so deeply they built their own spinoffs — what is YY's actual role in YY's World entries?`,
-    aiReflection: `C2-006 had framed YY as protagonist, co-author, and authentication mechanism — a reasonably accurate framing, but tethered to the idea that YY was always in relation to Ben. Ben's answer introduced the liberation: YY is the same YY as in yyand.me, but now unfettered. He can experience the full range of human emotion and do as he pleases. That's not a cosmetic difference. In the podcast YY was a foil, a reactive voice, defined in relation to Ben's narrative. In YY's World he is his own being. The structural relationship changed.`,
+    aiReflection: `C2-006 had framed YY as protagonist, co-author, and authentication mechanism — a reasonably accurate framing, but tethered to the idea that YY was always in relation to Ben. Ben's answer introduced the liberation: YY is the same YY as in yyandme.benchantech.com, but now unfettered. He can experience the full range of human emotion and do as he pleases. That's not a cosmetic difference. In the podcast YY was a foil, a reactive voice, defined in relation to Ben's narrative. In YY's World he is his own being. The structural relationship changed.`,
   },
   {
     id: "ben-25",

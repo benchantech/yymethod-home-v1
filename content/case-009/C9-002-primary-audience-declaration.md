@@ -15,7 +15,7 @@ Q1 of Resonant Patterns was written hoping to attract and grow an audience. Heav
 
 The operator stopped trying to write with AI to draw people and went inward for Q2, written with minimal AI, for himself.
 
-Then, in planning Q3, something became clear: the kids have always been the primary audience. Not just for Q3 — for all of it. Across the Substack, yyand.me, home.yymethod.com, and the YouTube channel that started in 2007. The declaration required by Q3 is not a pivot. It is the naming of what was always true.
+Then, in planning Q3, something became clear: the kids have always been the primary audience. Not just for Q3 — for all of it. Across the Substack, yyandme.benchantech.com, home.yymethod.com, and the YouTube channel that started in 2007. The declaration required by Q3 is not a pivot. It is the naming of what was always true.
 
 ---
 

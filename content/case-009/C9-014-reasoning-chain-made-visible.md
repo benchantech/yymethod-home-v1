@@ -13,9 +13,9 @@
 
 Case 009 was written in a single reasoning session on 2026-04-26, in conversation with an AI system. The operator brought the content — the experiences, the scars, the decisions, the surfaces, the quests — and the session surfaced connections that had not previously been made explicit:
 
-That the YouTube channel (2007), yyand.me, the Substack, and home.yymethod.com are four surfaces of the same project — not four separate projects that happen to share an author.
+That the YouTube channel (2007), yyandme.benchantech.com, the Substack, and home.yymethod.com are four surfaces of the same project — not four separate projects that happen to share an author.
 
-That "The First Echo" (yyand.me Episode 0) is the origin document for all of it — describing, in 2025, a project that the YouTube channel had been executing since 2007.
+That "The First Echo" (yyandme.benchantech.com Episode 0) is the origin document for all of it — describing, in 2025, a project that the YouTube channel had been executing since 2007.
 
 That "Paying Attention" (the closing Q2 essay) was already the Q2/Q3 bridge before Q3 was planned — because its closing statement ("making my thought processes visible to myself to help me reflect and internalize") is a prose description of the ADR system.
 

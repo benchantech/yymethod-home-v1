@@ -5,7 +5,7 @@
 **Domain:** Seed
 **Depends On:** C11-001, C11-002, C11-004, C11-009 — YY as viewpoint, adult syntax, gamified progression, and family-first boundary
 **Freshness Boundary:** Immutable. This is the golden seed for the fantasy theme underpinning YY Method™ Home Edition and YY. Product surfaces may evolve, but they must not contradict this source.
-**Source:** Operator correction and source review. 2026-06-06. Source anchors: `yyand.me` Episode 1, "Ben Chan and YY"; Resonant Patterns, "Building in Plain Sight."
+**Source:** Operator correction and source review. 2026-06-06. Source anchors: `yyandme.benchantech.com` Episode 1, "Ben Chan and YY"; Resonant Patterns, "Building in Plain Sight."
 
 ---
 
@@ -15,7 +15,7 @@ The fantasy theme that underpins `yymethod.com` is not invented brand dressing. 
 
 The source pattern appears in two public artifacts:
 
-- In `yyand.me` Episode 1, YY is introduced as the operator's stuffed squirrel, first storytelling partner, identity thread, and bridge between childhood imagination and adult creative voice. The episode recalls solo play, invented voices, recurring heroes, the "Author Ship" joke, and the realization that imagination unlocked by looking at ideas through distinct character lenses.
+- In `yyandme.benchantech.com` Episode 1, YY is introduced as the operator's stuffed squirrel, first storytelling partner, identity thread, and bridge between childhood imagination and adult creative voice. The episode recalls solo play, invented voices, recurring heroes, the "Author Ship" joke, and the realization that imagination unlocked by looking at ideas through distinct character lenses.
 - In "Building in Plain Sight," the operator frames adult learning through RPG stats, experience points, New Game Plus skills, daily logs, and visible practice. The same post roots that adult system in childhood: Legos on the floor, violin, computer, stuffed animals, and YY leading the charge through fear.
 
 Together, these establish the golden seed:

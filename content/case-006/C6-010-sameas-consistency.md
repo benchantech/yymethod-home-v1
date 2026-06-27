@@ -18,11 +18,11 @@ In this case, the array stabilized at six URLs:
 1. `https://benchantech.com` (hub)
 2. `https://yymethod.com` (framework)
 3. `https://home.yymethod.com` (cases)
-4. `https://yyand.me` (podcast)
+4. `https://yyandme.benchantech.com` (podcast)
 5. `https://www.youtube.com/@benchanviolin` (video)
 6. `https://benchanviolin.substack.com` (writing)
 
-All four properties (benchantech, yymethod, home.yymethod, yyand.me) carry this identical array.
+All four properties (benchantech, yymethod, home.yymethod, yyandme.benchantech.com) carry this identical array.
 
 ---
 

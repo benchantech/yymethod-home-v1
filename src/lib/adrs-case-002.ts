@@ -232,7 +232,7 @@ export const adrsCase002: ADRCase002[] = [
     domain: "content",
     position: "Foundational",
     dependsOn: ["C2-013"],
-    summary: "YY plays the same role as in yyand.me — but unfettered. Full range of human emotion. Not Ben's sidekick; his own being. YY vocalized what Ben felt internally — the unfiltered voice that couldn't be polished. Already proven on Ben's kids, who built uninhibited YY spinoffs they own outright. Liberating YY is continuing what he already is.",
+    summary: "YY plays the same role as in yyandme.benchantech.com — but unfettered. Full range of human emotion. Not Ben's sidekick; his own being. YY vocalized what Ben felt internally — the unfiltered voice that couldn't be polished. Already proven on Ben's kids, who built uninhibited YY spinoffs they own outright. Liberating YY is continuing what he already is.",
     tags: ["yy", "liberated", "full-range", "proven-on-kids", "operator-supplied"],
   },
   {

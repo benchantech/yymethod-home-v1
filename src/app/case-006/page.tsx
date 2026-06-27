@@ -73,7 +73,7 @@ export default function Case006Page() {
               { domain: "benchantech.com", role: "Hub", note: "Navigation, cohesion, canonical Person @id anchor. No original content." },
               { domain: "yymethod.com", role: "Framework", note: "The method in full — what it is, how it works, why it was built." },
               { domain: "home.yymethod.com", role: "Cases", note: "Live registry of decisions made under the method. This site." },
-              { domain: "yyand.me", role: "Origin", note: "Podcast. The method&apos;s backstory. Real life in real time." },
+              { domain: "yyandme.benchantech.com", role: "Origin", note: "Podcast. The method&apos;s backstory. Real life in real time." },
             ].map((item) => (
               <div key={item.domain} className="space-y-1">
                 <div className="space-y-0.5">

@@ -8,13 +8,13 @@
 
 ## What This Case Is
 
-A structured knowledge artifact capturing the mission crystallization for YY Method™ Home Edition: the doctrine of the method should be taught through the lens of the real YY from `yyand.me`, promoted from mascot/reference to first-class viewpoint.
+A structured knowledge artifact capturing the mission crystallization for YY Method™ Home Edition: the doctrine of the method should be taught through the lens of the real YY from `yyandme.benchantech.com`, promoted from mascot/reference to first-class viewpoint.
 
 The goal is not to make a child-directed product. The goal is to build an adult-positioned family learning system where parents can learn AI from the ground up while bringing their families into a shared, gamified world. `yyworld` remains the kids' safe sandbox for imagination and character play. `yymethod-home` becomes the graduation field where sandboxed ideas become real reasoning, philosophy, and product engine design.
 
 The case documents seventeen decision domains:
 
-1. **Canon** — Real YY from `yyand.me` becomes the first-class guide.
+1. **Canon** — Real YY from `yyandme.benchantech.com` becomes the first-class guide.
 2. **Voice** — Childlike wonder is carried through adult syntax.
 3. **Positioning** — Family-shareable, adult-directed, not kids-only.
 4. **Progression** — Badges, XP, quests, and family victories become the learning loop.
@@ -94,7 +94,7 @@ C11-013  Founder-Parent Non-Coercion Invariant                     [FOUNDATIONAL
 
 ## Cascade Rules
 
-If YY's canonical characterization changes in `yyand.me` or `yysworld` → revisit C11-001 and C11-002 before changing public teaching voice  
+If YY's canonical characterization changes in `yyandme.benchantech.com` or `yysworld` → revisit C11-001 and C11-002 before changing public teaching voice  
 If any surface begins soliciting, profiling, or collecting from children directly → revisit C11-003 immediately; the adult-directed posture is no longer intact  
 If gamification starts rewarding shallow completion instead of real reasoning → revisit C11-004; XP must measure demonstrated cognitive moves, not clicks  
 If `yyworld` becomes public or account-based for minors → revisit C11-005 against Case 010's privacy and authorship architecture  

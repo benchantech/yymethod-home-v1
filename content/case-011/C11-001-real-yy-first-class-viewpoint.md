@@ -4,16 +4,16 @@
 **Date:** 2026-06-06
 **Domain:** Canon
 **Depends On:** None — foundational viewpoint decision
-**Freshness Boundary:** Permanent. The system may mature, but the source of YY's authority remains the real YY from `yyand.me`.
+**Freshness Boundary:** Permanent. The system may mature, but the source of YY's authority remains the real YY from `yyandme.benchantech.com`.
 **Source:** Operator crystallization session. 2026-06-06.
 
 ---
 
 ## Capture
 
-The doctrine in `yymethod-home` is structurally useful but emotionally under-anchored. It explains judgment, provenance, correction, and durable reasoning, but it does not yet carry the soul of the original YY from `yyand.me`: the reddish-brown stuffed squirrel with the Y-shaped nose, the first storytelling partner, the bridge between childhood imagination and adult creative identity.
+The doctrine in `yymethod-home` is structurally useful but emotionally under-anchored. It explains judgment, provenance, correction, and durable reasoning, but it does not yet carry the soul of the original YY from `yyandme.benchantech.com`: the reddish-brown stuffed squirrel with the Y-shaped nose, the first storytelling partner, the bridge between childhood imagination and adult creative identity.
 
-`yysworld` attempted to make YY central, but the operator did not participate directly in the storytelling. The result preserved some scaffolding and some character traits, but not the full lived personality. The real source is still `yyand.me`: YY as companion, comic interruption, emotional thread, inner-child keeper, and narrative lens.
+`yysworld` attempted to make YY central, but the operator did not participate directly in the storytelling. The result preserved some scaffolding and some character traits, but not the full lived personality. The real source is still `yyandme.benchantech.com`: YY as companion, comic interruption, emotional thread, inner-child keeper, and narrative lens.
 
 The decision is to promote real YY from brand decoration to first-class viewpoint. YY is not the mascot standing next to the method. YY is the lens through which the method can be taught without losing wonder.
 
@@ -50,7 +50,7 @@ A new guide would be cleaner but weaker. YY's force comes from being real within
 
 ## Commit
 
-**Decision:** Real YY from `yyand.me` is promoted to first-class viewpoint for YY Method™ Home Edition. Future academy, gamification, lesson, and product surfaces should treat YY as guide, lens, and emotional operating system, not as decorative mascot. `yysworld` remains a branch/sandbox lineage; `yyand.me` remains the canonical emotional source.
+**Decision:** Real YY from `yyandme.benchantech.com` is promoted to first-class viewpoint for YY Method™ Home Edition. Future academy, gamification, lesson, and product surfaces should treat YY as guide, lens, and emotional operating system, not as decorative mascot. `yysworld` remains a branch/sandbox lineage; `yyandme.benchantech.com` remains the canonical emotional source.
 
 **Confidence:** High.
 

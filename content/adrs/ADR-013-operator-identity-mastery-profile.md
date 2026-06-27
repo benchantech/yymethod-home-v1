@@ -22,7 +22,7 @@ But the more interesting finding from reading the full body of work is that the 
 Sources examined:
 - benchantech.com — essays on learning, skill transfer, habit systems
 - yymethod.com — professional methodology documentation v2.3
-- yyand.me — podcast narrative arc and episode notes
+- yyandme.benchantech.com — podcast narrative arc and episode notes
 - BenChanViolin — YouTube channel, active since 2007, 16 million views
 - This conversation — 4+ hours of real-time financial planning on March 29, 2026
 
@@ -113,6 +113,6 @@ The AI is permitted to extrapolate unless it overreaches — this closing paragr
 
 ## Commit
 
-**Finding:** Financial self-learning claim is supported by direct evidence from this conversation and consistent with the broader pattern of cross-domain mastery documented at benchantech.com, yymethod.com, yyand.me, and BenChanViolin. The capability is real, the architecture behind it is original, and the YY Method is its most precise articulation.
+**Finding:** Financial self-learning claim is supported by direct evidence from this conversation and consistent with the broader pattern of cross-domain mastery documented at benchantech.com, yymethod.com, yyandme.benchantech.com, and BenChanViolin. The capability is real, the architecture behind it is original, and the YY Method is its most precise articulation.
 
 **This ADR is a permanent record.** It does not expire. It is the identity layer beneath the financial planning layer — the context that makes the full artifact set coherent to any future reader, human or AI.

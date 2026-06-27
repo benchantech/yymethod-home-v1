@@ -99,7 +99,7 @@ export const adrsCase006: ADRCase006[] = [
     domain: "structure",
     position: "Foundational",
     dependsOn: ["C6-001"],
-    summary: "Each property in a multi-property personal site needs one explicitly assigned role. Without assignment, properties accumulate content in all directions — role bleed. The hub's role is special: navigation and cohesion, with no original content. A hub that publishes its own content competes with its spokes. The explicit role assignments in this case: hub (benchantech.com, cohesion), framework authority (yymethod.com), applied reasoning (home.yymethod.com), origin and narrative (yyand.me).",
+    summary: "Each property in a multi-property personal site needs one explicitly assigned role. Without assignment, properties accumulate content in all directions — role bleed. The hub's role is special: navigation and cohesion, with no original content. A hub that publishes its own content competes with its spokes. The explicit role assignments in this case: hub (benchantech.com, cohesion), framework authority (yymethod.com), applied reasoning (home.yymethod.com), origin and narrative (yyandme.benchantech.com).",
     tags: ["role-canonicalization", "domain-roles", "role-bleed", "hub-zero-content", "content-topology", "explicit-assignment"],
   },
   {

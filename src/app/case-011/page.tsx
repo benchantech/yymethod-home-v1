@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 };
 
 const domainGroups: { domain: ADRCase011Domain; label: string; description: string }[] = [
-  { domain: "canon", label: "Canon", description: "Real YY from yyand.me becomes the first-class guide and emotional source" },
+  { domain: "canon", label: "Canon", description: "Real YY from yyandme.benchantech.com becomes the first-class guide and emotional source" },
   { domain: "voice", label: "Voice", description: "Childlike wonder carried through adult syntax" },
   { domain: "positioning", label: "Positioning", description: "Adult-directed, family-shareable AI literacy rather than kids-only product posture" },
   { domain: "progression", label: "Progression", description: "Badges, XP, quests, and family victories as the repeated learning loop" },
@@ -71,7 +71,7 @@ export default function Case011Page() {
           <p className="text-xs font-mono text-muted-foreground font-semibold uppercase tracking-wider">Mission Distillation</p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {[
-              { layer: "YY", adrs: "C11-001 – C11-002", note: "Real YY from yyand.me becomes the first-class lens. The voice preserves wonder while speaking in adult syntax." },
+              { layer: "YY", adrs: "C11-001 – C11-002", note: "Real YY from yyandme.benchantech.com becomes the first-class lens. The voice preserves wonder while speaking in adult syntax." },
               { layer: "Family Learning", adrs: "C11-003 – C11-005", note: "Adult-directed, family-shareable, gamified AI literacy. yyworld protects sandbox play; yymethod-home graduates ideas into doctrine." },
               { layer: "Seed + Kernel", adrs: "C11-006 – C11-017", note: "Ben Chan Tech becomes a family-first learning academy. The fantasy layer stays anchored in childhood truth while yysworld's kernel, consent invariants, and YY lens give the new method construction discipline." },
             ].map((item) => (

@@ -19,7 +19,7 @@ In this case:
 - **benchantech.com** — hub (navigation, cohesion, identity anchor)
 - **yymethod.com** — framework authority (the method: what it is, how it works, why it was built)
 - **home.yymethod.com** — applied reasoning (cases, ADR registry, decisions made under the method)
-- **yyand.me** — origin and narrative (podcast, backstory, real life in real time)
+- **yyandme.benchantech.com** — origin and narrative (podcast, backstory, real life in real time)
 
 The hub's role is special: it holds no original content. Its value is entirely relational.
 
