@@ -55,7 +55,7 @@ export default function AgentPage() {
 
       {/* Header */}
       <div className="space-y-3">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
           <Badge variant="outline" className="font-mono text-xs">agent_secure_setup v2</Badge>
           <Badge variant="outline" className="font-mono text-xs">March 29, 2026 · 22:57</Badge>
         </div>

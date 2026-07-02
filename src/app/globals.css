@@ -157,3 +157,12 @@
 .prose pre {
   border: 1px solid #dcc9ae;
 }
+
+/* Page mains are flex items of the column-flex body. Blink floors their
+   stretched width at the content's min-content size, so a single long
+   unbreakable line (truncated titles, code) widens the whole page past the
+   viewport on mobile. width:100% pins them to the body; each page's
+   max-w-* and mx-auto then apply as intended. */
+body > main {
+  width: 100%;
+}
