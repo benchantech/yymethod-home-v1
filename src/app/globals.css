@@ -11,6 +11,11 @@
   --font-sans: var(--font-serif), "Source Serif 4", Georgia, serif;
   --font-mono: var(--font-plex-mono), "IBM Plex Mono", ui-monospace, monospace;
   --font-heading: var(--font-sans);
+  /* Readability: serif needs a larger small-type scale than the Tailwind default */
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.55;
+  --text-sm: 0.9375rem;
+  --text-sm--line-height: 1.65;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -69,8 +74,8 @@
   --color-blue-500: #96683f;
   --color-orange-400: #8a6a2f;
   --color-orange-500: #8a6a2f;
-  --color-slate-400: #8a7358;
-  --color-slate-500: #8a7358;
+  --color-slate-400: #75604a;
+  --color-slate-500: #75604a;
 }
 
 :root {
@@ -85,7 +90,7 @@
   --secondary: #eeddc4;
   --secondary-foreground: #3f2b16;
   --muted: #eeddc4;
-  --muted-foreground: #6b5740;
+  --muted-foreground: #55432f;
   --accent: #f5ead6;
   --accent-foreground: #33261a;
   --destructive: #a04c2e;

@@ -20,8 +20,8 @@ const statusInk: Record<CaseStudy["status"], string> = {
   "Complete": "text-[#5f7a4a]",
   "In Progress": "text-[#a3672c]",
   "Rejected": "text-[#a04c2e]",
-  "Superseded": "text-[#8a7358]",
-  "Coming Soon": "text-[#8a7358]",
+  "Superseded": "text-[#75604a]",
+  "Coming Soon": "text-[#75604a]",
 };
 
 const isScar = (status: CaseStudy["status"]) => status === "Rejected" || status === "Superseded";
@@ -57,17 +57,17 @@ export default function Home() {
       {/* Hero */}
       <div className="px-6 md:px-12 pt-[72px] pb-[54px] bg-gradient-to-b from-[#f3e9dc] to-[#eeddc4] border-b border-border">
         <div className="max-w-[860px] mx-auto">
-          <div className="font-mono text-[11px] tracking-[.16em] text-[#96683f]">FOR A LIFE · v2.3 · INDEPENDENTLY OWNED</div>
+          <div className="font-mono text-[12px] tracking-[.16em] text-[#96683f]">FOR A LIFE · v2.3 · INDEPENDENTLY OWNED</div>
           <h1 className="mt-[18px] text-[40px] md:text-[56px] font-semibold leading-[1.06] tracking-[-.01em] text-[#3f2b16]">
             Preserve judgment under&nbsp;constraint.
           </h1>
-          <p className="mt-6 max-w-[700px] text-[17px] leading-[1.65] text-[#5c4a35]">
+          <p className="mt-6 max-w-[700px] text-[18px] leading-[1.65] text-[#5c4a35]">
             The YY Method is a personal epistemological framework for making decisions durable — structured so they
             survive time, correction, and handoff to AI. It applies everywhere judgment is required under constraint:
             tax strategy, system design, creative work, life architecture.
           </p>
           <div className="flex gap-[22px] mt-[30px] items-center flex-wrap">
-            <a href="#cases" className="font-mono text-[12.5px] px-6 py-3 bg-[#7a4a24] text-[#f6ecdd] font-medium">
+            <a href="#cases" className="font-mono text-[13px] px-6 py-3 bg-[#7a4a24] text-[#f6ecdd] font-medium">
               Browse the cases
             </a>
             <a
@@ -85,11 +85,11 @@ export default function Home() {
       {/* Provenance */}
       <div className="border-b border-border">
         <div className="max-w-[860px] mx-auto grid grid-cols-1 sm:grid-cols-[150px_1fr] gap-4 sm:gap-8 px-6 md:px-12 py-[38px]">
-          <div className="font-mono text-[11px] tracking-[.16em] text-[#96683f] leading-loose">
+          <div className="font-mono text-[12px] tracking-[.16em] text-[#96683f] leading-loose">
             PROVENANCE<br />
-            <span className="text-[#b39b7a]">RECORD OF<br />OWNERSHIP</span>
+            <span className="text-[#8a7358]">RECORD OF<br />OWNERSHIP</span>
           </div>
-          <p className="text-[14.5px] leading-[1.7] text-[#5c4a35]">
+          <p className="text-[15.5px] leading-[1.7] text-[#5c4a35]">
             This is YY Method™ Home Edition — independently owned and controlled. v2.3 is the last version personally
             owned by the method&apos;s author. The method has since been applied within a professional employment context.
             The method itself — its principles, decision structures, and reasoning patterns — remains the author&apos;s
@@ -105,15 +105,15 @@ export default function Home() {
       {/* About */}
       <div className="border-b border-border">
         <div className="max-w-[860px] mx-auto grid grid-cols-1 sm:grid-cols-[150px_1fr] gap-4 sm:gap-8 px-6 md:px-12 py-[38px]">
-          <div className="font-mono text-[11px] tracking-[.16em] text-[#96683f] leading-loose">ABOUT THIS<br />SYSTEM</div>
+          <div className="font-mono text-[12px] tracking-[.16em] text-[#96683f] leading-loose">ABOUT THIS<br />SYSTEM</div>
           <div>
-            <p className="text-[14.5px] leading-[1.7] text-[#5c4a35]">
+            <p className="text-[15.5px] leading-[1.7] text-[#5c4a35]">
               This is the YY Method™ Home Edition case study archive. Each case study applies the method to a
               real-world complex problem, producing a structured set of ADRs (Architecture Decision Records) that
               capture the full reasoning chain — decisions made, alternatives rejected, corrections applied, and
               freshness boundaries defined.
             </p>
-            <p className="mt-4 text-[14.5px] leading-[1.7] text-[#5c4a35]">
+            <p className="mt-4 text-[15.5px] leading-[1.7] text-[#5c4a35]">
               Case studies are illustrative and anonymized. Numbers are approximate. The method is the message. More
               case studies will be added over time — some from the method&apos;s author, some from other practitioners. As
               the archive grows, the method itself becomes the through-line.
@@ -125,8 +125,8 @@ export default function Home() {
       {/* Case ledger */}
       <div id="cases" className="max-w-[860px] mx-auto px-6 md:px-12 pt-[46px] pb-5">
         <div className="flex justify-between items-baseline flex-wrap gap-3">
-          <div className="font-mono text-[11px] tracking-[.16em] text-[#96683f]">THE HOUSEHOLD LEDGER — CASE STUDIES</div>
-          <div className="font-mono text-xs text-[#8a7358]">
+          <div className="font-mono text-[12px] tracking-[.16em] text-[#96683f]">THE HOUSEHOLD LEDGER — CASE STUDIES</div>
+          <div className="font-mono text-xs text-[#75604a]">
             {caseStudies.length} published · {inProgress} in progress
           </div>
         </div>
@@ -140,27 +140,27 @@ export default function Home() {
                 isScar(cs.status) ? "bg-[#f5ead6] border-[#cdae87]" : "bg-[#faf4e8] border-border"
               }`}
             >
-              <div className="flex justify-between items-baseline font-mono text-[11px] flex-wrap gap-2">
+              <div className="flex justify-between items-baseline font-mono text-[12px] flex-wrap gap-2">
                 <span className="text-[#96683f]">
                   CASE #{cs.number} · <span className={`font-semibold ${statusInk[cs.status]}`}>{cs.status.toUpperCase()}</span>
                 </span>
-                <span className="text-[#8a7358]">{cs.date} · {cs.adrCount} ADRs</span>
+                <span className="text-[#75604a]">{cs.date} · {cs.adrCount} ADRs</span>
               </div>
-              <div className="text-[21px] font-semibold leading-[1.3] mt-2.5 text-[#3f2b16]">{cs.title}</div>
-              <div className="text-[13px] italic text-[#96683f] mt-1.5">{cs.subtitle}</div>
-              <p className="mt-3 text-[13.5px] leading-[1.62] text-[#5c4a35]">{cs.description}</p>
+              <div className="text-[22px] font-semibold leading-[1.3] mt-2.5 text-[#3f2b16]">{cs.title}</div>
+              <div className="text-[14px] italic text-[#96683f] mt-1.5">{cs.subtitle}</div>
+              <p className="mt-3 text-[15px] leading-[1.62] text-[#5c4a35]">{cs.description}</p>
             </Link>
           ))}
         </div>
 
-        <p className="mt-[26px] text-[13.5px] italic text-[#8a7358] max-w-[640px]">
+        <p className="mt-[26px] text-[15px] italic text-[#75604a] max-w-[640px]">
           Rejected cases are never superseded — the scar record is preserved intact. The registry audits itself.
         </p>
       </div>
 
       {/* Disclosure */}
       <div className="max-w-[860px] mx-auto px-6 md:px-12 pt-[30px] pb-[46px]">
-        <p className="font-mono text-[11px] leading-[1.8] text-[#a08a68]">
+        <p className="font-mono text-[12px] leading-[1.8] text-[#75604a]">
           Disclosure: Case studies published here are illustrative demonstrations of the YY Method™ Home Edition
           applied to real-world problems. Numbers are approximate and generalized. Math is illustrative only. Nothing
           here constitutes financial, tax, legal, or professional advice of any kind. Consult qualified professionals
@@ -171,7 +171,7 @@ export default function Home() {
       {/* System artifacts */}
       <div className="border-t border-border bg-[#eeddc4]">
         <div className="max-w-[860px] mx-auto px-6 md:px-12 pt-10 pb-[46px]">
-          <div className="font-mono text-[11px] tracking-[.16em] text-[#96683f] mb-5">SYSTEM ARTIFACTS</div>
+          <div className="font-mono text-[12px] tracking-[.16em] text-[#96683f] mb-5">SYSTEM ARTIFACTS</div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {artifacts.map((a) => (
               <Link
@@ -179,11 +179,11 @@ export default function Home() {
                 href={a.href}
                 className="bg-[#faf4e8] border border-border px-6 py-[22px] hover:shadow-[0_4px_12px_rgba(90,60,25,.18)] transition-shadow"
               >
-                <div className="flex justify-between font-mono text-[10.5px] text-[#96683f]">
+                <div className="flex justify-between font-mono text-[11.5px] text-[#96683f]">
                   <span>{a.label}</span>
                   <span>{a.badge}</span>
                 </div>
-                <p className="mt-2.5 text-[13.5px] leading-[1.55] text-[#5c4a35]">{a.description}</p>
+                <p className="mt-2.5 text-[15px] leading-[1.55] text-[#5c4a35]">{a.description}</p>
               </Link>
             ))}
           </div>
