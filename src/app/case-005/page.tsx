@@ -40,7 +40,7 @@ const ledgerStatus: Partial<Record<ADRStatus, { label: string; color: string }>>
 };
 
 function ledgerStatusFor(status: ADRStatus): { label: string; color: string } {
-  return ledgerStatus[status] ?? { label: status.toUpperCase(), color: "text-[#75604a]" };
+  return ledgerStatus[status] ?? { label: status.toUpperCase(), color: "text-[#64503a]" };
 }
 
 export default function Case005Page() {
@@ -58,7 +58,7 @@ export default function Case005Page() {
           <div className="font-mono flex gap-4 items-baseline flex-wrap text-[12.5px]">
             <span className="text-[#96683f]">CASE #005</span>
             <span className="px-2.5 py-[3px] bg-[#5f7a4a] text-[#f6ecdd] font-semibold text-[11.5px] tracking-[.08em]">COMPLETE</span>
-            <span className="text-[#75604a]">2026-04-05 · {adrsCase005.length} ADRs · housing · sovereignty</span>
+            <span className="text-[#64503a]">2026-04-05 · {adrsCase005.length} ADRs · housing · sovereignty</span>
           </div>
           <h1 className="mt-4 text-4xl md:text-[44px] font-semibold leading-[1.1] tracking-[-.01em] text-[#3f2b16]">
             Family Move Architecture
@@ -66,7 +66,7 @@ export default function Case005Page() {
           <div className="mt-2.5 text-[15.5px] italic text-[#96683f]">
             Housing upgrade · opportunity cost · family alignment · spouse protection · sovereignty
           </div>
-          <p className="mt-5 max-w-[700px] text-[16.5px] leading-[1.68] text-[#5c4a35]">
+          <p className="mt-5 max-w-[700px] text-[16.5px] leading-[1.68] text-[#43321f]">
             20 ADRs capturing and closing a family housing decision. A lifestyle upgrade collides with a 7-figure
             opportunity cost, a split household, a rejected split-time model, and a funding trilemma. Closing ADRs
             establish the decision architecture: default stay as the permanent baseline, a six-condition unicorn gate
@@ -88,7 +88,7 @@ export default function Case005Page() {
               <div key={p.tag} className="bg-[#faf4e8] border border-border px-[22px] py-[18px]">
                 <div className="font-mono text-[11.5px] text-[#96683f]">{p.tag}</div>
                 <div className="text-[16px] font-semibold mt-1.5 text-[#3f2b16]">{p.title}</div>
-                <p className="mt-1.5 text-[14px] leading-[1.55] text-[#5c4a35]">{p.body}</p>
+                <p className="mt-1.5 text-[14px] leading-[1.55] text-[#43321f]">{p.body}</p>
               </div>
             ))}
           </div>
@@ -101,7 +101,7 @@ export default function Case005Page() {
           <div className="font-mono text-[12px] tracking-[.16em] text-[#96683f]">
             THE REASONING CHAIN — {adrsCase005.length} ADRs
           </div>
-          <div className="font-mono text-[12.5px] text-[#75604a]">decisions made · alternatives rejected · corrections applied</div>
+          <div className="font-mono text-[12.5px] text-[#64503a]">decisions made · alternatives rejected · corrections applied</div>
         </div>
 
         {ledgerGroups.map(({ domain, name }) => {
@@ -137,20 +137,20 @@ export default function Case005Page() {
           );
         })}
 
-        <p className="mt-[26px] text-[15px] italic text-[#75604a] max-w-[640px]">
+        <p className="mt-[26px] text-[15px] italic text-[#64503a] max-w-[640px]">
           Rejected alternatives are recorded with the same weight as accepted decisions. The rejection is the record.
         </p>
       </div>
 
       {/* Framing notice */}
       <div className="max-w-[860px] mx-auto px-6 md:px-12 pt-[30px] pb-11">
-        <p className="font-mono text-[12px] leading-[1.8] text-[#75604a]">
+        <p className="font-mono text-[12px] leading-[1.8] text-[#64503a]">
           Framing notice: This case study is an illustrative demonstration of the YY Method™ Home Edition applied to a
           real-world problem. Numbers are approximate and generalized. Math is illustrative only. Nothing here
           constitutes financial, tax, legal, or professional advice of any kind. Consult qualified professionals before
           making any decisions.
         </p>
-        <p className="font-mono mt-3 text-[12px] leading-[1.8] text-[#75604a]">
+        <p className="font-mono mt-3 text-[12px] leading-[1.8] text-[#64503a]">
           Disclosure posture (C5-011): The reasoning structure and constraint hierarchy are preserved at full fidelity.
           Identifying details — family composition, specific financial figures, and personal network references — are
           abstracted. The method is the subject. The family is not.

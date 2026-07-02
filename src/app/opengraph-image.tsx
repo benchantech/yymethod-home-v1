@@ -42,7 +42,7 @@ export default function Image() {
           <span
             style={{
               fontSize: "12px",
-              color: "#75604a",
+              color: "#64503a",
               border: "1px solid #cdae87",
               padding: "2px 8px",
               fontFamily: "monospace",
@@ -53,7 +53,7 @@ export default function Image() {
           <span
             style={{
               fontSize: "12px",
-              color: "#75604a",
+              color: "#64503a",
               border: "1px solid #cdae87",
               padding: "2px 8px",
               fontFamily: "monospace",
@@ -95,7 +95,7 @@ export default function Image() {
         <div
           style={{
             fontSize: "14px",
-            color: "#75604a",
+            color: "#64503a",
             fontFamily: "monospace",
           }}
         >

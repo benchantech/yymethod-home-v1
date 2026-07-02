@@ -10,10 +10,10 @@ export function SiteNav() {
         </span>
       </div>
       <div className="font-mono flex gap-7 text-xs">
-        <a href="https://yymethod.com" className="text-[#75604a] hover:text-foreground">Method</a>
-        <a href="https://yymethod.com/violin" className="text-[#75604a] hover:text-foreground">Violin</a>
+        <a href="https://yymethod.com" className="text-[#64503a] hover:text-foreground">Method</a>
+        <a href="https://yymethod.com/violin" className="text-[#64503a] hover:text-foreground">Violin</a>
         <span className="border-b border-foreground pb-0.5">Cases &amp; ADRs</span>
-        <a href="https://benchantech.com" className="text-[#75604a] hover:text-foreground">Ben Chan</a>
+        <a href="https://benchantech.com" className="text-[#64503a] hover:text-foreground">Ben Chan</a>
       </div>
     </div>
   );
@@ -22,7 +22,7 @@ export function SiteNav() {
 export function SiteFooter() {
   return (
     <div className="border-t border-border mt-auto">
-      <div className="font-mono max-w-[860px] mx-auto flex justify-between items-center flex-wrap gap-2.5 px-6 md:px-12 py-[18px] text-[12px] text-[#75604a]">
+      <div className="font-mono max-w-[860px] mx-auto flex justify-between items-center flex-wrap gap-2.5 px-6 md:px-12 py-[18px] text-[12px] text-[#64503a]">
         <span>Human captures. AI reads.</span>
         <span>
           <a href="https://benchantech.com" className="hover:text-foreground">benchantech.com</a>

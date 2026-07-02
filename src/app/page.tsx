@@ -20,8 +20,8 @@ const statusInk: Record<CaseStudy["status"], string> = {
   "Complete": "text-[#5f7a4a]",
   "In Progress": "text-[#a3672c]",
   "Rejected": "text-[#a04c2e]",
-  "Superseded": "text-[#75604a]",
-  "Coming Soon": "text-[#75604a]",
+  "Superseded": "text-[#64503a]",
+  "Coming Soon": "text-[#64503a]",
 };
 
 const isScar = (status: CaseStudy["status"]) => status === "Rejected" || status === "Superseded";
@@ -61,7 +61,7 @@ export default function Home() {
           <h1 className="mt-[18px] text-[40px] md:text-[56px] font-semibold leading-[1.06] tracking-[-.01em] text-[#3f2b16]">
             Preserve judgment under&nbsp;constraint.
           </h1>
-          <p className="mt-6 max-w-[700px] text-[18px] leading-[1.65] text-[#5c4a35]">
+          <p className="mt-6 max-w-[700px] text-[18px] leading-[1.65] text-[#43321f]">
             The YY Method is a personal epistemological framework for making decisions durable — structured so they
             survive time, correction, and handoff to AI. It applies everywhere judgment is required under constraint:
             tax strategy, system design, creative work, life architecture.
@@ -89,7 +89,7 @@ export default function Home() {
             PROVENANCE<br />
             <span className="text-[#8a7358]">RECORD OF<br />OWNERSHIP</span>
           </div>
-          <p className="text-[15.5px] leading-[1.7] text-[#5c4a35]">
+          <p className="text-[15.5px] leading-[1.7] text-[#43321f]">
             This is YY Method™ Home Edition — independently owned and controlled. v2.3 is the last version personally
             owned by the method&apos;s author. The method has since been applied within a professional employment context.
             The method itself — its principles, decision structures, and reasoning patterns — remains the author&apos;s
@@ -107,13 +107,13 @@ export default function Home() {
         <div className="max-w-[860px] mx-auto grid grid-cols-1 sm:grid-cols-[150px_1fr] gap-4 sm:gap-8 px-6 md:px-12 py-[38px]">
           <div className="font-mono text-[12px] tracking-[.16em] text-[#96683f] leading-loose">ABOUT THIS<br />SYSTEM</div>
           <div>
-            <p className="text-[15.5px] leading-[1.7] text-[#5c4a35]">
+            <p className="text-[15.5px] leading-[1.7] text-[#43321f]">
               This is the YY Method™ Home Edition case study archive. Each case study applies the method to a
               real-world complex problem, producing a structured set of ADRs (Architecture Decision Records) that
               capture the full reasoning chain — decisions made, alternatives rejected, corrections applied, and
               freshness boundaries defined.
             </p>
-            <p className="mt-4 text-[15.5px] leading-[1.7] text-[#5c4a35]">
+            <p className="mt-4 text-[15.5px] leading-[1.7] text-[#43321f]">
               Case studies are illustrative and anonymized. Numbers are approximate. The method is the message. More
               case studies will be added over time — some from the method&apos;s author, some from other practitioners. As
               the archive grows, the method itself becomes the through-line.
@@ -126,7 +126,7 @@ export default function Home() {
       <div id="cases" className="max-w-[860px] mx-auto px-6 md:px-12 pt-[46px] pb-5">
         <div className="flex justify-between items-baseline flex-wrap gap-3">
           <div className="font-mono text-[12px] tracking-[.16em] text-[#96683f]">THE HOUSEHOLD LEDGER — CASE STUDIES</div>
-          <div className="font-mono text-xs text-[#75604a]">
+          <div className="font-mono text-xs text-[#64503a]">
             {caseStudies.length} published · {inProgress} in progress
           </div>
         </div>
@@ -144,23 +144,23 @@ export default function Home() {
                 <span className="text-[#96683f]">
                   CASE #{cs.number} · <span className={`font-semibold ${statusInk[cs.status]}`}>{cs.status.toUpperCase()}</span>
                 </span>
-                <span className="text-[#75604a]">{cs.date} · {cs.adrCount} ADRs</span>
+                <span className="text-[#64503a]">{cs.date} · {cs.adrCount} ADRs</span>
               </div>
               <div className="text-[22px] font-semibold leading-[1.3] mt-2.5 text-[#3f2b16]">{cs.title}</div>
               <div className="text-[14px] italic text-[#96683f] mt-1.5">{cs.subtitle}</div>
-              <p className="mt-3 text-[15px] leading-[1.62] text-[#5c4a35]">{cs.description}</p>
+              <p className="mt-3 text-[15px] leading-[1.62] text-[#43321f]">{cs.description}</p>
             </Link>
           ))}
         </div>
 
-        <p className="mt-[26px] text-[15px] italic text-[#75604a] max-w-[640px]">
+        <p className="mt-[26px] text-[15px] italic text-[#64503a] max-w-[640px]">
           Rejected cases are never superseded — the scar record is preserved intact. The registry audits itself.
         </p>
       </div>
 
       {/* Disclosure */}
       <div className="max-w-[860px] mx-auto px-6 md:px-12 pt-[30px] pb-[46px]">
-        <p className="font-mono text-[12px] leading-[1.8] text-[#75604a]">
+        <p className="font-mono text-[12px] leading-[1.8] text-[#64503a]">
           Disclosure: Case studies published here are illustrative demonstrations of the YY Method™ Home Edition
           applied to real-world problems. Numbers are approximate and generalized. Math is illustrative only. Nothing
           here constitutes financial, tax, legal, or professional advice of any kind. Consult qualified professionals
@@ -183,7 +183,7 @@ export default function Home() {
                   <span>{a.label}</span>
                   <span>{a.badge}</span>
                 </div>
-                <p className="mt-2.5 text-[15px] leading-[1.55] text-[#5c4a35]">{a.description}</p>
+                <p className="mt-2.5 text-[15px] leading-[1.55] text-[#43321f]">{a.description}</p>
               </Link>
             ))}
           </div>

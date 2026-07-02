@@ -90,7 +90,7 @@
   --secondary: #eeddc4;
   --secondary-foreground: #3f2b16;
   --muted: #eeddc4;
-  --muted-foreground: #55432f;
+  --muted-foreground: #43321f;
   --accent: #f5ead6;
   --accent-foreground: #33261a;
   --destructive: #a04c2e;
@@ -124,29 +124,36 @@
   html {
     @apply font-sans;
   }
-  /* Typography plugin — parchment ink defaults */
-  .prose {
-    --tw-prose-body: #5c4a35;
-    --tw-prose-headings: #3f2b16;
-    --tw-prose-lead: #5c4a35;
-    --tw-prose-links: #7a4a24;
-    --tw-prose-bold: #3f2b16;
-    --tw-prose-counters: #96683f;
-    --tw-prose-bullets: #b39b7a;
-    --tw-prose-hr: #dcc9ae;
-    --tw-prose-quotes: #5c4a35;
-    --tw-prose-quote-borders: #dcc9ae;
-    --tw-prose-captions: #8a7358;
-    --tw-prose-code: #5c3a1e;
-    --tw-prose-pre-code: #f6ecdd;
-    --tw-prose-pre-bg: #3f2b16;
-    --tw-prose-th-borders: #dcc9ae;
-    --tw-prose-td-borders: #ecdfc6;
-  }
   /* Prose tables scroll independently on narrow screens */
   .prose table {
     display: block;
     overflow-x: auto;
     max-width: 100%;
   }
+}
+
+/* Typography plugin — parchment ink defaults.
+   Unlayered on purpose: the plugin emits its .prose variables in a later
+   cascade layer, so a layered override loses and code blocks fall back to
+   the plugin's light-gray-on-dark palette — invisible on parchment. */
+.prose {
+  --tw-prose-body: #43321f;
+  --tw-prose-headings: #3f2b16;
+  --tw-prose-lead: #43321f;
+  --tw-prose-links: #7a4a24;
+  --tw-prose-bold: #3f2b16;
+  --tw-prose-counters: #96683f;
+  --tw-prose-bullets: #b39b7a;
+  --tw-prose-hr: #dcc9ae;
+  --tw-prose-quotes: #43321f;
+  --tw-prose-quote-borders: #dcc9ae;
+  --tw-prose-captions: #64503a;
+  --tw-prose-code: #5c3a1e;
+  --tw-prose-pre-code: #3f2b16;
+  --tw-prose-pre-bg: #efe2cf;
+  --tw-prose-th-borders: #dcc9ae;
+  --tw-prose-td-borders: #ecdfc6;
+}
+.prose pre {
+  border: 1px solid #dcc9ae;
 }
