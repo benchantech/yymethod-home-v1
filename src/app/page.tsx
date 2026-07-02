@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import { caseStudies } from "@/lib/cases";
+import { caseStudies, type CaseStudy } from "@/lib/cases";
 import { JsonLd, personSchema } from "@/components/json-ld";
 
 export const metadata: Metadata = {
@@ -19,236 +16,179 @@ export const metadata: Metadata = {
   },
 };
 
-const HOME_DOMAIN_LIMIT = 4;
-const HOME_TAG_LIMIT = 10;
+const statusInk: Record<CaseStudy["status"], string> = {
+  "Complete": "text-[#5f7a4a]",
+  "In Progress": "text-[#a3672c]",
+  "Rejected": "text-[#a04c2e]",
+  "Superseded": "text-[#8a7358]",
+  "Coming Soon": "text-[#8a7358]",
+};
+
+const isScar = (status: CaseStudy["status"]) => status === "Rejected" || status === "Superseded";
+
+const artifacts = [
+  {
+    href: "/framework",
+    label: "YY FRAMEWORK",
+    badge: "v2.3",
+    description: "Core formula. Eight layers. Canonical principles. The method itself.",
+  },
+  {
+    href: "/agent",
+    label: "AGENT SYSTEM",
+    badge: "v2",
+    description: "Builder / Test / Review / Docs. Ambiguity queue. Executor contract.",
+  },
+  {
+    href: "/interview",
+    label: "INTERVIEW WITH AI",
+    badge: "2026-03-30",
+    description: "Word-for-word audit of the Case 002 first draft. AI extrapolated; operator corrected. The scar record.",
+  },
+];
 
 export default function Home() {
+  const inProgress = caseStudies.filter((c) => c.status === "In Progress").length;
+
   return (
-    <main className="min-h-screen p-6 md:p-10 max-w-4xl mx-auto space-y-12">
+    <main className="flex-1">
       <JsonLd data={personSchema()} />
 
-      {/* Header — YY Method Home Edition brand */}
-      <div className="space-y-4 pt-4">
-        <div className="flex items-center gap-3 flex-wrap">
-          <span className="font-mono text-xs text-muted-foreground tracking-widest uppercase">YY Method™</span>
-          <Badge variant="outline" className="font-mono text-xs font-semibold">Home Edition</Badge>
-          <Badge variant="outline" className="font-mono text-xs">v2.3</Badge>
-        </div>
-        <h1 className="text-3xl font-semibold tracking-tight leading-snug">
-          Preserve judgment under constraint.
-        </h1>
-        <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
-          The YY Method is a personal epistemological framework for making decisions durable —
-          structured so they survive time, correction, and handoff to AI.
-          It applies everywhere judgment is required under constraint: tax strategy, system design, creative work, life architecture.
-        </p>
-
-        {/* Edition ownership notice */}
-        <Card className="border-border bg-card max-w-2xl">
-          <CardContent className="pt-4 pb-4 space-y-2">
-            <p className="text-xs text-muted-foreground leading-relaxed">
-              <span className="text-foreground/80 font-semibold font-mono">This is YY Method™ Home Edition</span>
-              {" "}— independently owned and controlled. v2.3 is the last version personally owned by the method&apos;s author.
-              The method has since been applied within a professional employment context. The method itself — its principles,
-              decision structures, and reasoning patterns — remains the author&apos;s personal property; it predated the employment
-              and outlasts it. What belongs to the employer is the work-product: the specific implementations, operational
-              refinements, and decisions produced within that context. This site publishes reasoning chains, not deployments.
-              The boundary is governed by{" "}
-              <Link href="/case-004/c4-015" className="text-foreground/70 underline underline-offset-2 hover:text-foreground transition-colors font-mono">C4-015</Link>
-              {" "}and{" "}
-              <Link href="/case-004/c4-016" className="text-foreground/70 underline underline-offset-2 hover:text-foreground transition-colors font-mono">C4-016</Link>.
-            </p>
-            <p className="text-xs text-muted-foreground">
-              Canonical framework overview →{" "}
-              <a
-                href="https://yymethod.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground/70 underline underline-offset-2 hover:text-foreground transition-colors font-mono"
-              >
-                YY Method™
-              </a>
-            </p>
-          </CardContent>
-        </Card>
-      </div>
-
-      <Separator />
-
-      {/* What this system is */}
-      <div className="space-y-3">
-        <h2 className="text-xs font-medium uppercase tracking-wider text-muted-foreground">About This System</h2>
-        <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
-          This is the YY Method™ Home Edition case study archive. Each case study applies the method to a real-world complex problem,
-          producing a structured set of ADRs (Architecture Decision Records) that capture the full reasoning chain —
-          decisions made, alternatives rejected, corrections applied, and freshness boundaries defined.
-        </p>
-        <p className="text-sm text-muted-foreground leading-relaxed max-w-2xl">
-          Case studies are illustrative and anonymized. Numbers are approximate. The method is the message.
-          More case studies will be added over time — some from the method&apos;s author, some from other practitioners.
-          As the archive grows, the method itself becomes the through-line.
-        </p>
-      </div>
-
-      {/* Case Studies */}
-      <div className="space-y-4">
-        <div className="flex items-baseline gap-3">
-          <h2 className="text-xs font-medium uppercase tracking-wider text-muted-foreground">Case Studies</h2>
-          <span className="text-xs text-muted-foreground">{caseStudies.length} published · more in progress</span>
-        </div>
-
-        <div className="space-y-3">
-          {caseStudies.map((cs) => {
-            const visibleDomains = cs.domains.slice(0, HOME_DOMAIN_LIMIT);
-            const hiddenDomainCount = Math.max(0, cs.domains.length - visibleDomains.length);
-            const visibleTags = cs.tags.slice(0, HOME_TAG_LIMIT);
-            const hiddenTagCount = Math.max(0, cs.tags.length - visibleTags.length);
-
-            return (
-              <Link
-                key={cs.id}
-                href={cs.href}
-                className="group block rounded-lg border border-border bg-card p-5 transition-colors hover:bg-muted/30"
-              >
-                {/* Top row: meta + title (left) · compact case shape (right) */}
-                <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-                  <div className="space-y-2 min-w-0">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className="font-mono text-xs text-muted-foreground">Case #{cs.number}</span>
-                      <span
-                        className={`text-xs px-1.5 py-0.5 rounded border font-mono ${
-                          cs.status === "Complete"
-                            ? "bg-emerald-500/15 text-emerald-400 border-emerald-500/20"
-                            : cs.status === "In Progress"
-                            ? "bg-blue-500/15 text-blue-400 border-blue-500/20"
-                            : cs.status === "Rejected"
-                            ? "bg-red-500/15 text-red-400 border-red-500/20"
-                            : cs.status === "Superseded"
-                            ? "bg-amber-500/15 text-amber-400 border-amber-500/20"
-                            : "bg-muted/50 text-muted-foreground border-border"
-                        }`}
-                      >
-                        {cs.status}
-                      </span>
-                      <span className="font-mono text-xs text-muted-foreground">{cs.date}</span>
-                    </div>
-                    <div>
-                      <h3 className="text-base font-semibold leading-snug group-hover:text-foreground transition-colors">
-                        {cs.title}
-                      </h3>
-                      <p className="text-xs text-muted-foreground font-mono mt-0.5 leading-relaxed">
-                        {cs.subtitle}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex shrink-0 flex-col gap-2 sm:items-end sm:max-w-64">
-                    <span className="text-xs font-mono text-muted-foreground sm:text-right">{cs.adrCount} ADRs</span>
-                    <div className="flex flex-wrap gap-1 sm:justify-end">
-                      {visibleDomains.map((d) => (
-                        <Badge key={d} variant="outline" className="text-xs font-mono">
-                          {d}
-                        </Badge>
-                      ))}
-                      {hiddenDomainCount > 0 && (
-                        <Badge variant="outline" className="text-xs font-mono text-muted-foreground">
-                          +{hiddenDomainCount}
-                        </Badge>
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Description + hashtags — summarized for home-card scanability */}
-                <p className="text-sm text-muted-foreground leading-relaxed mt-3 line-clamp-4">
-                  {cs.description}
-                </p>
-                <div className="flex flex-wrap gap-1 mt-3">
-                  {visibleTags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs font-mono text-muted-foreground bg-muted/40 px-2 py-0.5 rounded"
-                    >
-                      #{tag}
-                    </span>
-                  ))}
-                  {hiddenTagCount > 0 && (
-                    <span className="text-xs font-mono text-muted-foreground bg-muted/40 px-2 py-0.5 rounded">
-                      +{hiddenTagCount}
-                    </span>
-                  )}
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-
-      </div>
-
-      <Separator />
-
-      {/* Legal disclaimer */}
-      <Card className="border-muted-foreground/20 bg-muted/10">
-        <CardContent className="pt-3 pb-3">
-          <p className="text-xs text-muted-foreground leading-relaxed font-mono">
-            <span className="text-foreground/60 font-semibold">Disclosure:</span>{" "}
-            Case studies published here are illustrative demonstrations of the YY Method™ Home Edition applied to real-world problems.
-            Numbers are approximate and generalized. Math is illustrative only.
-            Nothing here constitutes financial, tax, legal, or professional advice of any kind.
-            Consult qualified professionals before making any decisions. See individual ADRs for case-specific framing notices.
+      {/* Hero */}
+      <div className="px-6 md:px-12 pt-[72px] pb-[54px] bg-gradient-to-b from-[#f3e9dc] to-[#eeddc4] border-b border-border">
+        <div className="max-w-[860px] mx-auto">
+          <div className="font-mono text-[11px] tracking-[.16em] text-[#96683f]">FOR A LIFE · v2.3 · INDEPENDENTLY OWNED</div>
+          <h1 className="mt-[18px] text-[40px] md:text-[56px] font-semibold leading-[1.06] tracking-[-.01em] text-[#3f2b16]">
+            Preserve judgment under&nbsp;constraint.
+          </h1>
+          <p className="mt-6 max-w-[700px] text-[17px] leading-[1.65] text-[#5c4a35]">
+            The YY Method is a personal epistemological framework for making decisions durable — structured so they
+            survive time, correction, and handoff to AI. It applies everywhere judgment is required under constraint:
+            tax strategy, system design, creative work, life architecture.
           </p>
-        </CardContent>
-      </Card>
-
-      {/* Nav to framework/agent/interview */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {[
-          {
-            href: "/framework",
-            title: "YY Framework",
-            description: "Core formula. Eight layers. Canonical principles. The method itself.",
-            badge: "v2.3",
-          },
-          {
-            href: "/agent",
-            title: "Agent System",
-            description: "Builder / Test / Review / Docs. Ambiguity queue. Executor contract.",
-            badge: "v2",
-          },
-          {
-            href: "/interview",
-            title: "Interview with AI",
-            description: "Word-for-word audit of the Case 002 first draft. AI extrapolated; operator corrected. The scar record.",
-            badge: "2026-03-30",
-          },
-        ].map((nav) => (
-          <Link
-            key={nav.href}
-            href={nav.href}
-            className="group block p-5 rounded-lg border border-border bg-card hover:bg-muted/30 transition-colors"
-          >
-            <div className="flex items-start justify-between gap-2">
-              <h3 className="font-medium text-sm group-hover:text-foreground">{nav.title}</h3>
-              <Badge variant="outline" className="font-mono text-xs shrink-0">
-                {nav.badge}
-              </Badge>
-            </div>
-            <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
-              {nav.description}
-            </p>
-          </Link>
-        ))}
+          <div className="flex gap-[22px] mt-[30px] items-center flex-wrap">
+            <a href="#cases" className="font-mono text-[12.5px] px-6 py-3 bg-[#7a4a24] text-[#f6ecdd] font-medium">
+              Browse the cases
+            </a>
+            <a
+              href="https://yymethod.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-xs text-[#96683f] border-b border-[#96683f] pb-0.5"
+            >
+              Canonical framework overview → yymethod.com
+            </a>
+          </div>
+        </div>
       </div>
 
-      <div className="pb-6 text-center space-y-2">
-        <p className="text-xs text-muted-foreground font-mono">Human captures. AI reads.</p>
-        <p className="text-xs text-muted-foreground">
-          <a href="https://benchantech.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">benchantech.com</a>
-          <span className="mx-2 opacity-30">·</span>
-          <a href="https://yymethod.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">yymethod.com</a>
+      {/* Provenance */}
+      <div className="border-b border-border">
+        <div className="max-w-[860px] mx-auto grid grid-cols-1 sm:grid-cols-[150px_1fr] gap-4 sm:gap-8 px-6 md:px-12 py-[38px]">
+          <div className="font-mono text-[11px] tracking-[.16em] text-[#96683f] leading-loose">
+            PROVENANCE<br />
+            <span className="text-[#b39b7a]">RECORD OF<br />OWNERSHIP</span>
+          </div>
+          <p className="text-[14.5px] leading-[1.7] text-[#5c4a35]">
+            This is YY Method™ Home Edition — independently owned and controlled. v2.3 is the last version personally
+            owned by the method&apos;s author. The method has since been applied within a professional employment context.
+            The method itself — its principles, decision structures, and reasoning patterns — remains the author&apos;s
+            personal property; it predated the employment and outlasts it. What belongs to the employer is the
+            work-product: the specific implementations, operational refinements, and decisions produced within that
+            context. This site publishes reasoning chains, not deployments. The boundary is governed by{" "}
+            <Link href="/case-004/c4-015" className="text-[#7a4a24] underline underline-offset-2">C4-015</Link> and{" "}
+            <Link href="/case-004/c4-016" className="text-[#7a4a24] underline underline-offset-2">C4-016</Link>.
+          </p>
+        </div>
+      </div>
+
+      {/* About */}
+      <div className="border-b border-border">
+        <div className="max-w-[860px] mx-auto grid grid-cols-1 sm:grid-cols-[150px_1fr] gap-4 sm:gap-8 px-6 md:px-12 py-[38px]">
+          <div className="font-mono text-[11px] tracking-[.16em] text-[#96683f] leading-loose">ABOUT THIS<br />SYSTEM</div>
+          <div>
+            <p className="text-[14.5px] leading-[1.7] text-[#5c4a35]">
+              This is the YY Method™ Home Edition case study archive. Each case study applies the method to a
+              real-world complex problem, producing a structured set of ADRs (Architecture Decision Records) that
+              capture the full reasoning chain — decisions made, alternatives rejected, corrections applied, and
+              freshness boundaries defined.
+            </p>
+            <p className="mt-4 text-[14.5px] leading-[1.7] text-[#5c4a35]">
+              Case studies are illustrative and anonymized. Numbers are approximate. The method is the message. More
+              case studies will be added over time — some from the method&apos;s author, some from other practitioners. As
+              the archive grows, the method itself becomes the through-line.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Case ledger */}
+      <div id="cases" className="max-w-[860px] mx-auto px-6 md:px-12 pt-[46px] pb-5">
+        <div className="flex justify-between items-baseline flex-wrap gap-3">
+          <div className="font-mono text-[11px] tracking-[.16em] text-[#96683f]">THE HOUSEHOLD LEDGER — CASE STUDIES</div>
+          <div className="font-mono text-xs text-[#8a7358]">
+            {caseStudies.length} published · {inProgress} in progress
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-[18px] mt-[22px]">
+          {caseStudies.map((cs) => (
+            <Link
+              key={cs.id}
+              href={cs.href}
+              className={`block shadow-[0_2px_5px_rgba(90,60,25,.09)] hover:shadow-[0_4px_12px_rgba(90,60,25,.18)] hover:-translate-y-px transition px-[30px] py-6 border ${
+                isScar(cs.status) ? "bg-[#f5ead6] border-[#cdae87]" : "bg-[#faf4e8] border-border"
+              }`}
+            >
+              <div className="flex justify-between items-baseline font-mono text-[11px] flex-wrap gap-2">
+                <span className="text-[#96683f]">
+                  CASE #{cs.number} · <span className={`font-semibold ${statusInk[cs.status]}`}>{cs.status.toUpperCase()}</span>
+                </span>
+                <span className="text-[#8a7358]">{cs.date} · {cs.adrCount} ADRs</span>
+              </div>
+              <div className="text-[21px] font-semibold leading-[1.3] mt-2.5 text-[#3f2b16]">{cs.title}</div>
+              <div className="text-[13px] italic text-[#96683f] mt-1.5">{cs.subtitle}</div>
+              <p className="mt-3 text-[13.5px] leading-[1.62] text-[#5c4a35]">{cs.description}</p>
+            </Link>
+          ))}
+        </div>
+
+        <p className="mt-[26px] text-[13.5px] italic text-[#8a7358] max-w-[640px]">
+          Rejected cases are never superseded — the scar record is preserved intact. The registry audits itself.
         </p>
       </div>
 
+      {/* Disclosure */}
+      <div className="max-w-[860px] mx-auto px-6 md:px-12 pt-[30px] pb-[46px]">
+        <p className="font-mono text-[11px] leading-[1.8] text-[#a08a68]">
+          Disclosure: Case studies published here are illustrative demonstrations of the YY Method™ Home Edition
+          applied to real-world problems. Numbers are approximate and generalized. Math is illustrative only. Nothing
+          here constitutes financial, tax, legal, or professional advice of any kind. Consult qualified professionals
+          before making any decisions. See individual ADRs for case-specific framing notices.
+        </p>
+      </div>
+
+      {/* System artifacts */}
+      <div className="border-t border-border bg-[#eeddc4]">
+        <div className="max-w-[860px] mx-auto px-6 md:px-12 pt-10 pb-[46px]">
+          <div className="font-mono text-[11px] tracking-[.16em] text-[#96683f] mb-5">SYSTEM ARTIFACTS</div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {artifacts.map((a) => (
+              <Link
+                key={a.href}
+                href={a.href}
+                className="bg-[#faf4e8] border border-border px-6 py-[22px] hover:shadow-[0_4px_12px_rgba(90,60,25,.18)] transition-shadow"
+              >
+                <div className="flex justify-between font-mono text-[10.5px] text-[#96683f]">
+                  <span>{a.label}</span>
+                  <span>{a.badge}</span>
+                </div>
+                <p className="mt-2.5 text-[13.5px] leading-[1.55] text-[#5c4a35]">{a.description}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
     </main>
   );
 }

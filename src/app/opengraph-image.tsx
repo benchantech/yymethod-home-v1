@@ -10,7 +10,7 @@ export default function Image() {
     (
       <div
         style={{
-          background: "#09090b",
+          background: "#f3e9dc",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -31,7 +31,7 @@ export default function Image() {
           <span
             style={{
               fontSize: "13px",
-              color: "#71717a",
+              color: "#96683f",
               letterSpacing: "0.12em",
               textTransform: "uppercase",
               fontFamily: "monospace",
@@ -42,9 +42,8 @@ export default function Image() {
           <span
             style={{
               fontSize: "12px",
-              color: "#a1a1aa",
-              border: "1px solid #3f3f46",
-              borderRadius: "4px",
+              color: "#8a7358",
+              border: "1px solid #cdae87",
               padding: "2px 8px",
               fontFamily: "monospace",
             }}
@@ -54,9 +53,8 @@ export default function Image() {
           <span
             style={{
               fontSize: "12px",
-              color: "#a1a1aa",
-              border: "1px solid #3f3f46",
-              borderRadius: "4px",
+              color: "#8a7358",
+              border: "1px solid #cdae87",
               padding: "2px 8px",
               fontFamily: "monospace",
             }}
@@ -71,7 +69,7 @@ export default function Image() {
             style={{
               fontSize: "52px",
               fontWeight: "600",
-              color: "#fafafa",
+              color: "#3f2b16",
               lineHeight: "1.2",
               letterSpacing: "-0.02em",
             }}
@@ -83,7 +81,7 @@ export default function Image() {
           <div
             style={{
               fontSize: "18px",
-              color: "#71717a",
+              color: "#96683f",
               maxWidth: "680px",
               lineHeight: "1.6",
             }}
@@ -97,7 +95,7 @@ export default function Image() {
         <div
           style={{
             fontSize: "14px",
-            color: "#52525b",
+            color: "#8a7358",
             fontFamily: "monospace",
           }}
         >

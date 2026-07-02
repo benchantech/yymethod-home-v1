@@ -192,7 +192,7 @@ export default async function ADRCase006Page({ params }: { params: Promise<{ id:
       {/* Content */}
       {content ? (
         <div
-          className="prose prose-sm prose-invert max-w-none
+          className="prose prose-sm max-w-none
             prose-headings:font-semibold prose-headings:tracking-tight
             prose-h2:text-base prose-h2:mt-8 prose-h2:mb-3
             prose-h3:text-sm prose-h3:mt-6 prose-h3:mb-2

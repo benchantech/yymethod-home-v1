@@ -231,7 +231,7 @@ export default async function ADRPage({ params }: { params: Promise<{ id: string
       {/* Full artifact content */}
       {content ? (
         <div
-          className="prose prose-invert prose-sm max-w-none
+          className="prose prose-sm max-w-none
             prose-headings:font-semibold prose-headings:tracking-tight
             prose-h1:text-xl prose-h2:text-base prose-h2:text-muted-foreground prose-h2:uppercase prose-h2:tracking-wider prose-h2:text-xs prose-h2:font-medium
             prose-h3:text-sm prose-h3:font-medium
