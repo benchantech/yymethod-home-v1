@@ -14,6 +14,20 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   {
+    id: "case-012",
+    number: "012",
+    title: "Violin Stand Partner — Building a Human-Judgment System Between Lessons",
+    subtitle: "Between lessons · stand partner · page turns · source provenance · defensive judgment",
+    date: "2026-07-17",
+    status: "In Progress",
+    domains: ["Identity", "Audience", "Daily Ritual", "Coach Authority", "Method Runtime", "Memory", "Corpus", "Defensive Judgment"],
+    adrCount: 42,
+    description:
+      "42 ADRs documenting Violin Stand Partner: a broad AI violin coach concept is rejected in favor of bounded between-lessons support; teacher authority is preserved; parents become a first-class audience; comprehensive practice plans narrow into one five-minute page turn; multiple open pages are constrained to one current action each; Coach becomes an orchestration layer; durable memory is visible and human-approved; Ben-source provenance is separated from AI synthesis; Approved Compacts and deterministic authorization govern physical action; and First Response becomes an event-driven protective layer rather than a standalone daily ritual.",
+    href: "/case-012",
+    tags: ["violin-stand-partner", "between-lessons", "teacher-authority", "parents", "five-minute-page-turn", "open-pages", "coach-authority", "visible-memory", "source-provenance", "approved-compacts", "deterministic-authorization", "first-response", "defensive-judgment", "human-first-ai-second"],
+  },
+  {
     id: "case-011",
     number: "011",
     title: "YY Method Academy — Real YY as First-Class Guide, Family AI Literacy, and the Graduation Field",
