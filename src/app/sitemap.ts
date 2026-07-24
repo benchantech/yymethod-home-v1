@@ -11,6 +11,7 @@ import { adrsCase009 } from "@/lib/adrs-case-009";
 import { adrsCase010 } from "@/lib/adrs-case-010";
 import { adrsCase011 } from "@/lib/adrs-case-011";
 import { adrsCase012 } from "@/lib/adrs-case-012";
+import { adrsCase013 } from "@/lib/adrs-case-013";
 
 const BASE_URL = "https://home.yymethod.com";
 
@@ -33,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/case-010`, lastModified: "2026-04-27", changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/case-011`, lastModified: "2026-06-06", changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/case-012`, lastModified: "2026-07-17", changeFrequency: "weekly", priority: 0.8 },
+    { url: `${BASE_URL}/case-013`, lastModified: "2026-07-24", changeFrequency: "monthly", priority: 0.8 },
   ];
 
   const case001Routes: MetadataRoute.Sitemap = adrs.map((adr) => ({
@@ -119,6 +121,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const case013Routes: MetadataRoute.Sitemap = adrsCase013.map((adr) => ({
+    url: `${BASE_URL}/case-013/${adr.id}`,
+    lastModified: adr.date,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   // ADR-026 is automatically included via case001Routes (adrs array)
-  return [...staticRoutes, ...case001Routes, ...case002Routes, ...case003Routes, ...case004Routes, ...case005Routes, ...case006Routes, ...case007Routes, ...case008Routes, ...case009Routes, ...case010Routes, ...case011Routes, ...case012Routes];
+  return [...staticRoutes, ...case001Routes, ...case002Routes, ...case003Routes, ...case004Routes, ...case005Routes, ...case006Routes, ...case007Routes, ...case008Routes, ...case009Routes, ...case010Routes, ...case011Routes, ...case012Routes, ...case013Routes];
 }

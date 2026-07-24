@@ -14,6 +14,20 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   {
+    id: "case-013",
+    number: "013",
+    title: "Constraining an AI Video Generator Through Progressive Decision Reduction",
+    subtitle: "AI video · decision reduction · visual locking · repeatable production · human judgment",
+    date: "2026-07-24",
+    status: "Complete",
+    domains: ["Control Surface", "Temporal Architecture", "Scene Construction", "Visual Locking", "Prompt Architecture", "Experimental Method", "Asset System", "Human-AI Collaboration"],
+    adrCount: 18,
+    description:
+      "18 ADRs documenting how an AI video workflow moved from increasingly elaborate prompts toward a system that progressively removes unnecessary decisions from the generator. Exact prompts, generated clips, reference assets, timing experiments, moderation observations, and platform-specific fixtures remain private; the public record preserves decisions, discarded assumptions, and the scars that made later decisions necessary.",
+    href: "/case-013",
+    tags: ["ai-video", "decision-reduction", "visual-locking", "prompt-architecture", "reference-images", "observable-behavior", "shot-architecture", "debugging", "moderation-boundary", "reusable-assets", "repeatability", "human-judgment"],
+  },
+  {
     id: "case-012",
     number: "012",
     title: "Violin Stand Partner — Building a Human-Judgment System Between Lessons",
